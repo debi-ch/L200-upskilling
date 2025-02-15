@@ -1,5 +1,11 @@
 from google.cloud import aiplatform
+from google.cloud import logging
 import re
+import time
+
+# Initialize Cloud Logging
+logging_client = logging.Client()
+logger = logging_client.logger('gemma_chat_logs')
 
 # **IMPORTANT:**  Replace these with your actual Project ID, Region, and Endpoint ID from Vertex AI!
 PROJECT_ID = "learningemini"  # <---- PUT YOUR GCP PROJECT ID HERE
@@ -8,35 +14,48 @@ ENDPOINT_ID = "5091895522835300352"  # <---- PUT YOUR VERTEX AI ENDPOINT ID HERE
 
 def chat_with_gemma(prompt_text):
     """Sends a prompt to the Gemma model endpoint and gets a response."""
-
+    
     aiplatform.init(project=PROJECT_ID, location=REGION)
     endpoint = aiplatform.Endpoint(ENDPOINT_ID)
 
-    instances = [{"prompt": prompt_text}] #inputs as expected by gemma 
+    # Simplified prompt structure
+    instances = [{
+        "prompt": prompt_text,
+        "max_tokens": 2048  # Try setting it in the instance
+    }]
 
-     # Add the 'maxOutputTokens' parameter here:
     parameters = {
-        "maxOutputTokens": 500  # You can adjust this value
+        "maxOutputTokens": 2048,
+        "temperature": 0.7,
+        "topP": 0.95,
+        "topK": 40
     }
 
-    prediction = endpoint.predict(instances=instances, parameters=parameters)
+    try:
+        prediction = endpoint.predict(instances=instances, parameters=parameters)
+        
+        print("\n=== DEBUG INFO ===")
+        print("Raw prediction object:", prediction)
+        print("Prediction type:", type(prediction))
+        print("Predictions array length:", len(prediction.predictions))
+        print("First prediction length:", len(prediction.predictions[0]))
+        print("First prediction:", prediction.predictions[0])
+        print("Parameters used:", parameters)
+        print("=== END DEBUG INFO ===\n")
 
-    print("--- Prediction object (for debugging) ---") # ADDED
-    print(prediction) # ADDED
-    print("--- End Prediction object ---") # ADDED
+        response_text = prediction.predictions[0]
+        if isinstance(response_text, str):
+            # Clean up the response if needed
+            response_text = response_text.replace("Prompt:", "").replace(prompt_text, "").strip()
+            if response_text.startswith("Output:"):
+                response_text = response_text[7:].strip()
+        return response_text
 
-    print(len(prediction.predictions[0]))
+    except Exception as e:
+        print(f"Error during prediction: {str(e)}")
+        return f"An error occurred: {str(e)}"
 
-    full_prediction = prediction.predictions[0]
-    match = re.search(r"Output:\s*(.*)", full_prediction, re.DOTALL) # finds everything after output
-    if match:
-        response_text = match.group(1).strip()
-    else:
-        response_text = full_prediction
-
-    print(response_text)
-    return response_text
-
+# Main function to run the chatbot in the CLI - only used when running gemma_chat.py directly 
 if __name__ == "__main__":
     print("Welcome to the Deb Chat!")
     print("Type 'poopie' to exit.")

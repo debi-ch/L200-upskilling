@@ -13,6 +13,6 @@ RUN pip install --trusted-host pypi.python.org -r requirements.txt
 # Copy the rest of the working directory contents into the container at /app
 COPY . .
 
-# Run app.py when the container launches
-ENTRYPOINT ["python", "main.py"]
+# Run streamlit app when the container launches
+ENTRYPOINT ["streamlit", "run", "chatbot_app.py", "--server.port=8080", "--server.address=0.0.0.0"]
 
