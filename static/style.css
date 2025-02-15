@@ -1,0 +1,74 @@
+/* Basic styling - feel free to customize */
+
+body {
+    background: linear-gradient(to bottom, #FFA500, #008000); /* Orange to Green Gradient */
+    color: #ffffff;  /* White text for better contrast */
+    font-family: "Courier New", monospace; /* Classic monospace font */
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;   /* Big, bold title */
+    text-shadow: 0 0 10px #00FF00;  /* Neon Green glow effect */
+    margin-top: 20px;     /* Space at the top */
+}
+
+input[type="text"] {
+    background-color: #333;    /* Dark background */
+    color: #FFA500;  /* Green text in the input */
+    border: 2px solid #FFA500;  /* Neon green border */
+    padding: 10px;
+    font-size: 1.2em;    /* Larger text */
+}
+
+button {
+    background-color: #008000; /* Green button */
+    color: #FFA500; /* Orange text */
+    border: none; /* No border */
+    padding: 10px 20px;
+    font-size: 1.2em;  /* Larger text */
+    cursor: pointer;  /* Indicate clickable */
+    margin-left: 15px; /* Spacing */
+    border: 1px solid black;
+    box-shadow: 3px 3px black;  /* Very 80s */
+}
+
+#questionInput {  /* Input-specific styles */
+    height: 100px;
+    width: 75%;
+    font-size: 1.2em;
+    resize: vertical;
+    background-color: #333;
+    color: #FFA500;
+    border: 1px solid #FFA500;
+}
+
+#answerArea {  /* Answer area-specific styles */
+    width: calc(100% - 40px); /* Consistent width for both */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;  /* Align text to the left */
+    margin-top: 20px;
+    min-height: 100px; /* Maintain minimum height */
+    white-space: pre-wrap; /* Handle text wrapping */
+    color: #ffffff;
+}
+
+/* Add some scanlines for extra cheesiness */
+body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: repeating-linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0) 1px,
+        rgba(255, 165, 0, 0.1) 1px, /* Subtle orange */
+        rgba(0, 128, 0, 0.1) 2px  /* Slightly wider green */
+    );
+    z-index: -1; /* Behind other elements */
+}

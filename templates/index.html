@@ -1,0 +1,16 @@
+<html>
+<head>
+    <title>Doobie Scoobie Chat</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <img src="https://static.wikitide.net/greatcharacterswiki/f/f9/Xfgfjbvdhbvjhsdb.png" alt="Spongebob" width="600"> <br>
+    <input type="text" id="questionInput" placeholder="Enter your question...">
+    <br/><br/>
+    <button id="submitBtn">Submit</button>
+    <div id="answerArea"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
