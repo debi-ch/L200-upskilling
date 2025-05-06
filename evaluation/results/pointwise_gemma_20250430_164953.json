@@ -1,0 +1,542 @@
+[
+  {
+    "model": "gemma",
+    "query_id": "q1",
+    "category": "destination_recommendations",
+    "query": "What are the must-visit places in Tokyo for a first-time visitor?",
+    "response": "Tokyo is an amazing city with something for everyone!  \n\nTo make sure you see the highlights, here are some must-visit places for a first-time visitor:\n\n**Iconic Landmarks & Cultural Experiences:**\n\n* **Shibuya Crossing:** Experience the world's busiest intersection, a true Tokyo spectacle.\n* **Senso-ji Temple:** Tokyo's oldest temple, with beautiful architecture and a vibrant atmosphere.\n* **Tokyo Skytree:** Ascend this towering structure for breathtaking panoramic views of the city.\n* **Imperial Palace:** Explore the former Edo Castle, now the residence of the Japanese Emperor.\n* **Ghibli Museum:** A magical journey into the world of Studio Ghibli animation (reservations required).\n\n**Unique & Trendy Neighborhoods:**\n\n* **Harajuku:** Immerse yourself in colorful street fashion, kawaii culture, and quirky shops.\n* **Shinjuku:** A bustling entertainment and shopping district, home to the Tokyo Metropolitan Government Building (free observatory with city views).\n* **Ginza:** Tokyo's upscale shopping district, known for its designer boutiques, art galleries, and Michelin-starred restaurants.\n* **Akihabara:** The \"Electric Town\" filled with anime, manga, video game stores, and maid cafes.\n\n**Relaxation & Nature:**\n\n* **Ueno Park:** A sprawling green oasis with museums, a zoo, and picturesque gardens.\n* **Shinjuku Gyoen National Garden:**  A serene escape from the city, with traditional Japanese gardens, French formal gardens, and an English landscape garden.\n* **Sumida River Cruise:** Enjoy a relaxing boat ride along the Sumida River, offering stunning views of Tokyo's landmarks.\n\n\nThis is just a starting point - Tokyo has endless possibilities! \n\nLet me know what kind of interests you have, and I can provide more personalized recommendations.",
+    "response_time": 17.472978115081787,
+    "evaluation": {
+      "basic": {
+        "response_length": 1770,
+        "word_count": 253
+      },
+      "structure": {
+        "has_intro": true,
+        "has_body": true,
+        "has_conclusion": false,
+        "structure_score": 0.6666666666666666
+      },
+      "formatting": {
+        "paragraph_count": 10,
+        "avg_paragraph_length": 175.2,
+        "list_item_count": 12,
+        "heading_count": 0,
+        "bold_text_count": 15,
+        "italic_text_count": 29,
+        "formatting_diversity_score": 0.8
+      },
+      "content": {
+        "relevance_score": 0.8636363636363636
+      },
+      "travel_specific": {
+        "attractions": 0.7,
+        "food": 0.4,
+        "accommodation": 0.0,
+        "transportation": 0.1,
+        "budget": 0.0,
+        "culture": 0.2222222222222222,
+        "practical_info": 0.1,
+        "overall_travel_score": 0.21746031746031752
+      },
+      "local_knowledge": {
+        "specific_place_mentions": 4,
+        "unique_specific_places": 4,
+        "time_references": 0,
+        "price_references": 0,
+        "estimated_local_terms_ratio": 0.6938775510204082,
+        "specificity_score": 0.4
+      },
+      "overall": {
+        "response_quality": 0.6625829725829726,
+        "specificity": 0.4
+      }
+    }
+  },
+  {
+    "model": "gemma",
+    "query_id": "q2",
+    "category": "itinerary_planning",
+    "query": "Can you suggest an itinerary for 3 days in Barcelona?",
+    "response": "## 3-Day Barcelona Itinerary: A Taste of Catalan Charm\n\nThis itinerary balances iconic landmarks with local experiences, leaving room for spontaneous exploration.\n\n**Day 1: Gaud\u00ed's Masterpieces & Gothic Charm**\n\n* **Morning:** Start your day at Sagrada Fam\u00edlia, Gaud\u00ed's unfinished masterpiece. Book tickets online in advance to skip the line. Explore the intricate facade and marvel at the towering spires.\n* **Afternoon:** Stroll through Park G\u00fcell, another Gaud\u00ed gem. Admire the whimsical mosaics, vibrant colors, and panoramic city views.\n* **Evening:** Wander through the Gothic Quarter, its narrow streets teeming with history. Enjoy a traditional Catalan dinner in a cozy restaurant, followed by tapas at a local bar.\n\n**Day 2: Beaches, Boulevards & Art**\n\n* **Morning:** Relax on Barceloneta Beach. Soak up the sun, take a swim in the Mediterranean Sea, or enjoy a refreshing drink at a beachfront caf\u00e9.\n* **Afternoon:** Take a leisurely walk along La Rambla, Barcelona's vibrant boulevard. Browse the street performers, flower stalls, and souvenir shops.\n* **Evening:** Immerse yourself in art at the Picasso Museum, showcasing the evolution of the artist's iconic style. Afterwards, enjoy dinner in the lively El Born neighborhood.\n\n**Day 3: Modernism & Panoramic Views**\n\n* **Morning:** Discover Casa Batll\u00f3 and Casa Mil\u00e0, two more of Gaud\u00ed's extraordinary modernist buildings. Their unique facades and interiors are a testament to his architectural genius.\n* **Afternoon:** Ascend Montju\u00efc hill for breathtaking panoramic views of the city. Visit the Montju\u00efc Castle, explore the gardens, or catch an outdoor performance at the Magic Fountain of Montju\u00efc.\n* **Evening:** Indulge in a farewell dinner at one of Barcelona's many Michelin-starred restaurants, savoring the city's culinary delights before your departure.\n\n**Pro-Tips:**\n\n* Purchase the Barcelona Card for access to public transport and discounts on attractions.\n* Learn a few basic Spanish phrases.\n* Wear comfortable shoes for walking.\n* Be prepared for crowds, especially during peak season.\n* Enjoy the delicious local cuisine!",
+    "response_time": 20.216318368911743,
+    "evaluation": {
+      "basic": {
+        "response_length": 2104,
+        "word_count": 315
+      },
+      "structure": {
+        "has_intro": false,
+        "has_body": true,
+        "has_conclusion": true,
+        "structure_score": 0.6666666666666666
+      },
+      "formatting": {
+        "paragraph_count": 10,
+        "avg_paragraph_length": 208.6,
+        "list_item_count": 14,
+        "heading_count": 0,
+        "bold_text_count": 13,
+        "italic_text_count": 28,
+        "formatting_diversity_score": 0.8
+      },
+      "content": {
+        "relevance_score": 0.31000000000000005
+      },
+      "travel_specific": {
+        "attractions": 0.6,
+        "food": 0.6,
+        "accommodation": 0.0,
+        "transportation": 0.3,
+        "budget": 0.0,
+        "culture": 0.3333333333333333,
+        "practical_info": 0.2,
+        "overall_travel_score": 0.29047619047619044
+      },
+      "local_knowledge": {
+        "specific_place_mentions": 1,
+        "unique_specific_places": 1,
+        "time_references": 4,
+        "price_references": 0,
+        "estimated_local_terms_ratio": 0.6426116838487973,
+        "specificity_score": 0.5
+      },
+      "overall": {
+        "response_quality": 0.511095238095238,
+        "specificity": 0.5
+      }
+    }
+  },
+  {
+    "model": "gemma",
+    "query_id": "q3",
+    "category": "food_recommendations",
+    "query": "What are some local dishes I should try in Thailand?",
+    "response": "Thailand is a foodie paradise with a diverse range of delicious dishes to tantalize your taste buds! Here are some local specialties you should definitely try:  \n\n**Must-Tries:**\n\n* **Pad Thai:** This iconic stir-fried noodle dish with shrimp, tofu, egg, and peanuts is a must-have in Thailand.\n* **Tom Yum Goong:** A hot and sour soup with prawns, lemongrass, galangal, and chili. It's a vibrant and aromatic experience!\n* **Green Curry:** A creamy coconut milk-based curry with green chilies, vegetables, and your choice of meat or tofu.\n* **Massaman Curry:** A milder, aromatic curry with influences from India. It's rich and flavorful, featuring beef, potatoes, onions, and peanuts.\n\n**Beyond the Basics:**\n\n* **Som Tum (Papaya Salad):** A spicy and refreshing salad made with shredded papaya, green beans, tomatoes, garlic, chilies, and lime juice.\n* **Khao Soi:** A unique northern Thai dish of coconut curry noodles, crispy noodles, chicken or beef, and pickled mustard greens.\n* **Larb:** A flavorful minced meat salad with herbs, lime juice, fish sauce, and chilies.\n\n**Sweet Treats:**\n\n* **Mango Sticky Rice:** This classic dessert is a perfect combination of sweet ripe mango, sticky rice, and coconut milk.\n* **Roti:** A thin, crispy flatbread with sweet or savory fillings. Often found at street stalls, it's a delicious and affordable treat.\n\n\nRemember to explore local markets and street food stalls for the most authentic and affordable Thai cuisine!",
+    "response_time": 15.085057258605957,
+    "evaluation": {
+      "basic": {
+        "response_length": 1466,
+        "word_count": 229
+      },
+      "structure": {
+        "has_intro": true,
+        "has_body": true,
+        "has_conclusion": true,
+        "structure_score": 1.0
+      },
+      "formatting": {
+        "paragraph_count": 8,
+        "avg_paragraph_length": 181.5,
+        "list_item_count": 9,
+        "heading_count": 0,
+        "bold_text_count": 12,
+        "italic_text_count": 23,
+        "formatting_diversity_score": 0.8
+      },
+      "content": {
+        "relevance_score": 0.6399999999999999
+      },
+      "travel_specific": {
+        "attractions": 0.0,
+        "food": 0.5,
+        "accommodation": 0.0,
+        "transportation": 0.0,
+        "budget": 0.0,
+        "culture": 0.1111111111111111,
+        "practical_info": 0.0,
+        "overall_travel_score": 0.08730158730158731
+      },
+      "local_knowledge": {
+        "specific_place_mentions": 0,
+        "unique_specific_places": 0,
+        "time_references": 0,
+        "price_references": 0,
+        "estimated_local_terms_ratio": 0.6607929515418502,
+        "specificity_score": 0.0
+      },
+      "overall": {
+        "response_quality": 0.6694603174603175,
+        "specificity": 0.0
+      }
+    }
+  },
+  {
+    "model": "gemma",
+    "query_id": "q4",
+    "category": "family_travel",
+    "query": "I'm traveling with young children to Costa Rica. What activities would be appropriate and safe?",
+    "response": "Fantastic! Costa Rica is a wonderful place for families with young children.  \n\nTo give you the best recommendations, tell me:\n\n* **How old are your children?**  Activities for toddlers will be very different from those for 8-year-olds!\n* **What are your children's interests?** Do they love animals, the beach, swimming, exploring nature, etc.?\n* **What kind of travel pace do you prefer?** Relaxed, with lots of downtime, or more packed with activities?\n* **Where in Costa Rica are you planning to go?** Different regions offer different experiences. \n\nOnce I have a better idea of your family's needs, I can suggest some amazing and safe adventures! \n\nHere are a few general ideas to get you started:  \n\n**For all ages:**\n\n* **Visit a wildlife sanctuary:**  See sloths, monkeys, toucans, and other amazing creatures up close in a safe and educational environment. \n* **Take a gentle hike:**  Many national parks have easy, stroller-friendly trails through lush rainforests. \n* **Relax on the beach:** Soak up the sun and build sandcastles on one of Costa Rica's beautiful beaches. \n* **Learn about nature:**  Visit a botanical garden or a butterfly garden.\n\nI'm excited to help you plan your family trip!",
+    "response_time": 12.720654964447021,
+    "evaluation": {
+      "basic": {
+        "response_length": 1207,
+        "word_count": 194
+      },
+      "structure": {
+        "has_intro": true,
+        "has_body": true,
+        "has_conclusion": false,
+        "structure_score": 0.6666666666666666
+      },
+      "formatting": {
+        "paragraph_count": 8,
+        "avg_paragraph_length": 149.125,
+        "list_item_count": 8,
+        "heading_count": 0,
+        "bold_text_count": 9,
+        "italic_text_count": 18,
+        "formatting_diversity_score": 0.8
+      },
+      "content": {
+        "relevance_score": 0.5406060606060605
+      },
+      "travel_specific": {
+        "attractions": 0.3,
+        "food": 0.1,
+        "accommodation": 0.0,
+        "transportation": 0.0,
+        "budget": 0.1,
+        "culture": 0.0,
+        "practical_info": 0.0,
+        "overall_travel_score": 0.07142857142857142
+      },
+      "local_knowledge": {
+        "specific_place_mentions": 0,
+        "unique_specific_places": 0,
+        "time_references": 1,
+        "price_references": 0,
+        "estimated_local_terms_ratio": 0.5625,
+        "specificity_score": 0.1
+      },
+      "overall": {
+        "response_quality": 0.5364675324675323,
+        "specificity": 0.1
+      }
+    }
+  },
+  {
+    "model": "gemma",
+    "query_id": "q5",
+    "category": "travel_planning",
+    "query": "What's the best time of year to visit Machu Picchu and what should I know about altitude sickness?",
+    "response": "Machu Picchu is stunning year-round, but the best time to visit depends on your priorities:\n\n* **Dry Season (May - September):**  \n    * **Pros:**  Sunny, clear skies perfect for hiking and photography.  Fewer crowds than the wet season.\n    * **Cons:**  Can be chilly in the mornings and evenings. Prices are at their peak.\n\n* **Shoulder Season (April & October):**  \n    * **Pros:**  Enjoy pleasant weather with fewer crowds and lower prices than the peak season.\n    * **Cons:**  Rain is possible, especially in April. \n\n* **Wet Season (November - March):**  \n    * **Pros:** Lush greenery, waterfalls flowing, fewer crowds and lower prices.\n    * **Cons:**  Frequent rain can make hiking difficult.\n\n**Altitude Sickness: What You Need to Know**\n\nMachu Picchu is located at 7,970 feet (2,430 meters). Altitude sickness can affect anyone, even healthy individuals. \n\n* **Symptoms:** Headache, nausea, dizziness, fatigue, shortness of breath.\n* **Prevention:**\n    * **Acclimatize:** Spend a few days in Cusco (11,150 feet) before heading to Machu Picchu. **This is crucial!**  \n    * **Hydrate:** Drink plenty of water.\n    * **Avoid alcohol:** It can dehydrate you and worsen symptoms.\n    * **Eat light:** Stick to easily digestible foods. \n* **Medication:**  Consider taking coca tea, altitude sickness pills (like Diamox) as prescribed by a doctor.\n* **Listen to your body:** If you experience symptoms, descend to a lower altitude immediately.\n\nDon't push yourself too hard!  Enjoy the incredible beauty of Machu Picchu at your own pace. \n\n\nLet me know if you have any other questions.",
+    "response_time": 17.41983413696289,
+    "evaluation": {
+      "basic": {
+        "response_length": 1592,
+        "word_count": 239
+      },
+      "structure": {
+        "has_intro": true,
+        "has_body": true,
+        "has_conclusion": true,
+        "structure_score": 1.0
+      },
+      "formatting": {
+        "paragraph_count": 9,
+        "avg_paragraph_length": 175.11111111111111,
+        "list_item_count": 7,
+        "heading_count": 0,
+        "bold_text_count": 19,
+        "italic_text_count": 38,
+        "formatting_diversity_score": 0.8
+      },
+      "content": {
+        "relevance_score": 0.7282051282051283
+      },
+      "travel_specific": {
+        "attractions": 0.1,
+        "food": 0.3,
+        "accommodation": 0.0,
+        "transportation": 0.0,
+        "budget": 0.2,
+        "culture": 0.0,
+        "practical_info": 0.3,
+        "overall_travel_score": 0.1285714285714286
+      },
+      "local_knowledge": {
+        "specific_place_mentions": 0,
+        "unique_specific_places": 0,
+        "time_references": 6,
+        "price_references": 0,
+        "estimated_local_terms_ratio": 0.6697247706422018,
+        "specificity_score": 0.6
+      },
+      "overall": {
+        "response_quality": 0.7041758241758241,
+        "specificity": 0.6
+      }
+    }
+  },
+  {
+    "model": "gemma",
+    "query_id": "q6",
+    "category": "transportation",
+    "query": "Can you explain the public transportation system in London? How do I get from Heathrow to central London?",
+    "response": "London has a fantastic and extensive public transportation system, making it easy to get around! \n\n**Here's a breakdown:**\n\n* **The Tube (Underground):** This is London's iconic subway system. It's fast, efficient, and covers most of the city. \n* **Buses:** Red double-deckers are a classic London sight, and they offer a comprehensive network covering areas not served by the Tube.\n\n**Getting from Heathrow to Central London:**\n\n**1. The Heathrow Express:**\n\n* This is the fastest option, taking you to Paddington Station (central London) in just 15 minutes. \n* It's more expensive than the other options but very convenient.\n\n**2. The Piccadilly Line (Tube):**\n\n*  This is a cheaper option that runs directly from Heathrow to central London stations like Covent Garden, Leicester Square, and Green Park.\n* The journey takes about 50-60 minutes, depending on your destination.\n\n**3.  The National Rail/TFL Rail:**\n\n* These trains connect Heathrow to central London stations like London Waterloo, Liverpool Street, and King's Cross.\n* Journey times vary depending on your destination, but generally take longer than the Heathrow Express or Piccadilly Line.\n\n**Tips:**\n\n* Purchase an Oyster card or use contactless payment for the cheapest fares on the Tube and buses. \n* Download the TFL (Transport for London) app for real-time journey planning and updates.\n* Allow extra time for travel, especially during rush hour.\n\nLet me know if you have any other questions or need help planning your journey!",
+    "response_time": 14.947189807891846,
+    "evaluation": {
+      "basic": {
+        "response_length": 1499,
+        "word_count": 235
+      },
+      "structure": {
+        "has_intro": true,
+        "has_body": true,
+        "has_conclusion": false,
+        "structure_score": 0.6666666666666666
+      },
+      "formatting": {
+        "paragraph_count": 13,
+        "avg_paragraph_length": 113.46153846153847,
+        "list_item_count": 11,
+        "heading_count": 0,
+        "bold_text_count": 8,
+        "italic_text_count": 20,
+        "formatting_diversity_score": 0.8
+      },
+      "content": {
+        "relevance_score": 0.6352941176470588
+      },
+      "travel_specific": {
+        "attractions": 0.2,
+        "food": 0.1,
+        "accommodation": 0.0,
+        "transportation": 0.6,
+        "budget": 0.2,
+        "culture": 0.0,
+        "practical_info": 0.3,
+        "overall_travel_score": 0.2
+      },
+      "local_knowledge": {
+        "specific_place_mentions": 4,
+        "unique_specific_places": 4,
+        "time_references": 6,
+        "price_references": 0,
+        "estimated_local_terms_ratio": 0.6299559471365639,
+        "specificity_score": 1.0
+      },
+      "overall": {
+        "response_quality": 0.5905882352941176,
+        "specificity": 1.0
+      }
+    }
+  },
+  {
+    "model": "gemma",
+    "query_id": "q7",
+    "category": "cultural_experiences",
+    "query": "I want to experience authentic local culture in Marrakech. What hidden gems should I visit?",
+    "response": "Ah, Marrakech! The Red City holds so many treasures beyond the famous souks and Djemaa el-Fna. \n\nTo truly immerse yourself in local culture, consider these hidden gems:\n\n**For History & Architecture:**\n\n* **Bahia Palace:** While popular, it's less crowded early in the morning or late afternoon. Admire the intricate mosaic work and beautiful gardens.\n\n* **Ben Youssef Madrasa:** This stunning Islamic school is a masterpiece of craftsmanship.  \n* **Saadian Tombs:**  A serene and exquisitely decorated necropolis hidden behind a nondescript doorway, reserved for the Saadian dynasty. \n\n**For Local Life & Atmosphere:**\n\n* **Quartier Mellah:** The historic Jewish quarter. Enjoy a quiet stroll, visit the synagogue, and discover its unique blend of Moroccan and Jewish traditions.\n* **Le Jardin Majorelle:** Yves Saint Laurent's former home and studio, expanded into a stunning blue garden with diverse plant life.  \n* **Museums of Marrakech:** Explore the Dar Si Said Museum (traditional Moroccan arts and crafts) or the Berber Museum.\n\n**Off the Beaten Path:**\n\n* **Museum of Marrakech:** Once  a 19th-century palace,  it houses a fascinating collection of artwork and Moroccan history.\n\n\n**Tips for an Authentic Experience:**\n\n* **Learn a few basic Arabic phrases.** Smiles and respect go a long way. \n* **Take a cooking class:** Immerse yourself in the flavors of Moroccan cuisine.\n* **Visit a local hammam:** Experience a traditional Moroccan bath.\n* **Explore beyond the medina:** Venture into the surrounding palm groves and villages for a taste of rural life.\n* **Stroll through the souks at sunset:** Witness the city transform in the golden hour light.\n\n\nRemember to be respectful of local customs and traditions. Enjoy your journey into the heart of Marrakech!",
+    "response_time": 17.352827787399292,
+    "evaluation": {
+      "basic": {
+        "response_length": 1771,
+        "word_count": 271
+      },
+      "structure": {
+        "has_intro": true,
+        "has_body": true,
+        "has_conclusion": true,
+        "structure_score": 1.0
+      },
+      "formatting": {
+        "paragraph_count": 12,
+        "avg_paragraph_length": 145.75,
+        "list_item_count": 12,
+        "heading_count": 0,
+        "bold_text_count": 16,
+        "italic_text_count": 31,
+        "formatting_diversity_score": 0.8
+      },
+      "content": {
+        "relevance_score": 0.49870129870129865
+      },
+      "travel_specific": {
+        "attractions": 0.2,
+        "food": 0.3,
+        "accommodation": 0.0,
+        "transportation": 0.0,
+        "budget": 0.0,
+        "culture": 0.5555555555555556,
+        "practical_info": 0.2,
+        "overall_travel_score": 0.17936507936507937
+      },
+      "local_knowledge": {
+        "specific_place_mentions": 2,
+        "unique_specific_places": 2,
+        "time_references": 0,
+        "price_references": 0,
+        "estimated_local_terms_ratio": 0.6615384615384615,
+        "specificity_score": 0.2
+      },
+      "overall": {
+        "response_quality": 0.6454834054834054,
+        "specificity": 0.2
+      }
+    }
+  },
+  {
+    "model": "gemma",
+    "query_id": "q8",
+    "category": "safety",
+    "query": "What safety precautions should I take when traveling to Rio de Janeiro?",
+    "response": "Rio de Janeiro is an amazing city full of life and culture, but like any major tourist destination, it's important to be aware of your surroundings and take precautions to stay safe. \n\nHere are some safety tips for your trip to Rio de Janeiro:\n\n**General Safety:**\n\n* **Be Aware of Your Surroundings:** Pay attention to your environment, especially in crowded areas. \n* **Avoid Walking Alone at Night:** If you must walk alone, stick to well-lit and populated areas.\n* **Don't Flash Cash or Expensive Jewelry:** Keep valuables out of sight and only carry what you need.\n* **Use Reliable Transportation:** Use licensed taxis or ride-sharing services. Avoid unmarked vans.\n* **Learn a Few Basic Portuguese Phrases:** Knowing a few key words and phrases can be helpful.\n* **Keep Copies of Important Documents:** Make copies of your passport, visa, and other important documents and store them separately from the originals.\n\n**Protecting Your Belongings:**\n\n* **Use a Money Belt:**  A money belt worn under your clothing is a secure way to keep your passport, cash, and credit cards.\n* **Don't Leave Belongings Unattended:** Be vigilant about your bags and belongings, especially in cafes, restaurants, and on public transportation.\n* **Be Cautious of Pickpockets:** Be aware of potential pickpockets, especially in crowded areas like markets and public transportation. \n\n**Scams:**\n\n* **\"Lost Tourist\" Scam:** Be wary of people who approach you claiming to be lost or needing help. They may try to steal your valuables.\n* **\"Friendship Bracelets\" Scam:** People selling friendship bracelets may tie them on you and demand payment.\n* **Fake Taxi Drivers:** Only use taxis from official taxi stands or licensed ride-sharing services.\n\n**Beaches and Nightlife:**\n\n* **Be Careful on the Beach :**  It's wise to keep your valuables secure and watch out for theft.\n\n**Other Considerations:**\n\n* **Medical Emergencies:** Make sure you have travel insurance that covers medical emergencies.\n\n\n**Stay Informed:**\n* **Check Travel Advisories:** Before you go, check your government's travel advisories for the latest safety and security information.\n\nBy taking these precautions, you can help ensure a safe and enjoyable trip to Rio de Janeiro!",
+    "response_time": 21.3815758228302,
+    "evaluation": {
+      "basic": {
+        "response_length": 2232,
+        "word_count": 347
+      },
+      "structure": {
+        "has_intro": true,
+        "has_body": true,
+        "has_conclusion": true,
+        "structure_score": 1.0
+      },
+      "formatting": {
+        "paragraph_count": 14,
+        "avg_paragraph_length": 157.57142857142858,
+        "list_item_count": 15,
+        "heading_count": 0,
+        "bold_text_count": 21,
+        "italic_text_count": 41,
+        "formatting_diversity_score": 0.8
+      },
+      "content": {
+        "relevance_score": 0.5333333333333333
+      },
+      "travel_specific": {
+        "attractions": 0.1,
+        "food": 0.2,
+        "accommodation": 0.1111111111111111,
+        "transportation": 0.4,
+        "budget": 0.2,
+        "culture": 0.2222222222222222,
+        "practical_info": 0.4,
+        "overall_travel_score": 0.23333333333333334
+      },
+      "local_knowledge": {
+        "specific_place_mentions": 0,
+        "unique_specific_places": 0,
+        "time_references": 0,
+        "price_references": 0,
+        "estimated_local_terms_ratio": 0.5988200589970502,
+        "specificity_score": 0.0
+      },
+      "overall": {
+        "response_quality": 0.6666666666666666,
+        "specificity": 0.0
+      }
+    }
+  },
+  {
+    "model": "gemma",
+    "query_id": "q9",
+    "category": "sustainable_travel",
+    "query": "I'm looking for sustainable and eco-friendly travel options in New Zealand. What would you recommend?",
+    "response": "Kia ora!  New Zealand is known for its stunning natural beauty, and fortunately, there are many ways to enjoy it while minimizing your environmental impact.  \n\nHere are some sustainable and eco-friendly travel options in New Zealand:\n\n**Accommodation:**\n\n* **Eco-lodges and certified sustainable hotels:** Look for properties with certifications like Qualmark Enviro, Green Globe, or EarthCheck.  These accommodations prioritize energy efficiency, waste reduction, and sustainable sourcing.\n* **Farm stays and homestays:** Supporting local communities and experiencing rural life while minimizing your footprint.  \n\n**Transport:**\n\n* **Public transport:**  New Zealand has a decent bus and train network, especially on the North Island. Consider using these options over rental cars for travel between cities.\n* **Electric bike rentals:**  Explore cities and scenic areas at your own pace while enjoying the journey electrically. \n* **Walk or cycle:** New Zealand offers countless walking and cycling trails, immersing yourself in nature and getting some exercise.\n* **Ferries:** Sustainable option for island hopping or crossing Cook Strait instead of flying.\n\n**Activities:**\n\n* **Guided nature walks and tours:**  Learn about the unique flora and fauna while supporting ethical and responsible tourism operators. \n* **Whale watching tours:** choose operators with strict guidelines to minimize disturbance to wildlife.\n* **Kayaking and paddleboarding:** Explore inlets, rivers, and coastlines with minimal environmental impact.\n* **Adventure activities with eco-conscious operators:** such as bungy jumping, ziplining, and white-water rafting offered by companies committed to sustainability.\n\n**Other Tips:**\n\n* **Pack light:** Excess baggage weight adds to a flight's carbon footprint.\n* **Reusable water bottle and coffee cup:**  Reduce single-use plastics.\n* **Support local businesses and communities:** Choose restaurants, markets, and shops that prioritize local ingredients and ethical sourcing.\n* **Leave no trace:** Pack out everything you pack in, respect wildlife and their habitats.\n\n\n\nLet me know if you have specific regions or interests in mind. I can give you more tailored recommendations!",
+    "response_time": 18.96779203414917,
+    "evaluation": {
+      "basic": {
+        "response_length": 2210,
+        "word_count": 306
+      },
+      "structure": {
+        "has_intro": true,
+        "has_body": true,
+        "has_conclusion": false,
+        "structure_score": 0.6666666666666666
+      },
+      "formatting": {
+        "paragraph_count": 12,
+        "avg_paragraph_length": 182.33333333333334,
+        "list_item_count": 14,
+        "heading_count": 0,
+        "bold_text_count": 18,
+        "italic_text_count": 35,
+        "formatting_diversity_score": 0.8
+      },
+      "content": {
+        "relevance_score": 0.5066666666666666
+      },
+      "travel_specific": {
+        "attractions": 0.0,
+        "food": 0.1,
+        "accommodation": 0.3333333333333333,
+        "transportation": 0.6,
+        "budget": 0.0,
+        "culture": 0.1111111111111111,
+        "practical_info": 0.2,
+        "overall_travel_score": 0.19206349206349205
+      },
+      "local_knowledge": {
+        "specific_place_mentions": 0,
+        "unique_specific_places": 0,
+        "time_references": 0,
+        "price_references": 0,
+        "estimated_local_terms_ratio": 0.697986577181208,
+        "specificity_score": 0.0
+      },
+      "overall": {
+        "response_quality": 0.5504126984126985,
+        "specificity": 0.0
+      }
+    }
+  },
+  {
+    "model": "gemma",
+    "query_id": "q10",
+    "category": "cultural_awareness",
+    "query": "What are common cultural faux pas to avoid in Japan?",
+    "response": "Japan has a rich culture with beautiful traditions, but navigating them can be tricky for newcomers. \n\nHere are some common cultural faux pas to avoid in Japan:\n\n**Greetings and Interactions:**\n\n* **Don't bow too deeply or for too long.** A slight bow is usually sufficient for most situations.\n* **Don't say \"No\" directly.** It's considered impolite. Offer alternatives or say \"Let me think about it.\"\n* **Avoid pointing with your finger.** Use your entire hand or a gesture with your thumb and index finger curled inside.\n\n**Dining:**\n\n* **Don't start eating until everyone is served.** Wait for the host to start.\n* **Don't slurp noodles.**  It's actually considered polite! But avoid making excessive noises.\n* **Don't leave your chopsticks sticking upright in your rice.** It resembles incense offerings at funerals.\n* **Don't pour drinks for yourself.** Offer to pour for others, and they will pour for you.\n* **Don't blow your nose at the table.** Excuse yourself to the restroom.\n* **Clean your plate.** It signifies appreciation for the meal.\n\n**Public Behavior:**\n\n* **Don't talk loudly on public transportation.**\n* **Don't litter.** Japan has strict rules against littering.\n* **Don't smoke in nonsmoking areas.**\n\n**Other:**\n\n* **Take off your shoes before entering homes, temples, and some shops.**\n* **Don't flash your cash.** It's considered vulgar.\n* **Don't wear revealing clothing.**\n\nRemember, Japanese culture values politeness, respect, and harmony. By being mindful of these customs, you can ensure a more enjoyable and respectful experience in Japan!",
+    "response_time": 16.385632753372192,
+    "evaluation": {
+      "basic": {
+        "response_length": 1574,
+        "word_count": 245
+      },
+      "structure": {
+        "has_intro": true,
+        "has_body": true,
+        "has_conclusion": true,
+        "structure_score": 1.0
+      },
+      "formatting": {
+        "paragraph_count": 11,
+        "avg_paragraph_length": 141.27272727272728,
+        "list_item_count": 15,
+        "heading_count": 0,
+        "bold_text_count": 19,
+        "italic_text_count": 37,
+        "formatting_diversity_score": 0.8
+      },
+      "content": {
+        "relevance_score": 0.72
+      },
+      "travel_specific": {
+        "attractions": 0.1,
+        "food": 0.3,
+        "accommodation": 0.0,
+        "transportation": 0.1,
+        "budget": 0.0,
+        "culture": 0.3333333333333333,
+        "practical_info": 0.0,
+        "overall_travel_score": 0.11904761904761904
+      },
+      "local_knowledge": {
+        "specific_place_mentions": 0,
+        "unique_specific_places": 0,
+        "time_references": 0,
+        "price_references": 0,
+        "estimated_local_terms_ratio": 0.5510204081632653,
+        "specificity_score": 0.0
+      },
+      "overall": {
+        "response_quality": 0.6998095238095239,
+        "specificity": 0.0
+      }
+    }
+  }
+]

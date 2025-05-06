@@ -1,0 +1,12 @@
+Query ID,Category,Query,Response Time,Quality Score,Specificity Score,Structure Score,Formatting Score,Travel Content Score
+q1,destination_recommendations,What are the must-visit places in Tokyo for a first-time visitor?,17.472978115081787,0.6625829725829726,0.4,0.6666666666666666,0.8,0.21746031746031752
+q2,itinerary_planning,Can you suggest an itinerary for 3 days in Barcelona?,20.216318368911743,0.511095238095238,0.5,0.6666666666666666,0.8,0.29047619047619044
+q3,food_recommendations,What are some local dishes I should try in Thailand?,15.085057258605957,0.6694603174603175,0.0,1.0,0.8,0.08730158730158731
+q4,family_travel,I'm traveling with young children to Costa Rica. What activities would be appropriate and safe?,12.720654964447021,0.5364675324675323,0.1,0.6666666666666666,0.8,0.07142857142857142
+q5,travel_planning,What's the best time of year to visit Machu Picchu and what should I know about altitude sickness?,17.41983413696289,0.7041758241758241,0.6,1.0,0.8,0.1285714285714286
+q6,transportation,Can you explain the public transportation system in London? How do I get from Heathrow to central London?,14.947189807891846,0.5905882352941176,1.0,0.6666666666666666,0.8,0.2
+q7,cultural_experiences,I want to experience authentic local culture in Marrakech. What hidden gems should I visit?,17.352827787399292,0.6454834054834054,0.2,1.0,0.8,0.17936507936507937
+q8,safety,What safety precautions should I take when traveling to Rio de Janeiro?,21.3815758228302,0.6666666666666666,0.0,1.0,0.8,0.23333333333333334
+q9,sustainable_travel,I'm looking for sustainable and eco-friendly travel options in New Zealand. What would you recommend?,18.96779203414917,0.5504126984126985,0.0,0.6666666666666666,0.8,0.19206349206349205
+q10,cultural_awareness,What are common cultural faux pas to avoid in Japan?,16.385632753372192,0.6998095238095239,0.0,1.0,0.8,0.11904761904761904
+SUMMARY,,,17.19498610496521,0.6236742414448297,0.28,0.8333333333333333,0.7999999999999999,0.17190476190476192

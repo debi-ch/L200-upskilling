@@ -1,0 +1,542 @@
+[
+  {
+    "model": "gemini",
+    "query_id": "q1",
+    "category": "destination_recommendations",
+    "query": "What are the must-visit places in Tokyo for a first-time visitor?",
+    "response": "Okay, welcome to Tokyo! For a first-time visitor, you want to experience a blend of the modern, the traditional, and the just plain quirky. Here's a list of must-visit places in Tokyo, broken down by category to help you plan your itinerary:\n\n**Iconic Landmarks & Views:**\n\n*   **Tokyo Skytree:** The tallest structure in Japan, offering panoramic views of the city. Go for the Tembo Deck (350m) or the Tembo Galleria (450m) for the best experience. Booking tickets online in advance is highly recommended.\n*   **Tokyo Tower:** A classic symbol of Tokyo, offering a nostalgic vibe and great views. While shorter than Skytree, it's located closer to the city center and offers a more traditional Tokyo feel.\n*   **Senso-ji Temple:** Tokyo's oldest temple, located in Asakusa. Wander through the Nakamise-dori market leading up to the temple, filled with traditional crafts, snacks, and souvenirs. Take some time to absorb the details of the temple architecture.\n*   **Shibuya Crossing:** The world's busiest intersection, an absolute must-see. Experience the organized chaos as crowds surge across the street when the lights turn green. Observation points at the Shibuya Sky rooftop observation deck or inside the Starbucks overlooking the crossing offer fantastic views (arrive early or book online for Shibuya Sky).\n\n**Culture & History:**\n\n*   **Meiji Jingu Shrine:** A peaceful oasis dedicated to Emperor Meiji and Empress Shoken. Stroll through the serene forest leading to the shrine, a welcome escape from the city bustle.\n*   **Imperial Palace East Garden:** The former site of Edo Castle, now a public park. Explore the gardens and historical ruins, offering a glimpse into Japan's imperial past.\n*   **Tsukiji Outer Market:** While the inner market (fish auction) has moved, the outer market remains a vibrant place to sample fresh seafood, local produce, and other Japanese delicacies. Go early for the best selection.\n\n**Trendy & Modern Districts:**\n\n*   **Shibuya:** The center of youth culture, known for its iconic crossing, trendy shops, restaurants, and nightclubs. Explore the backstreets for hidden gems and unique boutiques.\n*   **Shinjuku:** A bustling district with skyscrapers, department stores, entertainment options, and Shinjuku Gyoen National Garden (a beautiful oasis). Don't miss the Robot Restaurant (though it's more of a show than a meal).\n*   **Harajuku:** Famous for its unique street style, colorful shops, and crepe stands. Takeshita Street is the heart of Harajuku culture. Meiji Jingu Shrine is also located here.\n*   **Ginza:** Tokyo's upscale shopping district, home to designer boutiques, department stores, and fine dining restaurants. A great place for window shopping or indulging in a special treat.\n\n**Other Highly Recommended Experiences:**\n\n*   **Ueno Park:** A large public park housing several museums (Tokyo National Museum, Tokyo Metropolitan Art Museum, Tokyo University Museum, and Ueno Zoo).\n*   **Akihabara:** The electric town of Tokyo, famous for its anime, manga, and electronics. A fun and unique place to explore, even if you're not a huge fan of the culture.\n*   **Ghibli Museum (Mitaka):** (Requires pre-booked tickets WELL in advance - often months). If you're a fan of Studio Ghibli films (like *Spirited Away* and *My Neighbor Totoro*), this museum is a must-visit. Tickets sell out quickly, so plan ahead! Consider the Ghibli Park, now open as well!\n\n**Important Tips for Your First Trip:**\n\n*   **Japan Rail Pass:** If you plan on traveling extensively outside of Tokyo, consider purchasing a Japan Rail Pass *before* you arrive in Japan.\n*   **Suica/Pasmo Card:** These rechargeable cards can be used for trains, buses, and even vending machines in Tokyo. Very convenient!\n*   **Pocket Wifi/SIM Card:** Staying connected is essential. Rent a pocket wifi device or purchase a SIM card upon arrival.\n*   **Learn Basic Japanese Phrases:** While many people in tourist areas speak some English, learning a few basic phrases like \"hello\" (konnichiwa), \"thank you\" (arigato), and \"excuse me\" (sumimasen) will be greatly appreciated.\n*   **Convenience Stores (Konbini):** 7-Eleven, FamilyMart, and Lawson are everywhere and offer surprisingly high-quality food, drinks, and essential items.\n*   **Be Prepared to Walk:** Tokyo is a very walkable city, so wear comfortable shoes.\n*   **Download Useful Apps:** Google Maps (for navigation), a translation app, and a train app (like Japan Official Travel App) are highly recommended.\n*   **Respect Local Customs:** Learn about basic Japanese etiquette, such as bowing instead of shaking hands, taking off your shoes indoors, and avoiding talking loudly on public transportation.\n\nThis is just a starting point, of course. Depending on your interests (food, art, history, anime, etc.), you can tailor your itinerary to your specific preferences. Have a fantastic trip to Tokyo! Let me know if you have any other questions.\n",
+    "response_time": 8.778280019760132,
+    "evaluation": {
+      "basic": {
+        "response_length": 4930,
+        "word_count": 755
+      },
+      "structure": {
+        "has_intro": true,
+        "has_body": true,
+        "has_conclusion": false,
+        "structure_score": 0.6666666666666666
+      },
+      "formatting": {
+        "paragraph_count": 12,
+        "avg_paragraph_length": 409.0,
+        "list_item_count": 22,
+        "heading_count": 0,
+        "bold_text_count": 27,
+        "italic_text_count": 56,
+        "formatting_diversity_score": 0.8
+      },
+      "content": {
+        "relevance_score": 0.7272727272727273
+      },
+      "travel_specific": {
+        "attractions": 0.6,
+        "food": 0.6,
+        "accommodation": 0.2222222222222222,
+        "transportation": 0.5,
+        "budget": 0.0,
+        "culture": 0.7777777777777778,
+        "practical_info": 0.4,
+        "overall_travel_score": 0.4428571428571428
+      },
+      "local_knowledge": {
+        "specific_place_mentions": 12,
+        "unique_specific_places": 12,
+        "time_references": 1,
+        "price_references": 0,
+        "estimated_local_terms_ratio": 0.6680053547523427,
+        "specificity_score": 1.3
+      },
+      "overall": {
+        "response_quality": 0.6667532467532467,
+        "specificity": 1.3
+      }
+    }
+  },
+  {
+    "model": "gemini",
+    "query_id": "q2",
+    "category": "itinerary_planning",
+    "query": "Can you suggest an itinerary for 3 days in Barcelona?",
+    "response": "Okay, I can definitely help with that! Here's a possible 3-day Barcelona itinerary. This is a packed schedule, so feel free to adjust it based on your interests and preferred pace. It balances iconic landmarks with local experiences:\n\n**Day 1: Gothic Quarter & Gaudi's Marvels**\n\n*   **Morning (9:00 AM):**\n    *   Start in the **Gothic Quarter (Barri G\u00f2tic)**. Get lost in the labyrinthine streets.\n    *   Visit the **Barcelona Cathedral (Catedral de Barcelona)**. Explore the cloister and, if you're feeling adventurous, climb to the top for panoramic views.\n    *   Stroll along **La Rambla**, Barcelona's famous pedestrian street (be mindful of pickpockets). Stop by the **Boqueria Market (La Boqueria)** for a vibrant display of local produce and a quick snack.\n\n*   **Lunch (1:00 PM):**\n    *   Find a tapas bar in the Gothic Quarter or El Born for an authentic Catalan lunch. Try some **patatas bravas, pan con tomate, and jam\u00f3n ib\u00e9rico.**\n\n*   **Afternoon (2:30 PM):**\n    *   **Park G\u00fcell**. Book your tickets online in advance to guarantee entry and avoid long lines! Explore Gaudi's whimsical park with its mosaic benches and stunning city views. Allow at least 2-3 hours.\n\n*   **Evening (6:00 PM):**\n    *   **Sagrada Familia**. (Exterior views today, interior visit tomorrow). Marvel at the Sagrada Familia from the outside. Find a nearby cafe for a drink and take it all in.\n    *   **Dinner (8:00 PM):**\n        *   Head to **Gr\u00e0cia**, a charming neighborhood with independent shops and excellent restaurants. Find a place for dinner based on your taste.\n\n**Day 2: Sagrada Familia & Beach Relaxation**\n\n*   **Morning (9:00 AM):**\n    *   **Sagrada Familia**. Visit the **Sagrada Familia** interior. Book your tickets well in advance online. Consider an audio guide for a more in-depth experience. (Allow at least 2 hours). The light filtering through the stained glass is breathtaking!\n\n*   **Lunch (12:00 PM):**\n    *   Grab lunch near the Sagrada Familia. There are plenty of cafes and restaurants catering to tourists.\n\n*   **Afternoon (1:30 PM):**\n    *   **Passeig de Gr\u00e0cia**. Walk along Passeig de Gr\u00e0cia, admiring the architecture, including **Casa Batll\u00f3** and **Casa Mil\u00e0 (La Pedrera)**. You can take a tour of either if you have time and interest (book in advance!).\n\n*   **Late Afternoon (4:00 PM):**\n    *   **Barceloneta Beach**. Head to Barceloneta Beach for some relaxation. Walk along the promenade, soak up the sun, or take a dip in the Mediterranean.\n\n*   **Evening (7:00 PM):**\n    *   **Dinner & Barceloneta Vibes**. Have dinner at one of the seafood restaurants in Barceloneta. Enjoy fresh seafood paella or tapas with a sea view.\n\n**Day 3: Art, Magic, and a Farewell View**\n\n*   **Morning (9:00 AM):**\n    *   **Picasso Museum (Museu Picasso)**. Explore the works of Pablo Picasso in this museum housed in a beautiful medieval palace.\n\n*   **Lunch (12:00 PM):**\n    *   **El Born Lunch**. Have lunch in the El Born neighborhood, known for its trendy cafes and restaurants.\n\n*   **Afternoon (1:30 PM):**\n    *   **Montju\u00efc Hill**. Take the metro/bus to Montju\u00efc Hill.\n    *   **Magic Fountain of Montju\u00efc**. (Check the schedule online in advance as performances are seasonal and depend on the day). Enjoy the colorful Magic Fountain show (usually in the evening, but check times).\n    *   **Montju\u00efc Castle**. If time permits, visit Montju\u00efc Castle for historical insights and panoramic views.\n\n*   **Late Afternoon (4:00 PM):**\n    *   **MNAC (Museu Nacional d'Art de Catalunya)**. Explore Catalan art from various periods at the MNAC, housed in a stunning palace on Montju\u00efc.\n\n*   **Evening (7:00 PM):**\n    *   **Farewell Dinner**. Choose a restaurant in your favorite neighborhood for a final Barcelona dinner.\n\n**Important Notes & Tips:**\n\n*   **Transportation:** Barcelona has an excellent public transportation system (metro and buses). Consider purchasing a T-Casual travel card for cost-effective travel. Walking is also a great way to explore the city center.\n*   **Accommodation:** Book your accommodation well in advance, especially during peak season. Consider staying in neighborhoods like the Gothic Quarter, El Born, Gr\u00e0cia, or Eixample.\n*   **Book in Advance:** Book tickets for popular attractions like the Sagrada Familia and Park G\u00fcell online in advance to avoid long queues and ensure entry.\n*   **Tapas:** Embrace the tapas culture! Barcelona is a great place to try different small plates and share them with friends.\n*   **Pickpockets:** Be aware of your belongings, especially in crowded areas like La Rambla and on public transportation.\n*   **Siesta:** Some shops and restaurants may close during the afternoon siesta (usually between 2 PM and 5 PM).\n*   **Learn a few basic Catalan phrases:** Locals will appreciate the effort!\n*   **Comfortable Shoes:** You'll be doing a lot of walking, so wear comfortable shoes.\n*   **Adjust based on your interests:** This is just a suggestion! Feel free to swap out activities based on your preferences. If you love art, spend more time in museums. If you prefer relaxation, spend more time on the beach.\n*   **Weather:** Check the weather forecast before you go and pack accordingly.\n\n**Alternative Activities (Replace or Add):**\n\n*   **Camp Nou (FC Barcelona Stadium):** For football fans.\n*   **Hospital de Sant Pau:** A stunning modernist complex.\n*   **Chocolate Workshop:** For a sweet treat and a fun experience.\n*   **Cooking Class:** Learn to make traditional Catalan dishes.\n*   **Day Trip to Montserrat:** A mountain monastery with stunning views.\n\nHave a fantastic time in Barcelona! Let me know if you have any other questions.\n",
+    "response_time": 8.724539279937744,
+    "evaluation": {
+      "basic": {
+        "response_length": 5646,
+        "word_count": 867
+      },
+      "structure": {
+        "has_intro": true,
+        "has_body": true,
+        "has_conclusion": false,
+        "structure_score": 0.6666666666666666
+      },
+      "formatting": {
+        "paragraph_count": 23,
+        "avg_paragraph_length": 243.56521739130434,
+        "list_item_count": 29,
+        "heading_count": 0,
+        "bold_text_count": 57,
+        "italic_text_count": 114,
+        "formatting_diversity_score": 0.8
+      },
+      "content": {
+        "relevance_score": 0.5
+      },
+      "travel_specific": {
+        "attractions": 0.6,
+        "food": 0.8,
+        "accommodation": 0.2222222222222222,
+        "transportation": 0.4,
+        "budget": 0.2,
+        "culture": 0.3333333333333333,
+        "practical_info": 0.5,
+        "overall_travel_score": 0.43650793650793657
+      },
+      "local_knowledge": {
+        "specific_place_mentions": 2,
+        "unique_specific_places": 2,
+        "time_references": 24,
+        "price_references": 0,
+        "estimated_local_terms_ratio": 0.6043256997455471,
+        "specificity_score": 2.6
+      },
+      "overall": {
+        "response_quality": 0.5973015873015873,
+        "specificity": 2.6
+      }
+    }
+  },
+  {
+    "model": "gemini",
+    "query_id": "q3",
+    "category": "food_recommendations",
+    "query": "What are some local dishes I should try in Thailand?",
+    "response": "Okay, Thailand is a foodie paradise! Here are some must-try local dishes, keeping in mind that regional variations exist, so don't be afraid to explore:\n\n**Noodles & Rice:**\n\n*   **Pad Thai:** (\u0e1c\u0e31\u0e14\u0e44\u0e17\u0e22) This is probably the most famous Thai dish outside of Thailand. Stir-fried rice noodles with shrimp, tofu, egg, bean sprouts, peanuts, and a tangy tamarind sauce. A classic for a reason!\n*   **Khao Pad:** (\u0e02\u0e49\u0e32\u0e27\u0e1c\u0e31\u0e14) Fried rice.  Simple, but delicious and versatile. It can be made with chicken, pork, shrimp, or vegetables. Often served with lime and prik nam pla (fish sauce with chilies).\n*   **Kuay Teow Reua (Boat Noodles):** (\u0e01\u0e4b\u0e27\u0e22\u0e40\u0e15\u0e35\u0e4b\u0e22\u0e27\u0e40\u0e23\u0e37\u0e2d) A rich, dark noodle soup traditionally sold from boats on the canals.  The broth is often made with blood, spices, and herbs. Don't let the blood scare you; it adds a distinctive flavor! It's usually served in small portions, so you can try different variations.\n*   **Pad See Ew:** (\u0e1c\u0e31\u0e14\u0e0b\u0e35\u0e2d\u0e34\u0e4a\u0e27) Stir-fried wide rice noodles with Chinese broccoli, egg, and a dark soy sauce. A comforting and satisfying choice.\n*   **Khao Soi:** (\u0e02\u0e49\u0e32\u0e27\u0e0b\u0e2d\u0e22) A Northern Thai specialty:  Egg noodles in a creamy coconut curry broth, usually with chicken or beef. Topped with crispy fried noodles and pickled mustard greens. This is a must-try in Chiang Mai!\n\n**Soups & Curries:**\n\n*   **Tom Yum Goong:** (\u0e15\u0e49\u0e21\u0e22\u0e33\u0e01\u0e38\u0e49\u0e07) A hot and sour shrimp soup with lemongrass, galangal, kaffir lime leaves, chilies, and mushrooms.  The iconic Thai soup!\n*   **Tom Kha Gai:** (\u0e15\u0e49\u0e21\u0e02\u0e48\u0e32\u0e44\u0e01\u0e48) A creamy coconut milk soup with chicken, galangal, lemongrass, and mushrooms.  A milder and sweeter alternative to Tom Yum.\n*   **Green Curry (Gaeng Keow Wan):** (\u0e41\u0e01\u0e07\u0e40\u0e02\u0e35\u0e22\u0e27\u0e2b\u0e27\u0e32\u0e19) A fragrant and creamy curry made with green chili paste, coconut milk, bamboo shoots, Thai basil, and your choice of meat (chicken, pork, or beef).  Served with rice.\n*   **Red Curry (Gaeng Daeng):** (\u0e41\u0e01\u0e07\u0e41\u0e14\u0e07) Similar to green curry but made with red chili paste, giving it a richer and slightly spicier flavor.\n*   **Massaman Curry (Gaeng Massaman):** (\u0e41\u0e01\u0e07\u0e21\u0e31\u0e2a\u0e21\u0e31\u0e48\u0e19) A milder, sweeter curry with influences from Persian and Indian cuisine. It often includes potatoes, peanuts, and spices like cinnamon and cardamom. Typically made with beef or chicken.\n\n**Other Dishes:**\n\n*   **Som Tum:** (\u0e2a\u0e49\u0e21\u0e15\u0e33) Green papaya salad.  A spicy, sour, and savory salad made with shredded green papaya, tomatoes, green beans, peanuts, dried shrimp, chilies, garlic, and fish sauce. Variations abound \u2013 try Som Tum Thai (sweeter) or Som Tum Pla Ra (with fermented fish sauce for a more intense flavor).\n*   **Larb:** (\u0e25\u0e32\u0e1a) A minced meat salad (usually pork or chicken) seasoned with lime juice, fish sauce, roasted rice powder, chilies, and herbs. Another dish that is a must-try.\n*   **Gai Yang:** (\u0e44\u0e01\u0e48\u0e22\u0e48\u0e32\u0e07) Grilled chicken marinated in various spices.  Often served with sticky rice and a dipping sauce.\n*   **Moo Ping:** (\u0e2b\u0e21\u0e39\u0e1b\u0e34\u0e49\u0e07) Grilled pork skewers marinated in a sweet and savory sauce.  A popular street food snack.\n*   **Pla Pao:** (\u0e1b\u0e25\u0e32\u0e40\u0e1c\u0e32) Salt-crusted grilled fish.  The skin is removed to reveal moist and flavorful flesh.\n*   **Sai Oua:** (\u0e44\u0e2a\u0e49\u0e2d\u0e31\u0e48\u0e27) Northern Thai sausage made with ground pork, herbs, and spices.\n*   **Mango Sticky Rice (Khao Niao Mamuang):** (\u0e02\u0e49\u0e32\u0e27\u0e40\u0e2b\u0e19\u0e35\u0e22\u0e27\u0e21\u0e30\u0e21\u0e48\u0e27\u0e07) The quintessential Thai dessert.  Sweet sticky rice with fresh mango and drizzled with coconut milk.\n\n**Things to keep in mind:**\n\n*   **Spice Level:** Thai food can be very spicy! If you're not used to it, ask for \"mai pet\" (not spicy) or \"pet nit noi\" (a little spicy).\n*   **Street Food:** Don't be afraid to try street food! It's often the most authentic and delicious. Look for stalls that are busy and have a high turnover of food.\n*   **Regional Variations:** Different regions of Thailand have their own specialties. Northern Thai food (Chiang Mai) tends to be milder and uses more coconut milk, while Southern Thai food is often spicier and uses more seafood.\n*   **Learn a Few Basic Phrases:** Knowing a few Thai phrases will go a long way. \"Sawasdee\" (hello), \"khop khun\" (thank you), and \"aroy\" (delicious) are good starting points.\n*   **Be Adventurous:** Don't be afraid to try new things! Thailand has a vast and diverse culinary landscape.\n\nEnjoy your culinary journey in Thailand!  Let me know if you have any other questions!\n",
+    "response_time": 7.2264039516448975,
+    "evaluation": {
+      "basic": {
+        "response_length": 4287,
+        "word_count": 687
+      },
+      "structure": {
+        "has_intro": true,
+        "has_body": true,
+        "has_conclusion": true,
+        "structure_score": 1.0
+      },
+      "formatting": {
+        "paragraph_count": 10,
+        "avg_paragraph_length": 426.9,
+        "list_item_count": 22,
+        "heading_count": 0,
+        "bold_text_count": 26,
+        "italic_text_count": 51,
+        "formatting_diversity_score": 0.8
+      },
+      "content": {
+        "relevance_score": 0.5
+      },
+      "travel_specific": {
+        "attractions": 0.1,
+        "food": 0.4,
+        "accommodation": 0.0,
+        "transportation": 0.2,
+        "budget": 0.0,
+        "culture": 0.2222222222222222,
+        "practical_info": 0.2,
+        "overall_travel_score": 0.16031746031746033
+      },
+      "local_knowledge": {
+        "specific_place_mentions": 0,
+        "unique_specific_places": 0,
+        "time_references": 0,
+        "price_references": 0,
+        "estimated_local_terms_ratio": 0.6170212765957447,
+        "specificity_score": 0.0
+      },
+      "overall": {
+        "response_quality": 0.642063492063492,
+        "specificity": 0.0
+      }
+    }
+  },
+  {
+    "model": "gemini",
+    "query_id": "q4",
+    "category": "family_travel",
+    "query": "I'm traveling with young children to Costa Rica. What activities would be appropriate and safe?",
+    "response": "Okay, traveling to Costa Rica with young children sounds like a fantastic adventure! Costa Rica is a very family-friendly destination with tons to offer. Here are some safe and appropriate activities, broken down by area and with considerations for little ones:\n\n**General Considerations for Traveling with Young Children in Costa Rica:**\n\n*   **Transportation:**\n    *   **Car Seats:** Car seats are legally required in Costa Rica. Renting a car gives you the most flexibility, but ensure you reserve car seats in advance. Public transportation is less suitable for families with young children. Private shuttles are a good option and can often provide car seats as well.\n    *   **Roads:** Be prepared for varied road conditions, especially in more remote areas. A 4x4 vehicle is often recommended, especially during the rainy season (May-November).\n    *   **Travel Times:** Distances can be deceiving. What looks short on a map can take much longer due to road conditions. Plan accordingly and break up long drives.\n\n*   **Health & Safety:**\n    *   **Bug Spray:** Mosquitoes can be prevalent, especially at dawn and dusk. Use insect repellent with DEET (use sparingly on young children, following product instructions). Consider clothing that covers arms and legs.\n    *   **Sunscreen:** The sun is strong in Costa Rica. Use a high SPF sunscreen regularly.\n    *   **Water:** Drink bottled water or purified water.\n    *   **Food Safety:** Eat at reputable restaurants and avoid street food where hygiene might be questionable.\n    *   **Medical Care:** Costa Rica has good medical facilities, especially in tourist areas. Make sure you have travel insurance that covers medical expenses.\n    *   **Wildlife:** Admire wildlife from a safe distance. Do not feed the animals. Be aware of potential hazards like snakes and spiders.\n\n*   **Accommodation:**\n    *   **Family-Friendly Hotels/Resorts:** Look for hotels or resorts that cater to families with amenities like swimming pools, kids' clubs, and cribs.\n    *   **Vacation Rentals:** Consider renting a house or apartment, which can offer more space and a kitchen for preparing meals.\n\n*   **Packing:**\n    *   Lightweight, breathable clothing\n    *   Swimsuits\n    *   Rain gear (ponchos or lightweight jackets)\n    *   Hiking shoes or sturdy sandals\n    *   Hats\n    *   Sunscreen\n    *   Insect repellent\n    *   Any medications your children need\n    *   Familiar snacks\n    *   Toys and books for downtime\n\n**Activity Ideas by Region:**\n\n**1. La Fortuna/Arenal Volcano Area:**\n\n*   **Sloth Watching:** Many tours cater to families and focus on spotting sloths in their natural habitat. These are usually easy walks on relatively flat terrain. Examples include the Sloth Territory trail.\n*   **Hot Springs:** Arenal is famous for its hot springs. Many resorts have family-friendly hot springs with shallow areas and slides. Tabacon, Ecotermales Fortuna, and Baldi Hot Springs are popular choices.\n*   **Arenal Hanging Bridges:** These bridges offer stunning views of the rainforest canopy and wildlife. The trails are generally well-maintained, but it's best to check with the park about suitability for very young children (strollers are not recommended).\n*   **La Fortuna Waterfall:** While the hike down to the waterfall involves stairs, the waterfall itself is beautiful, and the pool at the bottom is shallow enough for kids to wade in (with supervision).\n*   **Chocolate Tour:** Learn about the process of making chocolate from cacao beans and enjoy a tasting. This is usually engaging for kids.\n\n**2. Manuel Antonio National Park:**\n\n*   **Beaches:** Manuel Antonio boasts beautiful beaches perfect for swimming and playing in the sand. Playa Espadilla is the main public beach and is generally calm and safe for swimming.\n*   **Easy Hikes:** The park has several relatively flat and easy trails suitable for young children. Keep an eye out for monkeys, sloths, and other wildlife. Hire a guide to help you spot animals.\n*   **Catamaran Tour:** Enjoy a boat tour along the coast with opportunities for snorkeling (if your children are old enough) and wildlife viewing.\n\n**3. Monteverde Cloud Forest:**\n\n*   **Sky Walk Hanging Bridges:** Similar to Arenal, Monteverde offers hanging bridges, but these are in the cloud forest. The views are incredible.\n*   **Coffee Plantation Tour:** Learn about coffee production and enjoy a tasting (coffee is ok for parents, and usually they offer juice for kids).\n*   **Children's Eternal Rainforest:** This reserve is specifically geared towards children and offers educational activities and easier trails.\n*   **Butterfly Gardens:** A great way to see beautiful butterflies up close.\n\n**4. Guanacaste (Beaches):**\n\n*   **Beaches:** Guanacaste is known for its beautiful beaches. Choose a beach with calm waters for swimming, such as Playa Conchal, Playa Tamarindo (sections), or Playa Flamingo.\n*   **Swimming Pools:** Many resorts in Guanacaste have large swimming pools with shallow areas for children.\n*   **Gentle Horseback Riding:** Some ranches offer horseback riding tours suitable for families with young children.\n*   **Palo Verde National Park Boat Tour:** A gentle boat tour through the Palo Verde wetlands is great for seeing birds and other wildlife.\n\n**5. The Caribbean Coast (Puerto Viejo, Cahuita):**\n\n*   **Cahuita National Park:** This park has a relatively flat trail that runs along the coast, perfect for easy walks. The beaches are beautiful, and you can often spot wildlife like sloths and monkeys.\n*   **Jaguar Rescue Center:** Learn about rescued animals and rehabilitation efforts.\n*   **Chocolate Tour:** Similar to Arenal, some locations offer chocolate tours that are kid-friendly.\n\n**Tips for Making it a Success:**\n\n*   **Pace Yourself:** Don't try to cram too much into each day. Allow for plenty of downtime and flexibility.\n*   **Involve Your Children in the Planning:** Let them choose a few activities that they are interested in.\n*   **Bring Snacks:** Pack plenty of snacks to keep your children happy on hikes and during travel.\n*   **Be Prepared for Rain:** Costa Rica can be rainy, especially during the rainy season. Pack rain gear and be prepared to adjust your plans if necessary.\n*   **Learn Some Basic Spanish Phrases:** It will be helpful to know some basic Spanish phrases, especially if you venture off the beaten path.\n*   **Relax and Enjoy!** Costa Rica is a beautiful and family-friendly destination. Take your time, be flexible, and enjoy the adventure.\n\nBefore you book anything, double-check the age/height/weight restrictions for any tours or activities to ensure they are appropriate for your children. Also, read reviews from other families who have traveled with young children.  Have a wonderful trip!\n",
+    "response_time": 9.499809980392456,
+    "evaluation": {
+      "basic": {
+        "response_length": 6770,
+        "word_count": 1024
+      },
+      "structure": {
+        "has_intro": true,
+        "has_body": true,
+        "has_conclusion": false,
+        "structure_score": 0.6666666666666666
+      },
+      "formatting": {
+        "paragraph_count": 20,
+        "avg_paragraph_length": 336.6,
+        "list_item_count": 29,
+        "heading_count": 0,
+        "bold_text_count": 48,
+        "italic_text_count": 100,
+        "formatting_diversity_score": 0.8
+      },
+      "content": {
+        "relevance_score": 0.810909090909091
+      },
+      "travel_specific": {
+        "attractions": 0.2,
+        "food": 0.5,
+        "accommodation": 0.4444444444444444,
+        "transportation": 0.3,
+        "budget": 0.1,
+        "culture": 0.0,
+        "practical_info": 0.4,
+        "overall_travel_score": 0.2777777777777778
+      },
+      "local_knowledge": {
+        "specific_place_mentions": 4,
+        "unique_specific_places": 4,
+        "time_references": 5,
+        "price_references": 0,
+        "estimated_local_terms_ratio": 0.6558044806517311,
+        "specificity_score": 0.9
+      },
+      "overall": {
+        "response_quality": 0.6588282828282829,
+        "specificity": 0.9
+      }
+    }
+  },
+  {
+    "model": "gemini",
+    "query_id": "q5",
+    "category": "travel_planning",
+    "query": "What's the best time of year to visit Machu Picchu and what should I know about altitude sickness?",
+    "response": "Okay, you're planning a trip to Machu Picchu! Excellent choice. It's an incredible place. Let's break down the best time to visit and how to handle altitude sickness:\n\n**Best Time of Year to Visit Machu Picchu:**\n\nThe best time to visit Machu Picchu depends on your priorities, mainly the weather and the crowds. Here's a breakdown:\n\n*   **Dry Season (May to September):**\n    *   **Pros:** This is generally considered the best time to visit. You'll have the clearest skies, the most sunshine, and the least chance of rain. The trails are in better condition. This is great for hiking and enjoying the views.\n    *   **Cons:** This is also the peak tourist season. Expect larger crowds at Machu Picchu, on the Inca Trail, and in the towns of Cusco and Aguas Calientes. Prices for accommodations and tours will be higher. You'll need to book everything well in advance, especially Inca Trail permits.\n    *   **Specific Months:**\n        *   **June, July, and August:** These are the driest months and therefore the most popular and crowded.\n\n*   **Shoulder Seasons (April and October):**\n    *   **Pros:** These months offer a good balance between decent weather and fewer crowds. You might experience some rain, but it's generally less frequent and intense than in the wet season. Prices may be slightly lower than in the peak season.\n    *   **Cons:** The weather is more unpredictable. You'll need to be prepared for both sunshine and rain.\n\n*   **Wet Season (November to March):**\n    *   **Pros:** The crowds are significantly smaller. The landscape is lush and green. Prices for accommodations and tours may be lower.\n    *   **Cons:** Rainfall is common, and sometimes heavy. Trails can be muddy and slippery. Cloud cover can obscure the views. The Inca Trail is closed in February for maintenance.\n\n**In Summary:**\n\n*   **Best Weather, Most Crowds:** May to September (especially June-August)\n*   **Good Balance of Weather and Crowds:** April and October\n*   **Fewest Crowds, Highest Chance of Rain:** November to March (except February: Inca Trail closed)\n\n**Altitude Sickness at Machu Picchu:**\n\nAltitude sickness (also known as acute mountain sickness or AMS) is a real concern when visiting Machu Picchu, as Cusco (the typical starting point) sits at over 11,000 feet (3,400 meters). Aguas Calientes (the town at the base of Machu Picchu) is lower, but you'll likely spend time in Cusco or other high-altitude locations before/after your visit.\n\n**Here's what you should know:**\n\n*   **Symptoms:** Symptoms can range from mild to severe and may include headache, fatigue, nausea, dizziness, loss of appetite, shortness of breath, and difficulty sleeping.\n*   **Acclimatization is Key:** The best way to prevent altitude sickness is to acclimatize gradually.\n    *   **Spend Time at a Lower Altitude First:** If possible, spend a day or two at a lower altitude (e.g., the Sacred Valley, which is lower than Cusco) before heading to Cusco or Machu Picchu.\n    *   **Ascend Slowly:** If flying directly into Cusco, take it easy on your first day. Avoid strenuous activities.\n    *   **Rest:** Get plenty of rest, especially on your first few days at altitude.\n*   **Stay Hydrated:** Drink plenty of water, but avoid excessive alcohol or caffeine, as these can dehydrate you.\n*   **Eat Lightly:** Avoid heavy, greasy meals. Opt for easily digestible foods, like carbohydrates.\n*   **Coca Tea (Mate de Coca):** Coca tea is a traditional remedy for altitude sickness in the Andes. While its effectiveness is debated, many find it helpful. You can find it readily available in hotels and restaurants.\n*   **Medication:**\n    *   **Acetazolamide (Diamox):** This medication can help prevent altitude sickness by speeding up acclimatization. You'll need a prescription from your doctor. Start taking it a day or two before you ascend to altitude, and continue taking it for a few days after you arrive. Be aware of potential side effects (tingling in fingers and toes is common).\n    *   **Ibuprofen or Paracetamol (Acetaminophen):** These can help relieve headaches.\n*   **Listen to Your Body:** Don't push yourself too hard. If you start to experience symptoms of altitude sickness, stop and rest.\n*   **Descend if Necessary:** If your symptoms are severe or don't improve with rest and hydration, descend to a lower altitude immediately. This is the most effective treatment for altitude sickness.\n*   **Oxygen:** Some hotels and tour operators offer oxygen tanks or concentrators. This can provide temporary relief from altitude sickness symptoms.\n*   **Consult Your Doctor:** Talk to your doctor before traveling to high altitude, especially if you have any underlying health conditions. They can advise you on the best ways to prevent and treat altitude sickness.\n\n**Important Reminders:**\n\n*   **Travel Insurance:** Ensure your travel insurance covers altitude-related illnesses and medical evacuation.\n*   **Medical Facilities:** Cusco has medical facilities, but they may not be as advanced as those in your home country.\n\nBy planning ahead and taking precautions, you can minimize your risk of altitude sickness and enjoy your trip to Machu Picchu! Have a fantastic adventure!\n",
+    "response_time": 6.991444826126099,
+    "evaluation": {
+      "basic": {
+        "response_length": 5191,
+        "word_count": 808
+      },
+      "structure": {
+        "has_intro": true,
+        "has_body": true,
+        "has_conclusion": true,
+        "structure_score": 1.0
+      },
+      "formatting": {
+        "paragraph_count": 15,
+        "avg_paragraph_length": 344.2,
+        "list_item_count": 18,
+        "heading_count": 0,
+        "bold_text_count": 36,
+        "italic_text_count": 71,
+        "formatting_diversity_score": 0.8
+      },
+      "content": {
+        "relevance_score": 0.7504273504273504
+      },
+      "travel_specific": {
+        "attractions": 0.1,
+        "food": 0.5,
+        "accommodation": 0.3333333333333333,
+        "transportation": 0.1,
+        "budget": 0.2,
+        "culture": 0.1111111111111111,
+        "practical_info": 0.3,
+        "overall_travel_score": 0.23492063492063495
+      },
+      "local_knowledge": {
+        "specific_place_mentions": 0,
+        "unique_specific_places": 0,
+        "time_references": 4,
+        "price_references": 0,
+        "estimated_local_terms_ratio": 0.6027742749054225,
+        "specificity_score": 0.4
+      },
+      "overall": {
+        "response_quality": 0.7321123321123322,
+        "specificity": 0.4
+      }
+    }
+  },
+  {
+    "model": "gemini",
+    "query_id": "q6",
+    "category": "transportation",
+    "query": "Can you explain the public transportation system in London? How do I get from Heathrow to central London?",
+    "response": "Okay, here's a breakdown of London's public transportation system and how to get from Heathrow Airport to central London:\n\n**London's Public Transportation System: A Quick Overview**\n\nLondon boasts a comprehensive and relatively efficient public transportation network. Here are the main components:\n\n*   **The Underground (The Tube):** This is the heart of London's public transport. It's a network of underground train lines serving most of Greater London. Each line is color-coded and named (e.g., the Piccadilly Line, the Northern Line). It's the fastest way to get around central London and to many outer areas.\n*   **Overground:** Similar to the tube, but running above ground, expanding the transit network beyond the Underground's reach.\n*   **Buses:** London has an extensive bus network covering almost every street. They're great for scenic routes and reaching areas not served by the Tube. However, buses can be slow, especially during peak hours due to traffic.\n*   **Docklands Light Railway (DLR):** A driverless light railway that serves the Docklands area of east London. It connects with the Tube network.\n*   **Trams:** Primarily in South London, trams offer a convenient way to travel within specific areas.\n*   **National Rail:** Suburban and intercity trains connecting London with the rest of the UK. Major train stations like Paddington, Euston, King's Cross, and Waterloo connect with the Tube and bus networks.\n*   **Taxis (Black Cabs):** Iconic and readily available, but also the most expensive option.\n*   **River Bus (Thames Clippers):** A scenic and sometimes quicker alternative for travelling along the River Thames.\n\n**Payment Methods:**\n\n*   **Oyster Card:** A reusable smartcard you can top up with credit. You touch it on yellow card readers at the start and end of your journey. It's a cost-effective option for frequent travel.\n*   **Contactless Payment:** You can use contactless credit or debit cards, or devices (phones, smartwatches) that support contactless payments. This usually offers the same fares as Oyster cards.\n*   **Travelcard:** A paper ticket that allows unlimited travel within specific zones for a day, week, month, or year. Usually more suitable for tourist if you plan to travel extensively each day.\n*   **Tickets:** Single or return paper tickets are available, but they are generally the most expensive option.\n\n**Zones:**\n\nLondon is divided into zones, with Zone 1 being the central area. Fares are calculated based on the zones you travel through. Most tourist attractions are in Zones 1 and 2.\n\n**Getting from Heathrow Airport (LHR) to Central London:**\n\nHeathrow is well-connected to central London. Here are your main options:\n\n1.  **Heathrow Express:**\n    *   **Fastest:** This dedicated train service runs directly from Heathrow Airport to Paddington Station in just 15-20 minutes.\n    *   **Frequency:** Trains depart every 15 minutes.\n    *   **Cost:** This is the most expensive option. Book in advance online for potential discounts.\n    *   **Paddington Station:** From Paddington, you can connect to the Tube (Bakerloo, Circle, District, and Elizabeth lines) or take a taxi to your final destination.\n\n2.  **Elizabeth Line:**\n    *   **Faster than the Tube but slower than the Heathrow Express:** Heathrow Airport has its own Elizabeth Line station, and you can get directly to many key Central London stations such as Bond Street, Tottenham Court Road, Farringdon, Liverpool Street, and Canary Wharf.\n    *   **Frequency:** Trains depart every 30 minutes.\n    *   **Cost:** Significantly cheaper than the Heathrow Express.\n    *   **Convenient:** This is a convenient choice if your final destination is near an Elizabeth Line station.\n\n3.  **The Underground (Piccadilly Line):**\n    *   **Cheapest:** The Piccadilly Line connects Heathrow Airport directly to central London.\n    *   **Time:** This is the slowest option, taking around 50-60 minutes to reach central London.\n    *   **Frequency:** Trains depart every 5-10 minutes.\n    *   **Useful:** A good option if you're on a budget and your destination is near a Piccadilly Line station.\n\n4.  **Taxi/Ride-Sharing (Uber, etc.):**\n    *   **Most Convenient (Door-to-door):** Taxis and ride-sharing services are readily available at Heathrow.\n    *   **Most Expensive:** This is the priciest option, and traffic can significantly increase the journey time.\n    *   **Journey Time:** Highly variable depending on traffic. Expect at least an hour or more.\n\n5. **National Express/Coach:**\n    *   **Good for certain destinations:** A cheaper option, but they do not go directly to central London.\n    *   **Time:** This is the slowest option, and also depends on traffic conditions.\n\n**Recommendation:**\n\n*   **For speed and convenience (and budget is less of a concern):** Heathrow Express to Paddington.\n*   **For a balance of cost and convenience:** Elizabeth Line\n*   **For budget travelers:** Piccadilly Line.\n*   **For door-to-door service and convenience (budget allowing):** Taxi/Ride-Sharing.\n\n**Key Tip:**\n\n*   Before you travel, use the Transport for London (TfL) website ([https://tfl.gov.uk/](https://tfl.gov.uk/)) or the Citymapper app to plan your journey and check for any disruptions. The TfL website also has a fare finder tool to estimate the cost of your trip.\n\nHave a great trip to London!\n",
+    "response_time": 8.591888904571533,
+    "evaluation": {
+      "basic": {
+        "response_length": 5338,
+        "word_count": 790
+      },
+      "structure": {
+        "has_intro": true,
+        "has_body": true,
+        "has_conclusion": false,
+        "structure_score": 0.6666666666666666
+      },
+      "formatting": {
+        "paragraph_count": 20,
+        "avg_paragraph_length": 265.0,
+        "list_item_count": 17,
+        "heading_count": 0,
+        "bold_text_count": 44,
+        "italic_text_count": 88,
+        "formatting_diversity_score": 0.8
+      },
+      "content": {
+        "relevance_score": 0.7294117647058823
+      },
+      "travel_specific": {
+        "attractions": 0.1,
+        "food": 0.1,
+        "accommodation": 0.0,
+        "transportation": 0.7,
+        "budget": 0.4,
+        "culture": 0.0,
+        "practical_info": 0.2,
+        "overall_travel_score": 0.21428571428571425
+      },
+      "local_knowledge": {
+        "specific_place_mentions": 2,
+        "unique_specific_places": 2,
+        "time_references": 16,
+        "price_references": 0,
+        "estimated_local_terms_ratio": 0.6270967741935484,
+        "specificity_score": 1.8
+      },
+      "overall": {
+        "response_quality": 0.6216806722689076,
+        "specificity": 1.8
+      }
+    }
+  },
+  {
+    "model": "gemini",
+    "query_id": "q7",
+    "category": "cultural_experiences",
+    "query": "I want to experience authentic local culture in Marrakech. What hidden gems should I visit?",
+    "response": "Okay, you want to dive deep into the authentic local culture of Marrakech! That's fantastic. Forget the heavily touristed areas for a bit and let's uncover some hidden gems. Here are a few ideas, categorized for different interests, to get you started:\n\n**For the Foodie:**\n\n*   **Mechoui Alley near Jamaa el-Fna (but NOT the main square stalls):** Venture slightly away from the main square. Seek out a less crowded alley where they roast whole sheep (mechoui) in underground ovens. The locals know where to go, so ask around for the best place. Be prepared to share a table and eat with your hands! It's an experience. Be sure to get there early (around midday) as they sell out quickly.\n*   **Cook with a Local (Dar Cherifa is often mentioned):** Rather than just eating, *learn* to cook authentic Moroccan cuisine. Find a reputable riad or local family that offers cooking classes. This is a fantastic way to learn about the ingredients, techniques, and traditions behind the food. Some offer market visits beforehand to choose your ingredients. Dar Cherifa offers a cooking class. But do your research and look into smaller, family run cooking classes that may offer a more intimate experience.\n*   **Patisserie in Gueliz (the new city):** The *newer* part of town, Gueliz, is also home to great sweets. Explore the local bakeries and get some authentic Moroccan sweets (pastries with almonds, honey, etc.). You will see locals shopping for their families there, so you will know that you are at a good location.\n*   **Tea at a local caf\u00e9 in the Kasbah:** The Kasbah is a more residential area and offers a more relaxed atmosphere. Look for a small, unpretentious caf\u00e9 frequented by locals and enjoy a mint tea. It's a great way to observe everyday life.\n\n**For the Art & Craft Lover:**\n\n*   **Artisanal Workshops in the Industrial Area:** While not technically \"hidden,\" the artisan workshops outside the Medina (in areas that might require a taxi to get to) offer a fascinating glimpse into the creation of traditional crafts. You can often see leather tanneries, metalworkers, and pottery makers at work. It can be a sensory experience (strong smells!), but you'll witness the entire process. Negotiate prices directly with the artisans.\n*   **Sidi Ghanem Industrial Area:** This area is home to artisan workshops that produce leather goods, ceramics, and furniture. You can visit the workshops and purchase items directly from the artisans.\n*   **Explore the Tanneries (with caution):** The tanneries are famous, but the conditions can be rough. If you want to see them, go early in the morning, wear closed-toe shoes, and expect a strong smell. Locals outside the tanneries will likely offer you mint to hold under your nose \u2013 accept it! Negotiate any \"tour\" price beforehand. While very touristy, experiencing the tanneries can be very special.\n*   **Henna Art in the Mellah (Jewish Quarter):** The Mellah has a rich history and a slightly different atmosphere than the rest of the Medina. Seek out a reputable henna artist here for a traditional and beautiful temporary tattoo. Be sure to ask about the ingredients and avoid anything that looks like \"black henna,\" as it can be harmful.\n\n**For the Culture Seeker:**\n\n*   **Zaouia of Sidi Bel Abbes:** This is one of the most important religious shrines in Marrakech (for Muslims). Non-Muslims are not typically allowed inside the inner sanctum, but you can still experience the outer courtyard and surrounding area. Dress respectfully (covered shoulders and knees).\n*   **Daily Life in the Kasbah:** Spend time simply walking through the Kasbah, a more residential area of the Medina. Observe the daily rhythms of life. You'll see families going about their business, children playing, and locals chatting. It's a much more authentic experience than the bustling souks.\n*   **Visit a Hammam (Local Bathhouse):** *Not* a fancy spa, but a traditional hammam. It is an intense experience.  Separate sections for men and women. You'll be scrubbed clean (very vigorously!) by an attendant.  It's incredibly cleansing and a real cultural immersion. Do some research ahead of time and be prepared to be naked (or wear disposable underwear).\n*   **Engage with Locals:** The best way to experience authentic culture is to talk to people! Learn a few basic Arabic or French phrases. Don't be afraid to ask questions (respectfully). A simple \"Salaam Alaikum\" (peace be upon you) can go a long way.\n\n**Important Tips for a Respectful and Enjoyable Experience:**\n\n*   **Dress modestly:** Cover your shoulders and knees, especially when visiting religious sites.\n*   **Learn basic Arabic/French phrases:** Even a few words will be appreciated.\n*   **Be prepared to haggle:** It's part of the culture in the souks. But do so respectfully and with a smile.\n*   **Be aware of scams:** Unfortunately, they exist. Be wary of overly friendly strangers who offer to \"help\" you.\n*   **Respect local customs:** Ask permission before taking photos of people.\n*   **Stay hydrated:** Drink plenty of water.\n*   **Be open-minded and embrace the unexpected:** Marrakech can be overwhelming, but it's also an incredibly rewarding experience.\n\n**How to find these places:**\n\n*   **Ask Locals:** The best way to find these hidden gems is to ask the people who live there. Tell them you're looking for authentic experiences, not tourist traps.\n*   **Use Google Maps (but with a grain of salt):** Google Maps can be helpful, but don't rely on it exclusively. Look for reviews from locals.\n*   **Wander and Explore:** Get lost in the Medina! That's often how you stumble upon the best discoveries.\n\nEnjoy your authentic Marrakech adventure! Let me know if you have more specific interests, and I can refine these suggestions further. For example, if you want to do day trips outside of Marrakech or look into museums.\n",
+    "response_time": 9.258951187133789,
+    "evaluation": {
+      "basic": {
+        "response_length": 5846,
+        "word_count": 953
+      },
+      "structure": {
+        "has_intro": true,
+        "has_body": true,
+        "has_conclusion": false,
+        "structure_score": 0.6666666666666666
+      },
+      "formatting": {
+        "paragraph_count": 12,
+        "avg_paragraph_length": 485.3333333333333,
+        "list_item_count": 22,
+        "heading_count": 0,
+        "bold_text_count": 27,
+        "italic_text_count": 56,
+        "formatting_diversity_score": 0.8
+      },
+      "content": {
+        "relevance_score": 0.7220779220779221
+      },
+      "travel_specific": {
+        "attractions": 0.3,
+        "food": 0.4,
+        "accommodation": 0.1111111111111111,
+        "transportation": 0.3,
+        "budget": 0.2,
+        "culture": 0.6666666666666666,
+        "practical_info": 0.3,
+        "overall_travel_score": 0.3253968253968254
+      },
+      "local_knowledge": {
+        "specific_place_mentions": 0,
+        "unique_specific_places": 0,
+        "time_references": 0,
+        "price_references": 0,
+        "estimated_local_terms_ratio": 0.5543822597676874,
+        "specificity_score": 0.0
+      },
+      "overall": {
+        "response_quality": 0.6417027417027417,
+        "specificity": 0.0
+      }
+    }
+  },
+  {
+    "model": "gemini",
+    "query_id": "q8",
+    "category": "safety",
+    "query": "What safety precautions should I take when traveling to Rio de Janeiro?",
+    "response": "Okay, Rio de Janeiro is a vibrant and exciting city, but it's definitely important to be aware of your surroundings and take precautions to stay safe. Here's a breakdown of safety advice, focusing on practical steps you can take:\n\n**Before You Go:**\n\n*   **Research Safe Areas:** Get familiar with the safer neighborhoods, like Copacabana, Ipanema, Leblon (generally considered safer, but still require awareness), and Jardim Bot\u00e2nico.  Less touristy areas, while potentially offering a more \"authentic\" experience, may also have higher crime rates.\n*   **Photocopy Important Documents:** Make copies of your passport, visa (if applicable), driver's license, credit cards, and insurance information. Store them separately from the originals. Consider emailing a digital copy to yourself as well.\n*   **Inform Your Bank and Credit Card Companies:** Let them know your travel dates so they don't flag legitimate transactions as suspicious. Inquire about international transaction fees and consider getting a travel card with lower fees.\n*   **Learn Basic Portuguese Phrases:** Knowing even a few basic phrases can be helpful in emergencies or when interacting with locals. Download a translation app.\n*   **Download Offline Maps:** Google Maps (and other map apps) allow you to download maps for offline use. This is invaluable if you don't have consistent internet access.\n*   **Register with Your Embassy/Consulate:** Some countries offer a service where you can register your travel plans, allowing them to contact you in case of an emergency.\n*   **Check Travel Advisories:** Stay updated on the latest travel advisories issued by your government for Brazil and Rio de Janeiro specifically. These advisories often provide information on current safety concerns and recommended precautions.\n\n**On Arrival and During Your Stay:**\n\n*   **Be Aware of Your Surroundings (Situational Awareness):** This is the *most important* tip. Pay attention to who and what is around you. Avoid distractions like your phone when walking in public. If something feels off, trust your gut and move away.\n*   **Leave Valuables at Your Accommodation:** Don't flaunt expensive jewelry, watches, or large amounts of cash. Use the hotel safe for passports, excess cash, and valuable items.\n*   **Dress Down:** Try to blend in as much as possible. Avoid wearing flashy clothing or accessories that might make you a target.\n*   **Avoid Walking Alone at Night:** Especially in poorly lit areas or on deserted beaches. Stick to well-lit, populated streets. Consider taking a taxi or ride-sharing service instead.\n*   **Use Reputable Transportation:**\n    *   **Taxis:** Use official taxis from reputable taxi stands or order through apps like 99Taxi or Easy Taxi.  Avoid hailing taxis on the street, especially at night. Confirm the meter is running or agree on a fare before starting the journey.\n    *   **Ride-Sharing Apps (Uber, 99):** These are generally safe and reliable, but always double-check the driver's identity and license plate before getting in.\n    *   **Public Transportation (Metro):** The Metro is generally safe and efficient during the day, but be aware of your belongings, especially during rush hour.  Avoid using buses at night, as they can be targeted by robberies.\n*   **Be Cautious with ATMs:** Use ATMs inside banks or shopping malls during daylight hours. Be aware of anyone standing too close to you while you're using the ATM. Shield the keypad when entering your PIN.\n*   **Don't Resist in Case of Robbery:** If you are confronted by a robber, the best advice is to remain calm and hand over what they ask for. Your safety is more important than your belongings.\n*   **Avoid Favelas (Unless on a Reputable Tour):** While some favelas offer guided tours that can be a fascinating experience, it's crucial to go with a reputable and licensed tour operator. Avoid exploring favelas on your own, as they can be dangerous.  Even on a tour, be respectful of the residents and their community.\n*   **Watch Out for Scams:** Be aware of common scams targeting tourists, such as:\n    *   **The \"dropped wallet\" scam:** Someone drops a wallet in front of you, and while you're distracted, an accomplice steals your belongings.\n    *   **The \"fake police\" scam:** Individuals posing as police officers approach you and demand to see your documents or search your bags. Genuine police officers will usually be in uniform and have proper identification.\n    *   **Overpriced drinks or services:** Always confirm prices before ordering or agreeing to a service.\n*   **Be Careful with Your Drinks:** Never leave your drink unattended, and don't accept drinks from strangers. Be aware of the potential for drink spiking.\n*   **Sun Safety:** Rio is hot! Use sunscreen, wear a hat, and stay hydrated.\n*   **Food Safety:** Eat at reputable restaurants and avoid street food unless you're certain of its hygiene standards. Drink bottled water.\n*   **Beach Safety:**\n    *   **Swim in Designated Areas:** Be aware of strong currents and riptides.\n    *   **Don't Leave Belongings Unattended:** Petty theft is common on the beach.\n    *   **Be Aware of Beach Crowds:** Large crowds can make you more vulnerable to pickpockets.\n    *   **Avoid the Beach at Night:** Beaches are generally not safe at night.\n*   **Learn the Emergency Numbers:**\n    *   **Police: 190**\n    *   **Ambulance: 192**\n    *   **Fire Department: 193**\n*   **Stay Connected:** Purchase a local SIM card or portable Wi-Fi device to stay connected and be able to contact emergency services if needed.\n*   **Trust Your Instincts:** If a situation feels uncomfortable or dangerous, remove yourself from it immediately.\n\n**Important Considerations for Women Travelers:**\n\n*   The same general safety advice applies, but with an extra layer of caution.\n*   Be particularly aware of your surroundings at night, and avoid walking alone in deserted areas.\n*   Dress modestly to avoid unwanted attention.\n*   Be firm and assertive if you feel harassed or uncomfortable.\n*   Share your travel plans with a trusted friend or family member.\n*   Consider using ride-sharing apps specifically designed for women, if available.\n\n**In Summary:**\n\nRio de Janeiro is an amazing city with a lot to offer. By being prepared, staying aware, and taking sensible precautions, you can significantly reduce your risk of becoming a victim of crime and enjoy a safe and memorable trip.  Remember, common sense goes a long way! Enjoy your travels!\n",
+    "response_time": 10.369359970092773,
+    "evaluation": {
+      "basic": {
+        "response_length": 6476,
+        "word_count": 1005
+      },
+      "structure": {
+        "has_intro": true,
+        "has_body": true,
+        "has_conclusion": true,
+        "structure_score": 1.0
+      },
+      "formatting": {
+        "paragraph_count": 9,
+        "avg_paragraph_length": 717.7777777777778,
+        "list_item_count": 29,
+        "heading_count": 0,
+        "bold_text_count": 40,
+        "italic_text_count": 83,
+        "formatting_diversity_score": 0.8
+      },
+      "content": {
+        "relevance_score": 0.6416666666666666
+      },
+      "travel_specific": {
+        "attractions": 0.1,
+        "food": 0.4,
+        "accommodation": 0.3333333333333333,
+        "transportation": 0.5,
+        "budget": 0.2,
+        "culture": 0.1111111111111111,
+        "practical_info": 0.6,
+        "overall_travel_score": 0.32063492063492066
+      },
+      "local_knowledge": {
+        "specific_place_mentions": 0,
+        "unique_specific_places": 0,
+        "time_references": 4,
+        "price_references": 0,
+        "estimated_local_terms_ratio": 0.5971370143149284,
+        "specificity_score": 0.4
+      },
+      "overall": {
+        "response_quality": 0.7166269841269841,
+        "specificity": 0.4
+      }
+    }
+  },
+  {
+    "model": "gemini",
+    "query_id": "q9",
+    "category": "sustainable_travel",
+    "query": "I'm looking for sustainable and eco-friendly travel options in New Zealand. What would you recommend?",
+    "response": "Okay, great! New Zealand is a fantastic choice for sustainable travel. They're quite proactive about preserving their natural environment. Here are some recommendations, broken down by category, to help you plan an eco-friendly trip:\n\n**1. Transportation:**\n\n*   **Electric Vehicle (EV) or Hybrid Car Rental:** This is probably the biggest impact you can make. New Zealand is increasingly EV-friendly, with charging stations becoming more prevalent. Companies like *Europcar, Hertz, and Avis* are starting to offer EVs. Look for \"hybrid\" or \"electric\" in the vehicle descriptions. Plan your route around charging stations, especially in more remote areas.\n*   **Public Transportation:** Consider using buses or trains where possible. *InterCity* is a major bus network covering both islands. *KiwiRail* operates scenic train journeys like the TranzAlpine (Christchurch to Greymouth) and the Northern Explorer (Auckland to Wellington).\n*   **Cycling:** New Zealand has stunning cycle trails, including the New Zealand Cycle Trail network (Nga Haerenga), offering diverse options from easy family rides to challenging mountain biking. Companies offer bike rentals and guided tours.\n*   **Internal Flights (Consider Minimizing):** While sometimes necessary, flights have a significant carbon footprint. If possible, opt for longer ground travel options like trains or buses to reduce your flight frequency. You can offset the carbon emissions of your flights through various organizations.\n*   **Walking/Hiking:** The best way to immerse yourself in the natural beauty! Utilize well-maintained tracks and trails.\n\n**2. Accommodation:**\n\n*   **Eco-Lodges & Sustainable Hotels:** Seek out accommodations specifically committed to sustainable practices. Look for certifications like *Qualmark Enviro-Gold* (New Zealand's official quality assurance organisation) or other recognised eco-labels.  Some examples include:\n    *   *The Resurgence Luxury Eco Lodge (Nelson)*\n    *   *Hapuku Lodge + Treehouses (Kaikoura)*\n    *   *Treetops Lodge & Estate (Rotorua)*\n    *   *Solscape Eco Retreat (Raglan)* - focuses on off-grid living and permaculture.\n*   **Farm Stays & Homestays:** Staying on a farm or with a local family can provide a unique cultural experience while often supporting local communities and sustainable agriculture.\n*   **DOC Campsites (Department of Conservation):** Camping in designated DOC campsites is a budget-friendly and low-impact way to experience the wilderness. Bookings are often required, especially during peak season.\n\n**3. Activities & Tours:**\n\n*   **Choose Eco-Certified Tour Operators:** Look for tour companies that have *Qualmark Enviro-Gold* or other reputable eco-certifications. They'll be committed to responsible practices like minimizing waste, conserving water, and respecting wildlife.\n*   **Wildlife Encounters:** Opt for tours that prioritize ethical wildlife viewing. Avoid activities that disturb animals or their habitats. Look for operators with conservation partnerships.\n*   **Hiking & Tramping:** Stick to marked trails to avoid damaging fragile ecosystems. Pack out all your rubbish and follow the Leave No Trace principles.\n*   **Water Activities:** Choose kayaking, sailing, or paddleboarding over motorized water sports when possible. Select tour operators who are mindful of marine life and water quality.\n*   **Cultural Experiences:** Support M\u0101ori-owned and operated businesses to learn about their culture and traditions in a respectful and authentic way.\n\n**4. Food & Drink:**\n\n*   **Support Local & Organic Producers:** Visit farmers' markets, buy directly from local farms, and choose restaurants that source ingredients locally and sustainably.\n*   **Reduce Food Waste:** Be mindful of portion sizes and avoid wasting food. Compost food scraps where possible.\n*   **Choose Sustainable Seafood:** Look for seafood that is sustainably harvested or farmed. The *Best Fish Guide* can help you make informed choices.\n*   **Reusable Water Bottle & Coffee Cup:** Essential for minimizing single-use plastic.\n\n**5. General Tips for Sustainable Travel in New Zealand:**\n\n*   **Respect the Environment:** Pack out all your rubbish, stay on marked trails, and avoid disturbing wildlife.\n*   **Conserve Water:** Be mindful of water usage, especially in areas with limited water resources.\n*   **Reduce Energy Consumption:** Turn off lights and appliances when not in use.\n*   **Support Local Communities:** Shop at local businesses, eat at locally-owned restaurants, and participate in cultural experiences.\n*   **Learn About M\u0101ori Culture:** Understanding and respecting the indigenous culture is an important part of responsible tourism in New Zealand. Learn some basic M\u0101ori phrases and customs.\n*   **Leave No Trace:** A fundamental principle of responsible travel. Minimize your impact on the environment and leave the places you visit as you found them, or even better.\n*   **Offset Your Carbon Footprint:** Consider donating to carbon offset projects to mitigate the impact of your travel. Research reputable organizations that invest in renewable energy or reforestation projects in New Zealand.\n\n**Finding Certified Operators and Accommodations:**\n\n*   **Qualmark:** The Qualmark website (usually accessible through Tourism New Zealand's website or by searching \"Qualmark New Zealand\") is an excellent resource for finding certified sustainable businesses.  Look for the \"Enviro-Gold\" badge.\n*   **Tourism New Zealand Website:** The official Tourism New Zealand website often has sections dedicated to sustainable tourism and eco-friendly travel options.\n*   **Online Travel Agencies:** Many online travel agencies now allow you to filter your search results by \"eco-friendly\" or \"sustainable\" options.\n\n**Before you go:**\n\n*   **Research:**  The more you research in advance, the better you can plan a sustainable trip.\n*   **Pack Light:**  Reducing the weight of your luggage can save fuel on flights.\n*   **Pack Reusables:**  Water bottle, coffee cup, shopping bags, reusable containers.\n\nBy following these recommendations, you can enjoy a fantastic and eco-friendly trip to New Zealand while minimizing your impact on the environment and supporting local communities. Enjoy!\n",
+    "response_time": 9.703443050384521,
+    "evaluation": {
+      "basic": {
+        "response_length": 6237,
+        "word_count": 872
+      },
+      "structure": {
+        "has_intro": true,
+        "has_body": true,
+        "has_conclusion": true,
+        "structure_score": 1.0
+      },
+      "formatting": {
+        "paragraph_count": 16,
+        "avg_paragraph_length": 387.9375,
+        "list_item_count": 30,
+        "heading_count": 0,
+        "bold_text_count": 37,
+        "italic_text_count": 85,
+        "formatting_diversity_score": 0.8
+      },
+      "content": {
+        "relevance_score": 0.6
+      },
+      "travel_specific": {
+        "attractions": 0.3,
+        "food": 0.4,
+        "accommodation": 0.4444444444444444,
+        "transportation": 0.6,
+        "budget": 0.2,
+        "culture": 0.4444444444444444,
+        "practical_info": 0.2,
+        "overall_travel_score": 0.36984126984126986
+      },
+      "local_knowledge": {
+        "specific_place_mentions": 0,
+        "unique_specific_places": 0,
+        "time_references": 5,
+        "price_references": 0,
+        "estimated_local_terms_ratio": 0.6718009478672986,
+        "specificity_score": 0.5
+      },
+      "overall": {
+        "response_quality": 0.713968253968254,
+        "specificity": 0.5
+      }
+    }
+  },
+  {
+    "model": "gemini",
+    "query_id": "q10",
+    "category": "cultural_awareness",
+    "query": "What are common cultural faux pas to avoid in Japan?",
+    "response": "Okay, here are some common cultural faux pas to avoid in Japan to help you have a smooth and respectful trip:\n\n**Dining & Drinking:**\n\n*   **Sticking chopsticks upright in a bowl of rice:** This is a big no-no as it resembles incense offerings for the deceased. Always rest your chopsticks on the chopstick rest (hashioki) provided. If there isn't one, you can fashion one by folding the paper wrapper.\n*   **Passing food directly from chopstick to chopstick:** This mimics a ritual performed during Japanese funerals. Instead, place the food on the person's plate or a communal serving dish.\n*   **Wasting food:** Japanese culture values food highly. Try to finish what you take, and if you can't, it's better to leave a small amount rather than make a show of scraping the plate clean if it's simply too much.\n*   **Pouring your own drink:** It's customary to pour drinks for your companions and for them to pour for you. Keep an eye on others' glasses and offer to refill them. They'll likely reciprocate.\n*   **Eating or drinking while walking:** Generally, this is considered impolite. It's better to stop and finish your food/drink before continuing your walk. There are exceptions, like at festivals where it's more common.\n*   **Being overly loud or boisterous in restaurants:** While some restaurants are more casual, generally keep your voice down and avoid loud conversations.\n\n**General Etiquette:**\n\n*   **Wearing shoes inside:** This is a major faux pas. Always remove your shoes when entering homes, temples, traditional restaurants (especially those with tatami mats), and some businesses. You'll often find slippers provided. Be mindful of where you're expected to change shoes.\n*   **Ignoring the bowing culture:** Bowing is a common form of greeting and showing respect. A slight nod of the head is sufficient for casual encounters, but a deeper bow is appropriate for more formal situations or when expressing gratitude or apology. Don't shake hands unless offered; bowing is generally preferred.\n*   **Speaking loudly on public transportation:** Keep your voice down on trains, buses, and subways. It's also considered polite to refrain from talking on your phone, as well. Turn off the ringer.\n*   **Bathing with soap in the communal bath (onsen/sento):** Always wash and rinse thoroughly *before* entering the bath. The bath is for relaxation, not for cleaning.\n*   **Tattoos (potentially):** While attitudes are changing, tattoos can still be associated with organized crime in some contexts. If you have tattoos, it's best to cover them up when visiting onsen (hot springs), gyms, or other places where they might be visible. Some establishments have specific rules about tattoos.\n*   **Pointing:** Avoid pointing directly at people or things. It's considered rude.\n*   **Being overly direct or assertive:** Japanese culture values indirectness and harmony. Avoid being confrontational or overly demanding.\n*   **Giving tips:** Tipping is not customary in Japan, and it can actually be considered rude or confusing. Service is generally included in the price. Trying to tip may offend someone.\n*   **Using excessive perfume or strong scents:** The Japanese generally prefer subtle fragrances. Avoid wearing strong perfumes or colognes.\n*   **Taking photos without permission:** Be mindful of where you're taking photos, especially in temples, shrines, and private residences. Ask for permission before taking photos of people.\n\n**Other Considerations:**\n\n*   **Gift-giving:** If you are invited to someone's home, bringing a small gift is customary. Wrap it nicely. When presenting the gift, use both hands.\n*   **Masks:** If you have a cold, it's considered polite to wear a face mask to avoid spreading germs. You'll see many Japanese people wearing masks, even if they don't appear sick, as a preventative measure.\n*   **Queuing:** Japanese people are very orderly and always queue. Join the end of the line and be patient.\n*   **Learn a few basic Japanese phrases:** Even knowing a few simple phrases like \"Konnichiwa\" (hello), \"Arigato\" (thank you), and \"Sumimasen\" (excuse me) will be greatly appreciated.\n\n**Important Note:** While avoiding these faux pas is helpful, most Japanese people are very understanding and forgiving of foreigners who are unfamiliar with their customs. Making a genuine effort to be respectful will go a long way. Don't be afraid to ask if you're unsure about something. Enjoy your trip!\n",
+    "response_time": 7.551021099090576,
+    "evaluation": {
+      "basic": {
+        "response_length": 4446,
+        "word_count": 696
+      },
+      "structure": {
+        "has_intro": true,
+        "has_body": true,
+        "has_conclusion": true,
+        "structure_score": 1.0
+      },
+      "formatting": {
+        "paragraph_count": 8,
+        "avg_paragraph_length": 554.0,
+        "list_item_count": 20,
+        "heading_count": 0,
+        "bold_text_count": 24,
+        "italic_text_count": 48,
+        "formatting_diversity_score": 0.8
+      },
+      "content": {
+        "relevance_score": 0.8600000000000001
+      },
+      "travel_specific": {
+        "attractions": 0.3,
+        "food": 0.5,
+        "accommodation": 0.0,
+        "transportation": 0.5,
+        "budget": 0.1,
+        "culture": 0.6666666666666666,
+        "practical_info": 0.2,
+        "overall_travel_score": 0.3238095238095239
+      },
+      "local_knowledge": {
+        "specific_place_mentions": 0,
+        "unique_specific_places": 0,
+        "time_references": 0,
+        "price_references": 0,
+        "estimated_local_terms_ratio": 0.5848787446504993,
+        "specificity_score": 0.0
+      },
+      "overall": {
+        "response_quality": 0.7827619047619048,
+        "specificity": 0.0
+      }
+    }
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "query_id": "q1",
+    "query": "What are the must-visit places in Tokyo for a first-time visitor?",
+    "category": "destination_recommendations",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q2",
+    "query": "Can you suggest an itinerary for 3 days in Barcelona?",
+    "category": "itinerary_planning",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q3",
+    "query": "What are some local dishes I should try in Thailand?",
+    "category": "food_recommendations",
+    "difficulty": "easy"
+  },
+  {
+    "query_id": "q4",
+    "query": "I'm traveling with young children to Costa Rica. What activities would be appropriate and safe?",
+    "category": "family_travel",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q5",
+    "query": "What's the best time of year to visit Machu Picchu and what should I know about altitude sickness?",
+    "category": "travel_planning",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q6",
+    "query": "Can you explain the public transportation system in London? How do I get from Heathrow to central London?",
+    "category": "transportation",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q7",
+    "query": "I want to experience authentic local culture in Marrakech. What hidden gems should I visit?",
+    "category": "cultural_experiences",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q8",
+    "query": "What safety precautions should I take when traveling to Rio de Janeiro?",
+    "category": "safety",
+    "difficulty": "medium"
+  },
+  {
+    "query_id": "q9",
+    "query": "I'm looking for sustainable and eco-friendly travel options in New Zealand. What would you recommend?",
+    "category": "sustainable_travel",
+    "difficulty": "hard"
+  },
+  {
+    "query_id": "q10",
+    "query": "What are common cultural faux pas to avoid in Japan?",
+    "category": "cultural_awareness",
+    "difficulty": "medium"
+  }
+] 

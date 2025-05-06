@@ -1,0 +1,3 @@
+Query ID,Category,Query,Gemini Response Time,Gemma Response Time,Gemini Quality,Gemma Quality,Gemini Specificity,Gemma Specificity,Faster Model,Quality Winner,Specificity Winner
+q1,destination_recommendations,What are the must-visit places in Tokyo for a first-time visitor?,9.891913890838623,5.589082717895508,0.6843722943722943,0.53005772005772,0.8,0.0,gemma,gemini,gemini
+SUMMARY,,,9.891913890838623,5.589082717895508,0.6843722943722943,0.53005772005772,0.8,0.0,"Gemini: 0, Gemma: 1","Gemini: 1, Gemma: 0","Gemini: 1, Gemma: 0"

@@ -1,0 +1,167 @@
+/* Custom theme colors */
+:root {
+    --primary-color: #FF4B4B;
+    --background-color: #0E1117;
+    --secondary-background-color: #262730;
+    --text-color: #FAFAFA;
+    --font-family: 'Roboto', sans-serif;
+}
+
+/* Main container styling */
+.main {
+    padding: 2rem;
+}
+
+/* Chat message styling */
+.stChatMessage {
+    background-color: var(--secondary-background-color);
+    border-radius: 15px;
+    padding: 1rem;
+    margin: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.stChatMessage.user {
+    background-color: #2E4A62;
+}
+
+.stChatMessage.assistant {
+    background-color: #1E352F;
+}
+
+/* Ensure all text in chat messages is visible */
+.stChatMessage p, .stChatMessage span, .stChatMessage div {
+    color: var(--text-color) !important;
+}
+
+/* Specific styling for assistant messages to ensure readability */
+.stChatMessage.assistant {
+    background-color: rgba(30, 53, 47, 0.7); /* Making the background slightly transparent */
+    border: 1px solid #2a524a; /* Adding a subtle border */
+}
+
+/* Specific styling for text inside assistant messages */
+.stChatMessage.assistant p, 
+.stChatMessage.assistant span, 
+.stChatMessage.assistant div,
+.stChatMessage.assistant li,
+.stChatMessage.assistant a {
+    color: #E0E0E0 !important; /* Light gray text that shows up on dark backgrounds */
+}
+
+/* Override for any black text boxes in responses */
+.stChatMessage.assistant * {
+    background-color: transparent !important;
+    color: #E0E0E0 !important;
+}
+
+/* Style for code blocks in chat messages */
+.stChatMessage.assistant pre,
+.stChatMessage.assistant code {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    color: #E0E0E0 !important;
+    border: 1px solid #4a4a4a !important;
+    border-radius: 4px !important;
+    padding: 0.5em !important;
+}
+
+/* Sidebar styling */
+.css-1d391kg {
+    background-color: var(--secondary-background-color);
+    padding: 2rem 1rem;
+}
+
+/* Button styling */
+.stButton > button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 0.5rem 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.stButton > button:hover {
+    background-color: #FF6B6B;
+    transform: translateY(-2px);
+}
+
+/* Input field styling */
+.stTextInput > div > div > input {
+    border-radius: 25px;
+    border: 2px solid var(--primary-color);
+    padding: 0.5rem 1rem;
+}
+
+/* Text area styling */
+.stTextArea > div > div > textarea {
+    border-radius: 15px;
+    border: 2px solid var(--primary-color);
+    padding: 0.5rem;
+}
+
+/* Radio button styling - fixing the black background */
+.stRadio > div {
+    background-color: transparent;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid var(--secondary-background-color);
+}
+
+/* Individual radio items */
+.stRadio label {
+    color: var(--text-color) !important;
+}
+
+/* Expander styling */
+.streamlit-expanderHeader {
+    background-color: var(--secondary-background-color);
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+
+/* Session list styling */
+.session-list {
+    margin-top: 1rem;
+}
+
+.session-item {
+    background-color: var(--secondary-background-color);
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin: 0.5rem 0;
+}
+
+/* Chat input styling */
+.stChatInputContainer {
+    border-top: 2px solid var(--secondary-background-color);
+    padding-top: 1rem;
+}
+
+/* Title styling - removing green glow */
+h1, h2, h3 {
+    color: var(--text-color);
+    font-family: var(--font-family);
+    margin-bottom: 1rem;
+    text-shadow: none;
+    box-shadow: none;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--background-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #FF6B6B;
+}

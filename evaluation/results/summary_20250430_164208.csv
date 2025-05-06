@@ -1,0 +1,12 @@
+Query ID,Category,Query,Gemini Response Time,Gemma Response Time,Gemini Quality,Gemma Quality,Gemini Specificity,Gemma Specificity,Faster Model,Quality Winner,Specificity Winner
+q1,destination_recommendations,What are the must-visit places in Tokyo for a first-time visitor?,6.785865068435669,19.977999687194824,0.7955988455988456,0.5592640692640692,1.7,0.5,gemini,gemini,gemini
+q2,itinerary_planning,Can you suggest an itinerary for 3 days in Barcelona?,12.383090257644653,16.562989950180054,0.6327936507936508,0.6233492063492063,3.0,0.7,gemini,gemini,gemini
+q3,food_recommendations,What are some local dishes I should try in Thailand?,6.975636959075928,14.437894105911255,0.596063492063492,0.6363492063492063,0.0,0.0,gemini,gemma,gemma
+q4,family_travel,I'm traveling with young children to Costa Rica. What activities would be appropriate and safe?,10.807868957519531,6.503037214279175,0.7436709956709957,0.4749610389610389,1.7,0.0,gemma,gemini,gemini
+q5,travel_planning,What's the best time of year to visit Machu Picchu and what should I know about altitude sickness?,8.704758167266846,17.475836038589478,0.6562393162393162,0.7402442002442003,1.0,0.8,gemini,gemma,gemini
+q6,transportation,Can you explain the public transportation system in London? How do I get from Heathrow to central London?,10.409584045410156,17.974696397781372,0.6263678804855276,0.5776470588235294,3.2,1.1,gemini,gemini,gemini
+q7,cultural_experiences,I want to experience authentic local culture in Marrakech. What hidden gems should I visit?,9.874067783355713,21.413251161575317,0.7385281385281385,0.6683405483405483,0.4,0.1,gemini,gemini,gemini
+q8,safety,What safety precautions should I take when traveling to Rio de Janeiro?,9.24088191986084,20.302888870239258,0.7908333333333334,0.6316269841269841,1.1,0.1,gemini,gemini,gemini
+q9,sustainable_travel,I'm looking for sustainable and eco-friendly travel options in New Zealand. What would you recommend?,9.713680744171143,23.954670190811157,0.7339682539682539,0.5586666666666666,0.7,0.0,gemini,gemini,gemini
+q10,cultural_awareness,What are common cultural faux pas to avoid in Japan?,9.13223910331726,21.24043917655945,0.7350476190476191,0.6813015873015873,0.0,0.0,gemini,gemini,gemma
+SUMMARY,,,9.402767300605774,17.984370279312134,0.7049111525729173,0.6151750566427037,1.28,0.33,"Gemini: 9, Gemma: 1","Gemini: 8, Gemma: 2","Gemini: 8, Gemma: 2"

@@ -1,0 +1,172 @@
+2025-04-29 19:02:13,682 - evaluation - ERROR - --results-file is required when using --summarize or --charts
+2025-04-29 19:03:36,683 - evaluation - INFO - Loaded 1 test queries
+2025-04-29 19:03:36,758 - evaluation - INFO - Starting pointwise evaluation of gemini model on 1 queries
+2025-04-29 19:03:36,758 - evaluation - INFO - [1/1] Evaluating gemini on query q1 (destination_recommendations)
+2025-04-29 19:03:36,758 - gemini_model - INFO - Model preference set to: Base Model
+2025-04-29 19:03:37,591 - gemini_model - INFO - Using base model
+2025-04-29 19:03:46,469 - gemini_model - INFO - Model response generated
+2025-04-29 19:03:47,129 - evaluation - INFO - Completed pointwise evaluation of gemini model
+2025-04-29 19:03:47,131 - evaluation - INFO - Saved results to /Users/debicabrera/.cursor-tutor/L200-upskilling/evaluation/results/pointwise_gemini_20250429_190347.json
+2025-04-29 19:03:53,590 - evaluation - INFO - Saved summary table to /Users/debicabrera/.cursor-tutor/L200-upskilling/evaluation/results/summary_20250429_190353.csv
+2025-04-29 19:04:22,708 - evaluation - INFO - Loaded 1 test queries
+2025-04-29 19:04:22,786 - evaluation - INFO - Starting pairwise evaluation of Gemini vs. Gemma on 1 queries
+2025-04-29 19:04:22,786 - evaluation - INFO - [1/1] Running pairwise evaluation on query q1 (destination_recommendations)
+2025-04-29 19:04:22,786 - gemini_model - INFO - Model preference set to: Base Model
+2025-04-29 19:04:23,540 - gemini_model - INFO - Using base model
+2025-04-29 19:04:32,387 - gemini_model - INFO - Model response generated
+2025-04-29 19:04:39,274 - evaluation - INFO - Completed pairwise evaluation
+2025-04-29 19:04:39,280 - evaluation - INFO - Saved results to /Users/debicabrera/.cursor-tutor/L200-upskilling/evaluation/results/pairwise_comparison_20250429_190439.json
+2025-04-29 19:04:46,074 - evaluation - INFO - Saved summary table to /Users/debicabrera/.cursor-tutor/L200-upskilling/evaluation/results/summary_20250429_190446.csv
+2025-04-29 19:04:47,205 - evaluation - INFO - Saved comparison charts to /Users/debicabrera/.cursor-tutor/L200-upskilling/evaluation/results/charts_20250429_190446
+2025-04-30 16:37:16,803 - evaluation - INFO - Loaded 10 test queries
+2025-04-30 16:37:16,879 - evaluation - INFO - Starting pairwise evaluation of Gemini vs. Gemma on 10 queries
+2025-04-30 16:37:16,879 - evaluation - INFO - [1/10] Running pairwise evaluation on query q1 (destination_recommendations)
+2025-04-30 16:37:16,879 - gemini_model - INFO - Model preference set to: Base Model
+2025-04-30 16:37:17,408 - gemini_model - INFO - Using base model
+2025-04-30 16:37:23,536 - gemini_model - INFO - Model response generated
+2025-04-30 16:37:44,653 - evaluation - INFO - [2/10] Running pairwise evaluation on query q2 (itinerary_planning)
+2025-04-30 16:37:44,655 - gemini_model - INFO - Model preference set to: Base Model
+2025-04-30 16:37:44,766 - gemini_model - INFO - Using base model
+2025-04-30 16:37:56,932 - gemini_model - INFO - Model response generated
+2025-04-30 16:38:14,619 - evaluation - INFO - [3/10] Running pairwise evaluation on query q3 (food_recommendations)
+2025-04-30 16:38:14,627 - gemini_model - INFO - Model preference set to: Base Model
+2025-04-30 16:38:14,765 - gemini_model - INFO - Using base model
+2025-04-30 16:38:21,474 - gemini_model - INFO - Model response generated
+2025-04-30 16:38:37,053 - evaluation - INFO - [4/10] Running pairwise evaluation on query q4 (family_travel)
+2025-04-30 16:38:37,056 - gemini_model - INFO - Model preference set to: Base Model
+2025-04-30 16:38:37,202 - gemini_model - INFO - Using base model
+2025-04-30 16:38:47,709 - gemini_model - INFO - Model response generated
+2025-04-30 16:38:55,378 - evaluation - INFO - [5/10] Running pairwise evaluation on query q5 (travel_planning)
+2025-04-30 16:38:55,379 - gemini_model - INFO - Model preference set to: Base Model
+2025-04-30 16:38:55,533 - gemini_model - INFO - Using base model
+2025-04-30 16:39:03,916 - gemini_model - INFO - Model response generated
+2025-04-30 16:39:22,585 - evaluation - INFO - [6/10] Running pairwise evaluation on query q6 (transportation)
+2025-04-30 16:39:22,586 - gemini_model - INFO - Model preference set to: Base Model
+2025-04-30 16:39:22,763 - gemini_model - INFO - Using base model
+2025-04-30 16:39:32,891 - gemini_model - INFO - Model response generated
+2025-04-30 16:39:51,978 - evaluation - INFO - [7/10] Running pairwise evaluation on query q7 (cultural_experiences)
+2025-04-30 16:39:51,979 - gemini_model - INFO - Model preference set to: Base Model
+2025-04-30 16:39:52,086 - gemini_model - INFO - Using base model
+2025-04-30 16:40:01,669 - gemini_model - INFO - Model response generated
+2025-04-30 16:40:24,279 - evaluation - INFO - [8/10] Running pairwise evaluation on query q8 (safety)
+2025-04-30 16:40:24,280 - gemini_model - INFO - Model preference set to: Base Model
+2025-04-30 16:40:24,414 - gemini_model - INFO - Using base model
+2025-04-30 16:40:33,353 - gemini_model - INFO - Model response generated
+2025-04-30 16:40:54,831 - evaluation - INFO - [9/10] Running pairwise evaluation on query q9 (sustainable_travel)
+2025-04-30 16:40:54,834 - gemini_model - INFO - Model preference set to: Base Model
+2025-04-30 16:40:54,968 - gemini_model - INFO - Using base model
+2025-04-30 16:41:04,407 - gemini_model - INFO - Model response generated
+2025-04-30 16:41:29,518 - evaluation - INFO - [10/10] Running pairwise evaluation on query q10 (cultural_awareness)
+2025-04-30 16:41:29,519 - gemini_model - INFO - Model preference set to: Base Model
+2025-04-30 16:41:29,710 - gemini_model - INFO - Using base model
+2025-04-30 16:41:38,495 - gemini_model - INFO - Model response generated
+2025-04-30 16:42:00,899 - evaluation - INFO - Completed pairwise evaluation
+2025-04-30 16:42:00,916 - evaluation - INFO - Saved results to /Users/debicabrera/.cursor-tutor/L200-upskilling/evaluation/results/pairwise_comparison_20250430_164200.json
+2025-04-30 16:42:08,400 - evaluation - INFO - Saved summary table to /Users/debicabrera/.cursor-tutor/L200-upskilling/evaluation/results/summary_20250430_164208.csv
+2025-04-30 16:42:08,937 - evaluation - INFO - Saved comparison charts to /Users/debicabrera/.cursor-tutor/L200-upskilling/evaluation/results/charts_20250430_164208
+2025-04-30 16:44:47,926 - evaluation - INFO - Loaded 10 test queries
+2025-04-30 16:44:47,997 - evaluation - INFO - Starting pointwise evaluation of gemini model on 10 queries
+2025-04-30 16:44:47,997 - evaluation - INFO - [1/10] Evaluating gemini on query q1 (destination_recommendations)
+2025-04-30 16:44:47,997 - gemini_model - INFO - Model preference set to: Base Model
+2025-04-30 16:44:48,500 - gemini_model - INFO - Using base model
+2025-04-30 16:44:56,640 - gemini_model - INFO - Model response generated
+2025-04-30 16:44:57,283 - evaluation - INFO - [2/10] Evaluating gemini on query q2 (itinerary_planning)
+2025-04-30 16:44:57,283 - gemini_model - INFO - Model preference set to: Base Model
+2025-04-30 16:44:57,394 - gemini_model - INFO - Using base model
+2025-04-30 16:45:05,866 - gemini_model - INFO - Model response generated
+2025-04-30 16:45:06,515 - evaluation - INFO - [3/10] Evaluating gemini on query q3 (food_recommendations)
+2025-04-30 16:45:06,515 - gemini_model - INFO - Model preference set to: Base Model
+2025-04-30 16:45:06,655 - gemini_model - INFO - Using base model
+2025-04-30 16:45:13,559 - gemini_model - INFO - Model response generated
+2025-04-30 16:45:14,249 - evaluation - INFO - [4/10] Evaluating gemini on query q4 (family_travel)
+2025-04-30 16:45:14,249 - gemini_model - INFO - Model preference set to: Base Model
+2025-04-30 16:45:14,358 - gemini_model - INFO - Using base model
+2025-04-30 16:45:23,582 - gemini_model - INFO - Model response generated
+2025-04-30 16:45:24,256 - evaluation - INFO - [5/10] Evaluating gemini on query q5 (travel_planning)
+2025-04-30 16:45:24,256 - gemini_model - INFO - Model preference set to: Base Model
+2025-04-30 16:45:24,421 - gemini_model - INFO - Using base model
+2025-04-30 16:45:31,114 - gemini_model - INFO - Model response generated
+2025-04-30 16:45:31,754 - evaluation - INFO - [6/10] Evaluating gemini on query q6 (transportation)
+2025-04-30 16:45:31,754 - gemini_model - INFO - Model preference set to: Base Model
+2025-04-30 16:45:31,876 - gemini_model - INFO - Using base model
+2025-04-30 16:45:40,205 - gemini_model - INFO - Model response generated
+2025-04-30 16:45:40,853 - evaluation - INFO - [7/10] Evaluating gemini on query q7 (cultural_experiences)
+2025-04-30 16:45:40,853 - gemini_model - INFO - Model preference set to: Base Model
+2025-04-30 16:45:40,961 - gemini_model - INFO - Using base model
+2025-04-30 16:45:49,997 - gemini_model - INFO - Model response generated
+2025-04-30 16:45:50,620 - evaluation - INFO - [8/10] Evaluating gemini on query q8 (safety)
+2025-04-30 16:45:50,620 - gemini_model - INFO - Model preference set to: Base Model
+2025-04-30 16:45:50,819 - gemini_model - INFO - Using base model
+2025-04-30 16:46:00,833 - gemini_model - INFO - Model response generated
+2025-04-30 16:46:01,499 - evaluation - INFO - [9/10] Evaluating gemini on query q9 (sustainable_travel)
+2025-04-30 16:46:01,499 - gemini_model - INFO - Model preference set to: Base Model
+2025-04-30 16:46:01,638 - gemini_model - INFO - Using base model
+2025-04-30 16:46:11,063 - gemini_model - INFO - Model response generated
+2025-04-30 16:46:11,712 - evaluation - INFO - [10/10] Evaluating gemini on query q10 (cultural_awareness)
+2025-04-30 16:46:11,712 - gemini_model - INFO - Model preference set to: Base Model
+2025-04-30 16:46:11,844 - gemini_model - INFO - Using base model
+2025-04-30 16:46:19,155 - gemini_model - INFO - Model response generated
+2025-04-30 16:46:19,770 - evaluation - INFO - Completed pointwise evaluation of gemini model
+2025-04-30 16:46:19,776 - evaluation - INFO - Saved results to /Users/debicabrera/.cursor-tutor/L200-upskilling/evaluation/results/pointwise_gemini_20250430_164619.json
+2025-04-30 16:46:25,822 - evaluation - INFO - Saved summary table to /Users/debicabrera/.cursor-tutor/L200-upskilling/evaluation/results/summary_20250430_164625.csv
+2025-04-30 16:46:55,974 - evaluation - INFO - Loaded 10 test queries
+2025-04-30 16:46:56,046 - evaluation - INFO - Starting pointwise evaluation of gemma model on 10 queries
+2025-04-30 16:46:56,046 - evaluation - INFO - [1/10] Evaluating gemma on query q1 (destination_recommendations)
+2025-04-30 16:47:14,029 - evaluation - INFO - [2/10] Evaluating gemma on query q2 (itinerary_planning)
+2025-04-30 16:47:34,755 - evaluation - INFO - [3/10] Evaluating gemma on query q3 (food_recommendations)
+2025-04-30 16:47:50,349 - evaluation - INFO - [4/10] Evaluating gemma on query q4 (family_travel)
+2025-04-30 16:48:03,576 - evaluation - INFO - [5/10] Evaluating gemma on query q5 (travel_planning)
+2025-04-30 16:48:21,504 - evaluation - INFO - [6/10] Evaluating gemma on query q6 (transportation)
+2025-04-30 16:48:36,960 - evaluation - INFO - [7/10] Evaluating gemma on query q7 (cultural_experiences)
+2025-04-30 16:48:54,822 - evaluation - INFO - [8/10] Evaluating gemma on query q8 (safety)
+2025-04-30 16:49:16,713 - evaluation - INFO - [9/10] Evaluating gemma on query q9 (sustainable_travel)
+2025-04-30 16:49:36,190 - evaluation - INFO - [10/10] Evaluating gemma on query q10 (cultural_awareness)
+2025-04-30 16:49:53,115 - evaluation - INFO - Completed pointwise evaluation of gemma model
+2025-04-30 16:49:53,124 - evaluation - INFO - Saved results to /Users/debicabrera/.cursor-tutor/L200-upskilling/evaluation/results/pointwise_gemma_20250430_164953.json
+2025-04-30 16:49:58,705 - evaluation - INFO - Saved summary table to /Users/debicabrera/.cursor-tutor/L200-upskilling/evaluation/results/summary_20250430_164958.csv
+2025-04-30 16:54:54,245 - evaluation - INFO - Loaded 10 test queries
+2025-04-30 16:54:54,316 - evaluation - INFO - Starting pairwise evaluation of Gemini vs. Gemma on 10 queries
+2025-04-30 16:54:54,316 - evaluation - INFO - [1/10] Running pairwise evaluation on query q1 (destination_recommendations)
+2025-04-30 16:54:54,316 - gemini_model - INFO - Model preference set to: Base Model
+2025-04-30 16:54:54,784 - gemini_model - INFO - Using base model
+2025-04-30 16:55:01,706 - gemini_model - INFO - Model response generated
+2025-04-30 16:55:21,361 - evaluation - INFO - [2/10] Running pairwise evaluation on query q2 (itinerary_planning)
+2025-04-30 16:55:21,362 - gemini_model - INFO - Model preference set to: Base Model
+2025-04-30 16:55:21,468 - gemini_model - INFO - Using base model
+2025-04-30 16:55:32,856 - gemini_model - INFO - Model response generated
+2025-04-30 16:55:39,139 - evaluation - INFO - [3/10] Running pairwise evaluation on query q3 (food_recommendations)
+2025-04-30 16:55:39,140 - gemini_model - INFO - Model preference set to: Base Model
+2025-04-30 16:55:39,281 - gemini_model - INFO - Using base model
+2025-04-30 16:55:47,287 - gemini_model - INFO - Model response generated
+2025-04-30 16:56:08,373 - evaluation - INFO - [4/10] Running pairwise evaluation on query q4 (family_travel)
+2025-04-30 16:56:08,374 - gemini_model - INFO - Model preference set to: Base Model
+2025-04-30 16:56:08,515 - gemini_model - INFO - Using base model
+2025-04-30 16:56:20,103 - gemini_model - INFO - Model response generated
+2025-04-30 16:56:38,448 - evaluation - INFO - [5/10] Running pairwise evaluation on query q5 (travel_planning)
+2025-04-30 16:56:38,449 - gemini_model - INFO - Model preference set to: Base Model
+2025-04-30 16:56:38,622 - gemini_model - INFO - Using base model
+2025-04-30 16:56:47,141 - gemini_model - INFO - Model response generated
+2025-04-30 16:57:04,280 - evaluation - INFO - [6/10] Running pairwise evaluation on query q6 (transportation)
+2025-04-30 16:57:04,280 - gemini_model - INFO - Model preference set to: Base Model
+2025-04-30 16:57:04,454 - gemini_model - INFO - Using base model
+2025-04-30 16:57:13,129 - gemini_model - INFO - Model response generated
+2025-04-30 16:57:32,204 - evaluation - INFO - [7/10] Running pairwise evaluation on query q7 (cultural_experiences)
+2025-04-30 16:57:32,206 - gemini_model - INFO - Model preference set to: Base Model
+2025-04-30 16:57:32,309 - gemini_model - INFO - Using base model
+2025-04-30 16:57:43,100 - gemini_model - INFO - Model response generated
+2025-04-30 16:58:02,523 - evaluation - INFO - [8/10] Running pairwise evaluation on query q8 (safety)
+2025-04-30 16:58:02,523 - gemini_model - INFO - Model preference set to: Base Model
+2025-04-30 16:58:02,658 - gemini_model - INFO - Using base model
+2025-04-30 16:58:12,140 - gemini_model - INFO - Model response generated
+2025-04-30 16:58:35,586 - evaluation - INFO - [9/10] Running pairwise evaluation on query q9 (sustainable_travel)
+2025-04-30 16:58:35,586 - gemini_model - INFO - Model preference set to: Base Model
+2025-04-30 16:58:35,703 - gemini_model - INFO - Using base model
+2025-04-30 16:58:44,846 - gemini_model - INFO - Model response generated
+2025-04-30 16:59:06,167 - evaluation - INFO - [10/10] Running pairwise evaluation on query q10 (cultural_awareness)
+2025-04-30 16:59:06,169 - gemini_model - INFO - Model preference set to: Base Model
+2025-04-30 16:59:06,290 - gemini_model - INFO - Using base model
+2025-04-30 16:59:14,032 - gemini_model - INFO - Model response generated
+2025-04-30 16:59:37,948 - evaluation - INFO - Completed pairwise evaluation
+2025-04-30 16:59:37,958 - evaluation - INFO - Saved results to /Users/debicabrera/.cursor-tutor/L200-upskilling/evaluation/results/pairwise_comparison_20250430_165937.json
+2025-04-30 16:59:43,342 - evaluation - INFO - Saved summary table to /Users/debicabrera/.cursor-tutor/L200-upskilling/evaluation/results/summary_20250430_165943.csv
+2025-04-30 16:59:43,827 - evaluation - INFO - Saved comparison charts to /Users/debicabrera/.cursor-tutor/L200-upskilling/evaluation/results/charts_20250430_165943

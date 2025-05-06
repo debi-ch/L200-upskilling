@@ -1,0 +1,56 @@
+[
+  {
+    "model": "gemini",
+    "query_id": "q1",
+    "category": "destination_recommendations",
+    "query": "What are the must-visit places in Tokyo for a first-time visitor?",
+    "response": "Okay, welcome to Tokyo! For a first-time visitor, here's a list of must-visit places, balancing iconic landmarks with cultural experiences and a touch of modern fun:\n\n**1. Iconic Landmarks & Neighborhoods:**\n\n*   **Shibuya Crossing:** The world's busiest intersection. Experience the organized chaos from the pedestrian scramble and get a good viewpoint from the Shibuya Sky observation deck or the Starbucks overlooking the crossing.\n*   **Shinjuku Gyoen National Garden:** A beautiful oasis of calm amidst the bustling city. Offers a mix of Japanese, English, and French garden styles.\n*   **Senso-ji Temple (Asakusa):** Tokyo's oldest temple. Explore the Nakamise-dori market leading up to the temple for traditional crafts and snacks. A classic Tokyo experience.\n*   **Tokyo Skytree:** Offers panoramic views of the city and beyond. A good alternative to Tokyo Tower for modern architecture fans.\n*   **Imperial Palace East Garden:** The former site of Edo Castle. A peaceful place to stroll and appreciate history. The inner palace is not open to the public.\n*   **Tokyo Tower:** A symbol of Tokyo. Offers great views and a nostalgic vibe.\n\n**2. Cultural Experiences:**\n\n*   **Meiji Jingu Shrine:** A peaceful shrine dedicated to Emperor Meiji and Empress Shoken. A great place to experience Shinto spirituality.\n*   **Tsukiji Outer Market:** Offers fresh seafood, produce, and delicious street food. A great place for breakfast or lunch. While the inner market moved, the outer market is still very vibrant.\n*   **Ghibli Museum (Mitaka):** (Requires advance ticket purchase *well* in advance - often months!). If you're a fan of Studio Ghibli films, this is a must-visit. Book tickets online before your trip!\n*   **Sumo Wrestling (if in season/book in advance):** Attending a sumo tournament is an incredible cultural experience. Book tickets in advance. If not in season, consider visiting a sumo stable for a practice viewing (requires arrangements).\n*   **Traditional Tea Ceremony:** Experience the ritual and artistry of a Japanese tea ceremony.\n\n**3. Modern Fun & Entertainment:**\n\n*   **Harajuku (Takeshita Street):** Known for its unique street style, trendy shops, and colorful snacks. A must-see for fashion lovers.\n*   **Akihabara (Electric Town):** A paradise for anime, manga, video game, and electronics enthusiasts.\n*   **Ginza:** An upscale shopping district with department stores, designer boutiques, and art galleries.\n*   **Roppongi:** Known for its nightlife, art museums (Mori Art Museum, National Art Center), and observation decks (Roppongi Hills).\n*   **Ueno Park:** Home to several museums (Tokyo National Museum, Tokyo Metropolitan Art Museum, Tokyo Science Museum), a zoo, and Shinobazu Pond. A great place to spend a day.\n\n**Tips for First-Time Visitors:**\n\n*   **Purchase a Suica or Pasmo card:** These rechargeable cards make it easy to navigate the public transportation system.\n*   **Learn basic Japanese phrases:** While many people in Tokyo speak some English, knowing basic phrases like \"hello\" (konnichiwa), \"thank you\" (arigato), and \"excuse me\" (sumimasen) will be helpful.\n*   **Consider a Japan Rail Pass:** If you plan to travel outside of Tokyo, a Japan Rail Pass may be cost-effective.\n*   **Book accommodations in advance:** Especially during peak season.\n*   **Be prepared for crowds:** Tokyo is a densely populated city.\n*   **Enjoy the food!** Tokyo is a culinary paradise. Be adventurous and try new things.\n*   **Respect local customs:** Learn about Japanese etiquette to avoid accidentally offending anyone.\n*   **Wi-Fi:** Consider renting a pocket Wi-Fi device or purchasing a local SIM card for internet access.\n\n**To help me tailor recommendations further, tell me:**\n\n*   **How long will you be in Tokyo?**\n*   **What are your interests? (e.g., Food, history, art, anime, nature)**\n*   **What's your budget?**\n\nHave a fantastic trip to Tokyo!\n",
+    "response_time": 9.863043069839478,
+    "evaluation": {
+      "basic": {
+        "response_length": 3904,
+        "word_count": 588
+      },
+      "structure": {
+        "has_intro": true,
+        "has_body": true,
+        "has_conclusion": false,
+        "structure_score": 0.6666666666666666
+      },
+      "formatting": {
+        "paragraph_count": 12,
+        "avg_paragraph_length": 323.5,
+        "list_item_count": 27,
+        "heading_count": 0,
+        "bold_text_count": 32,
+        "italic_text_count": 64,
+        "formatting_diversity_score": 0.8
+      },
+      "content": {
+        "relevance_score": 0.790909090909091
+      },
+      "travel_specific": {
+        "attractions": 0.6,
+        "food": 0.3,
+        "accommodation": 0.1111111111111111,
+        "transportation": 0.3,
+        "budget": 0.3,
+        "culture": 0.6666666666666666,
+        "practical_info": 0.4,
+        "overall_travel_score": 0.3825396825396825
+      },
+      "local_knowledge": {
+        "specific_place_mentions": 10,
+        "unique_specific_places": 10,
+        "time_references": 3,
+        "price_references": 0,
+        "estimated_local_terms_ratio": 0.6573426573426573,
+        "specificity_score": 1.3
+      },
+      "overall": {
+        "response_quality": 0.6737806637806638,
+        "specificity": 1.3
+      }
+    }
+  }
+]

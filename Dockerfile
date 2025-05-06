@@ -1,18 +1,30 @@
-# Python image to use.
-FROM python:3.12.8-slim-bullseye
+FROM python:3.9-slim
 
-# Set the working directory to /app
 WORKDIR /app
 
-# copy the requirements file used for dependencies
+# Copy requirements first for better caching
 COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Install any needed packages specified in requirements.txt
-RUN pip install --trusted-host pypi.python.org -r requirements.txt
-
-# Copy the rest of the working directory contents into the container at /app
+# Copy the application code
 COPY . .
 
-# Run streamlit app when the container launches
-ENTRYPOINT ["streamlit", "run", "chatbot_app.py", "--server.port=8080", "--server.address=0.0.0.0"]
+# Environment variables
+ENV PYTHONPATH=/app
+ENV CHATBOT_ENV=production
+ENV GCP_PROJECT_ID=learningemini
+ENV USE_TUNED_MODEL=true
 
+# Create logs directory
+RUN mkdir -p logs
+
+# Create a non-root user to run the app
+RUN useradd -m appuser
+RUN chown -R appuser:appuser /app
+USER appuser
+
+# Expose the Streamlit port
+EXPOSE 8501
+
+# Run the app
+CMD ["streamlit", "run", "app/frontend/chatbot_app.py", "--server.port=8501", "--server.address=0.0.0.0"] 

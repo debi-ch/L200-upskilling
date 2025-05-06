@@ -9,6 +9,7 @@ Current Status:
 - Using Cloud Build for deployments
 - Using Artifact Registry for container images
 - Advanced prompt management system with versioning
+- Comprehensive model evaluation framework
 
 Features:
 - Web-based chat interface with Streamlit
@@ -20,6 +21,7 @@ Features:
 - Specialized travel agent personas:
   - Gemini: Local-focused cultural guide
   - Gemma: Mexican pirate character
+- Model performance evaluation and comparison tools
 
 To get started:
 1. Activate virtual environment: 
@@ -55,6 +57,19 @@ To get started:
      --allow-unauthenticated
    ```
 
+6. Evaluate model performance:
+   ```bash
+   # Navigate to evaluation directory
+   cd evaluation
+   
+   # Run complete evaluation process
+   ./run_evaluation_lab.sh
+   
+   # Or run individual evaluations
+   ./evaluate_models.sh pointwise --model gemini
+   ./evaluate_models.sh pairwise
+   ```
+
 Local Development:
 - All code is in L200-upskilling directory
 - Using virtual environment for Python dependencies
@@ -68,6 +83,7 @@ Dependencies:
 - google-cloud-firestore
 - streamlit
 - google-genai
+- pandas and matplotlib (for evaluation)
 
 Prompt Management:
 - Support for multiple prompt versions per model
@@ -76,6 +92,26 @@ Prompt Management:
 - Easy switching between different prompts
 - Specialized travel agent prompts for each model
 
+Model Evaluation Framework:
+- Pointwise evaluation of individual models
+- Pairwise comparison between Gemini and Gemma
+- Comprehensive metrics:
+  - Response time and length
+  - Quality scoring based on content and structure
+  - Travel-specific domain metrics
+  - Response specificity and detail level
+- Visualization tools for performance analysis
+- Customizable test queries and evaluation criteria
+- Lab guide for running evaluations and interpreting results
+
+Documentation:
+- `README.md`: Main project documentation (this file)
+- `evaluation/README.md`: Technical overview of the evaluation pipeline
+- `evaluation/LAB_OVERVIEW.md`: Guide to the evaluation lab materials
+- `evaluation/MODEL_EVALUATION_LAB.md`: Step-by-step lab guide for running evaluations
+- `evaluation/QUERY_CREATION_GUIDELINES.md`: Guidelines for creating effective test queries
+- `evaluation/LAB_README.md`: Instructions for lab instructors
+
 Recent Updates:
 - Migrated to Vertex AI SDK
 - Implemented prompt version control system
@@ -83,73 +119,73 @@ Recent Updates:
 - Enhanced error handling and debugging
 - Added support for both Gemini and Gemma models
 - Updated deployment process for new dependencies
+- Implemented comprehensive model evaluation framework
+- Created lab materials for model evaluation training
 
 ## Deployment
 The chatbot is currently deployed and accessible at:
 https://chatbot-app-708208532564.us-central1.run.app
 
 ## Next Steps (Week 3)
-### Current Challenges
-The Gemma 9B-IT model, while powerful, currently exhibits some behavioral issues:
-- Tends to ask multiple follow-up questions instead of providing direct answers
-- Sometimes struggles to maintain the Mexican Pirate persona while giving substantive responses
-- May need better guidance on when to ask questions vs. when to provide information
 
-### Model Fine-tuning Focus
-1. **Parameter Optimization (First Priority)**
-   - Current parameters:
-     ```python
-     parameters = {
-         "maxOutputTokens": 2048,
-         "temperature": 0.7,
-         "topP": 0.95,
-         "topK": 40
-     }
-     ```
-   - Plan to test:
-     - Lower temperature (0.3-0.5) for more focused responses
-     - Adjusted topP and topK values
-     - Different max output token lengths
-   - Track impact on response directness and persona consistency
+### Model Fine-tuning and Deployment
 
-2. **Prompt Engineering (Second Priority)**
-   - Current prompt structure may need reinforcement on:
-     - When to ask vs. when to answer
-     - Balancing character roleplay with information delivery
-     - Handling partial information scenarios
-   - Will test variations of the pirate persona prompt with:
-     - Explicit instruction about question-asking behavior
-     - Examples of good response patterns
-     - Clearer decision trees for information gathering
+1. **Fine-tune Gemini Model with OpenAssistant Guanaco Dataset**
+   - Set up fine-tuning environment with Vertex AI
+   - Acquire and preprocess the OpenAssistant Guanaco dataset from HuggingFace
+   - Format the dataset for Gemini fine-tuning requirements
+   - Configure training hyperparameters for optimal learning
+   - Execute fine-tuning process on Vertex AI
+   - Monitor training metrics and early stopping criteria
+   - Validate model performance with test set
 
-3. **Fine-tuning Pipeline (If Needed)**
-   - Prepare training data from successful interactions
-   - Focus on examples where direct answers were provided
-   - Include varied scenarios:
-     - Complete information available → direct answer
-     - Partial information → answer what's known, then ask specific questions
-     - Missing critical information → focused clarifying questions
+2. **Model Registry and Deployment**
+   - Save the fine-tuned model to Model Registry / Model Garden
+   - Alternatively, upload the model to Hugging Face for community use
+   - Document model architecture, training dataset, and performance metrics
+   - Set up a Vertex AI endpoint for model serving
+   - Configure scaling parameters and resource allocation
+   - Deploy the model to the endpoint
+   - Set up monitoring and logging for the deployed model
+
+3. **Integration with Existing Application**
+   - Update the API client code to support the new model endpoint
+   - Add functionality to switch between base and fine-tuned models
+   - Implement fallback mechanisms for endpoint failures
+   - Create a benchmark system to compare model versions
+   - Develop A/B testing framework to evaluate user satisfaction
+   - Add user feedback collection to further improve the model
 
 4. **Evaluation Framework**
-   - Metrics to track:
-     - Question-to-answer ratio in responses
-     - Persona consistency score
-     - Response relevance and completeness
-     - User satisfaction ratings
-   - A/B testing between different parameter sets and prompts
-   - Regular review of chat logs for behavioral patterns
+   - Define evaluation metrics for the fine-tuned model:
+     - Response relevance and quality
+     - Domain-specific knowledge accuracy
+     - Personality consistency
+     - Response time and latency
+   - Compare fine-tuned model performance against baseline
+   - Gather user feedback through the application interface
+   - Analyze improvements and areas for further refinement
+   - Use the new evaluation framework to measure improvements:
+     ```bash
+     # Compare base model vs fine-tuned model
+     cd evaluation
+     ./evaluate_models.sh pairwise --model1 gemini-base --model2 gemini-tuned
+     ```
 
-5. **Implementation Roadmap**
-   - Week 3.1: Parameter optimization and testing
-   - Week 3.2: Prompt engineering and refinement
-   - Week 3.3: Evaluation framework setup
-   - Week 3.4: Fine-tuning if previous steps insufficient
-   - Week 3.5: Final optimization and documentation
+### Implementation Timeline
+- Week 3.1: Dataset acquisition and preprocessing
+- Week 3.2: Fine-tuning execution and model validation
+- Week 3.3: Model registry and endpoint deployment
+- Week 3.4: Application integration and testing
+- Week 3.5: Performance evaluation and documentation
 
 ### Success Criteria
-- Gemma model should:
-  - Provide direct answers when sufficient information is available
-  - Maintain Mexican Pirate persona while being informative
-  - Ask questions only when critical information is missing
-  - Keep follow-up questions focused and minimal
+- Fine-tuned model should:
+  - Demonstrate improved domain expertise in travel and culture
+  - Maintain consistent personality traits based on selected persona
+  - Achieve higher relevance scores compared to the base model
+  - Show reduced latency in real-world application usage
+  - Receive positive user feedback on response quality
+  - Show measurable improvements in the evaluation framework metrics
+
 
