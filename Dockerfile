@@ -14,6 +14,7 @@ ENV PYTHONPATH=/app
 ENV CHATBOT_ENV=production
 ENV GCP_PROJECT_ID=learningemini
 ENV USE_TUNED_MODEL=true
+ENV PORT=8080
 
 # Create logs directory
 RUN mkdir -p logs
@@ -23,8 +24,8 @@ RUN useradd -m appuser
 RUN chown -R appuser:appuser /app
 USER appuser
 
-# Expose the Streamlit port
-EXPOSE 8501
+# Expose the port
+EXPOSE ${PORT}
 
-# Run the app
-CMD ["streamlit", "run", "app/frontend/chatbot_app.py", "--server.port=8501", "--server.address=0.0.0.0"] 
+# Run the app - use the PORT env variable
+CMD streamlit run app/frontend/chatbot_app.py --server.port=${PORT} --server.address=0.0.0.0 
