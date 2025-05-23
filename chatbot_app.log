@@ -1,3 +1,307 @@
 2025-04-29 15:40:07,526 - gemini_model - INFO - Model preference set to: Base Model
 2025-04-29 15:40:09,094 - gemini_model - INFO - Using base model
 2025-04-29 15:40:31,608 - gemini_model - INFO - Model response generated
+2025-05-22 19:33:17,630 - rag_embedding_service - INFO - EmbeddingService configured
+2025-05-22 19:33:22,590 - rag_vector_db - INFO - VectorSearchDB configured:
+2025-05-22 19:33:23,362 - rag_document_processor - INFO - DocumentProcessor initialized
+2025-05-22 19:33:24,230 - rag_engine - INFO - RAGEngine initialized.
+2025-05-22 19:33:26,906 - rag_vector_db - INFO - VectorSearchDB configured:
+2025-05-22 19:33:27,023 - rag_document_processor - INFO - DocumentProcessor initialized
+2025-05-22 19:33:27,180 - rag_engine - INFO - RAGEngine initialized.
+2025-05-22 19:33:27,361 - gemini_rag_model - INFO - Loading RAG data from: /Users/debicabrera/.cursor-tutor/L200-upskilling/data/travel/sample_travel.ndjson...
+2025-05-22 19:33:28,354 - rag_engine - INFO - RAGEngine: Starting dataset processing for /Users/debicabrera/.cursor-tutor/L200-upskilling/data/travel/sample_travel.ndjson
+2025-05-22 19:33:28,493 - rag_vector_db - INFO - Initializing Vertex AI SDK for project: learningemini, location: us-central1
+2025-05-22 19:33:30,096 - rag_vector_db - INFO - Using existing Vector Search index: travel_documents_index (projects/708208532564/locations/us-central1/indexes/514151428357357568)
+2025-05-22 19:33:31,030 - rag_vector_db - INFO - Found existing Vector Search endpoint: travel_index_endpoint (projects/708208532564/locations/us-central1/indexEndpoints/5284202305556578304). Re-instantiating with explicit credentials.
+2025-05-22 19:33:31,869 - rag_vector_db - INFO - Re-instantiated existing endpoint: travel_index_endpoint
+2025-05-22 19:33:32,005 - rag_vector_db - INFO - Endpoint public domain name: 1930169006.us-central1-708208532564.vdb.vertexai.goog
+2025-05-22 19:33:32,152 - rag_vector_db - INFO - Entering _deploy_index_to_endpoint. Type of self.index: <class 'google.cloud.aiplatform.matching_engine.matching_engine_index.MatchingEngineIndex'>, Value: <google.cloud.aiplatform.matching_engine.matching_engine_index.MatchingEngineIndex object at 0x110fa0340> 
+resource name: projects/708208532564/locations/us-central1/indexes/514151428357357568
+2025-05-22 19:33:32,322 - rag_vector_db - INFO - Type of self.index_endpoint: <class 'google.cloud.aiplatform.matching_engine.matching_engine_index_endpoint.MatchingEngineIndexEndpoint'>, Value: <google.cloud.aiplatform.matching_engine.matching_engine_index_endpoint.MatchingEngineIndexEndpoint object at 0x110f81190> 
+resource name: projects/708208532564/locations/us-central1/indexEndpoints/5284202305556578304
+2025-05-22 19:33:32,462 - rag_vector_db - INFO - Index 'travel_documents_index' (as 'travel_index_deploy_v2') already deployed.
+2025-05-22 19:33:32,586 - rag_vector_db - INFO - VectorSearchDB initialized successfully (infrastructure checked/created/deployed).
+2025-05-22 19:33:32,781 - rag_embedding_service - INFO - Initializing Vertex AI for Embedding Service: project=learningemini, location=us-central1
+2025-05-22 19:33:33,655 - rag_embedding_service - INFO - Embedding model 'text-embedding-005' loaded successfully.
+2025-05-22 19:33:38,363 - rag_document_processor - INFO - Successfully processed. Total chunks for upsert: 20. Total text mappings: 20 from /Users/debicabrera/.cursor-tutor/L200-upskilling/data/travel/sample_travel.ndjson.
+2025-05-22 19:33:38,532 - rag_engine - INFO - RAGEngine: Stored/updated text map with 20 new entries. Total map size: 20.
+2025-05-22 19:33:38,682 - rag_engine - INFO - RAGEngine: Upserting 20 processed chunks to VectorDB.
+2025-05-22 19:33:38,819 - rag_vector_db - INFO - Upserting 20 datapoints to index travel_documents_index (projects/708208532564/locations/us-central1/indexes/514151428357357568)
+2025-05-22 19:33:39,900 - rag_vector_db - INFO - Successfully upserted 20 documents.
+2025-05-22 19:33:40,035 - rag_engine - INFO - RAGEngine: Completed upserting. 20 chunks confirmed upserted.
+2025-05-22 19:33:40,209 - gemini_rag_model - INFO - RAG data loaded and processed. 20 items upserted/indexed.
+2025-05-22 19:33:40,361 - gemini_rag_model - INFO - RAG Chat: Received prompt: 'Are there any art-themed hotels in Recoleta?...'
+2025-05-22 19:33:40,514 - rag_engine - INFO - RAGEngine: Received query: 'Are there any art-themed hotels in Recoleta?...'
+2025-05-22 19:33:40,667 - rag_vector_db - INFO - VectorSearchDB already initialized.
+2025-05-22 19:33:40,799 - rag_vector_db - INFO - Performing search for query: 'Are there any art-themed hotels in Recoleta?...' with top_k=3
+2025-05-22 19:33:41,983 - rag_vector_db - INFO - Search completed. Found 3 results.
+2025-05-22 19:33:42,119 - rag_engine - INFO - Augmented prompt for LLM (first 300 chars): 
+Context information is provided below.
+---------------------
+A luxurious art-themed hotel in Recoleta, offering a sophisticated experience for art connoisseurs and culture enthusiasts. Expect elegantly appointed rooms featuring works by local artists, a private gallery, and curated art tours.
+---
+A...
+2025-05-22 19:33:42,283 - gemini_model - INFO - Using base model
+2025-05-22 19:33:44,163 - gemini_model - INFO - Model response generated
+2025-05-22 19:33:44,324 - rag_engine - INFO - RAGEngine: Query processing complete. LLM Call Succeeded: True. Found 3 relevant chunks.
+2025-05-22 19:33:44,496 - gemini_rag_model - INFO - RAG Chat: Received prompt: 'Tell me about hotels near San Telmo market with antique furnishings....'
+2025-05-22 19:33:44,674 - rag_engine - INFO - RAGEngine: Received query: 'Tell me about hotels near San Telmo market with antique furnishings....'
+2025-05-22 19:33:44,833 - rag_vector_db - INFO - VectorSearchDB already initialized.
+2025-05-22 19:33:44,984 - rag_vector_db - INFO - Performing search for query: 'Tell me about hotels near San Telmo market with antique furnishings....' with top_k=3
+2025-05-22 19:33:45,576 - rag_vector_db - INFO - Search completed. Found 3 results.
+2025-05-22 19:33:45,708 - rag_engine - INFO - Augmented prompt for LLM (first 300 chars): 
+Context information is provided below.
+---------------------
+A boutique hotel celebrating local craftsmanship, located on a quiet street in historic San Telmo. Ideal for travelers seeking authenticity and unique design. Expect rooms adorned with artisan pieces, a cozy cafe, and workshops with local...
+2025-05-22 19:33:45,884 - gemini_model - INFO - Using base model
+2025-05-22 19:33:47,483 - gemini_model - INFO - Model response generated
+2025-05-22 19:33:47,654 - rag_engine - INFO - RAGEngine: Query processing complete. LLM Call Succeeded: True. Found 3 relevant chunks.
+2025-05-22 19:33:47,803 - gemini_rag_model - INFO - RAG Chat: Received prompt: 'What are the best surf spots in Buenos Aires?...'
+2025-05-22 19:33:47,986 - rag_engine - INFO - RAGEngine: Received query: 'What are the best surf spots in Buenos Aires?...'
+2025-05-22 19:33:48,129 - rag_vector_db - INFO - VectorSearchDB already initialized.
+2025-05-22 19:33:48,284 - rag_vector_db - INFO - Performing search for query: 'What are the best surf spots in Buenos Aires?...' with top_k=3
+2025-05-22 19:33:49,100 - rag_vector_db - INFO - Search completed. Found 3 results.
+2025-05-22 19:33:49,299 - rag_engine - INFO - Augmented prompt for LLM (first 300 chars): 
+Context information is provided below.
+---------------------
+A charming hotel housed in a historic building, reflecting Buenos Aires' Belle Époque architecture. Ideal for history enthusiasts and cultural explorers. Expect classic decor, high ceilings, and a location steeped in political and cultura...
+2025-05-22 19:33:49,496 - gemini_model - INFO - Using base model
+2025-05-22 19:33:51,053 - gemini_model - INFO - Model response generated
+2025-05-22 19:33:51,208 - rag_engine - INFO - RAGEngine: Query processing complete. LLM Call Succeeded: True. Found 3 relevant chunks.
+2025-05-22 20:52:43,253 - rag_embedding_service - INFO - EmbeddingService configured
+2025-05-22 20:52:48,400 - rag_vector_db - INFO - VectorSearchDB configured:
+2025-05-22 20:52:49,322 - rag_document_processor - INFO - DocumentProcessor initialized
+2025-05-22 20:52:50,139 - rag_engine - INFO - RAGEngine initialized.
+2025-05-22 20:53:47,426 - gemini_model - INFO - Model preference set to: Base Model
+2025-05-22 20:53:49,101 - gemini_rag_model - INFO - Loading RAG data from: /Users/debicabrera/.cursor-tutor/L200-upskilling/data/travel/sample_travel.ndjson...
+2025-05-22 20:53:49,968 - rag_engine - INFO - RAGEngine: Starting dataset processing for /Users/debicabrera/.cursor-tutor/L200-upskilling/data/travel/sample_travel.ndjson
+2025-05-22 20:53:50,155 - rag_vector_db - INFO - Initializing Vertex AI SDK for project: learningemini, location: us-central1
+2025-05-22 20:53:52,285 - rag_vector_db - INFO - Using existing Vector Search index: travel_documents_index (projects/708208532564/locations/us-central1/indexes/514151428357357568)
+2025-05-22 20:53:53,281 - rag_vector_db - INFO - Found existing Vector Search endpoint: travel_index_endpoint (projects/708208532564/locations/us-central1/indexEndpoints/5284202305556578304). Re-instantiating with explicit credentials.
+2025-05-22 20:53:54,328 - rag_vector_db - INFO - Re-instantiated existing endpoint: travel_index_endpoint
+2025-05-22 20:53:54,504 - rag_vector_db - INFO - Endpoint public domain name: 1930169006.us-central1-708208532564.vdb.vertexai.goog
+2025-05-22 20:53:54,682 - rag_vector_db - INFO - Entering _deploy_index_to_endpoint. Type of self.index: <class 'google.cloud.aiplatform.matching_engine.matching_engine_index.MatchingEngineIndex'>, Value: <google.cloud.aiplatform.matching_engine.matching_engine_index.MatchingEngineIndex object at 0x139a6a130> 
+resource name: projects/708208532564/locations/us-central1/indexes/514151428357357568
+2025-05-22 20:53:54,835 - rag_vector_db - INFO - Type of self.index_endpoint: <class 'google.cloud.aiplatform.matching_engine.matching_engine_index_endpoint.MatchingEngineIndexEndpoint'>, Value: <google.cloud.aiplatform.matching_engine.matching_engine_index_endpoint.MatchingEngineIndexEndpoint object at 0x102aa5790> 
+resource name: projects/708208532564/locations/us-central1/indexEndpoints/5284202305556578304
+2025-05-22 20:53:54,998 - rag_vector_db - INFO - Index 'travel_documents_index' (as 'travel_index_deploy_v2') already deployed.
+2025-05-22 20:53:55,176 - rag_vector_db - INFO - VectorSearchDB initialized successfully (infrastructure checked/created/deployed).
+2025-05-22 20:53:55,331 - rag_embedding_service - INFO - Initializing Vertex AI for Embedding Service: project=learningemini, location=us-central1
+2025-05-22 20:53:56,508 - rag_embedding_service - INFO - Embedding model 'text-embedding-005' loaded successfully.
+2025-05-22 20:54:00,928 - rag_document_processor - INFO - Successfully processed. Total chunks for upsert: 20. Total text mappings: 20 from /Users/debicabrera/.cursor-tutor/L200-upskilling/data/travel/sample_travel.ndjson.
+2025-05-22 20:54:01,105 - rag_engine - INFO - RAGEngine: Stored/updated text map with 20 new entries. Total map size: 20.
+2025-05-22 20:54:01,264 - rag_engine - INFO - RAGEngine: Upserting 20 processed chunks to VectorDB.
+2025-05-22 20:54:01,442 - rag_vector_db - INFO - Upserting 20 datapoints to index travel_documents_index (projects/708208532564/locations/us-central1/indexes/514151428357357568)
+2025-05-22 20:54:02,550 - rag_vector_db - INFO - Successfully upserted 20 documents.
+2025-05-22 20:54:02,700 - rag_engine - INFO - RAGEngine: Completed upserting. 20 chunks confirmed upserted.
+2025-05-22 20:54:02,856 - gemini_rag_model - INFO - RAG data loaded and processed. 20 items upserted/indexed.
+2025-05-22 20:54:03,033 - gemini_rag_model - INFO - RAG Chat: Received prompt: 'Tell me the best places to have tea in buenos aires...'
+2025-05-22 20:54:03,229 - rag_engine - INFO - RAGEngine: Received query: 'Tell me the best places to have tea in buenos aires...'
+2025-05-22 20:54:03,420 - rag_vector_db - INFO - VectorSearchDB already initialized.
+2025-05-22 20:54:03,589 - rag_vector_db - INFO - Performing search for query: 'Tell me the best places to have tea in buenos aires...' with top_k=3
+2025-05-22 20:54:04,831 - rag_vector_db - INFO - Search completed. Found 3 results.
+2025-05-22 20:54:04,965 - rag_engine - INFO - Augmented prompt for LLM (first 300 chars): 
+Context information is provided below.
+---------------------
+An elegant hotel with a serene private garden, offering a peaceful oasis in upscale Recoleta. Suited for travelers seeking tranquility and refined comfort. Expect beautifully decorated rooms, afternoon tea service, and a quiet library.
+--...
+2025-05-22 20:54:05,145 - gemini_model - INFO - Using base model
+2025-05-22 20:54:06,641 - gemini_model - INFO - Model response generated
+2025-05-22 20:54:06,769 - rag_engine - INFO - RAGEngine: Query processing complete. LLM Call Succeeded: True. Found 3 relevant chunks.
+2025-05-22 20:59:11,814 - rag_embedding_service - INFO - EmbeddingService configured
+2025-05-22 21:00:34,798 - rag_embedding_service - INFO - EmbeddingService configured
+2025-05-22 21:00:39,291 - test_rag_query - INFO - Starting RAG query test...
+2025-05-22 21:00:40,066 - test_rag_query - INFO - Using data file for ingestion: /Users/debicabrera/.cursor-tutor/L200-upskilling/data/travel/sample_travel.ndjson
+2025-05-22 21:00:40,258 - rag_vector_db - INFO - VectorSearchDB configured:
+2025-05-22 21:00:41,008 - rag_document_processor - INFO - DocumentProcessor initialized
+2025-05-22 21:00:41,759 - rag_engine - INFO - RAGEngine initialized.
+2025-05-22 21:00:42,540 - test_rag_query - INFO - Performing data ingestion first to populate text map and ensure index has data...
+2025-05-22 21:00:42,714 - rag_engine - INFO - RAGEngine: Starting dataset processing for /Users/debicabrera/.cursor-tutor/L200-upskilling/data/travel/sample_travel.ndjson
+2025-05-22 21:00:42,903 - rag_vector_db - INFO - Initializing Vertex AI SDK for project: learningemini, location: us-central1
+2025-05-22 21:00:44,618 - rag_vector_db - INFO - Using existing Vector Search index: travel_documents_index (projects/708208532564/locations/us-central1/indexes/514151428357357568)
+2025-05-22 21:00:45,680 - rag_vector_db - INFO - Found existing Vector Search endpoint: travel_index_endpoint (projects/708208532564/locations/us-central1/indexEndpoints/5284202305556578304). Re-instantiating with explicit credentials.
+2025-05-22 21:00:47,041 - rag_vector_db - INFO - Re-instantiated existing endpoint: travel_index_endpoint
+2025-05-22 21:00:47,264 - rag_vector_db - INFO - Endpoint public domain name: 1930169006.us-central1-708208532564.vdb.vertexai.goog
+2025-05-22 21:00:47,411 - rag_vector_db - INFO - Entering _deploy_index_to_endpoint. Type of self.index: <class 'google.cloud.aiplatform.matching_engine.matching_engine_index.MatchingEngineIndex'>, Value: <google.cloud.aiplatform.matching_engine.matching_engine_index.MatchingEngineIndex object at 0x151423670> 
+resource name: projects/708208532564/locations/us-central1/indexes/514151428357357568
+2025-05-22 21:00:47,534 - rag_vector_db - INFO - Type of self.index_endpoint: <class 'google.cloud.aiplatform.matching_engine.matching_engine_index_endpoint.MatchingEngineIndexEndpoint'>, Value: <google.cloud.aiplatform.matching_engine.matching_engine_index_endpoint.MatchingEngineIndexEndpoint object at 0x1514009a0> 
+resource name: projects/708208532564/locations/us-central1/indexEndpoints/5284202305556578304
+2025-05-22 21:00:47,689 - rag_vector_db - INFO - Index 'travel_documents_index' (as 'travel_index_deploy_v2') already deployed.
+2025-05-22 21:00:47,855 - rag_vector_db - INFO - VectorSearchDB initialized successfully (infrastructure checked/created/deployed).
+2025-05-22 21:00:48,034 - rag_embedding_service - INFO - Initializing Vertex AI for Embedding Service: project=learningemini, location=us-central1
+2025-05-22 21:00:49,054 - rag_embedding_service - INFO - Embedding model 'text-embedding-005' loaded successfully.
+2025-05-22 21:00:55,421 - rag_document_processor - INFO - Successfully processed. Total chunks for upsert: 20. Total text mappings: 20 from /Users/debicabrera/.cursor-tutor/L200-upskilling/data/travel/sample_travel.ndjson.
+2025-05-22 21:00:55,615 - rag_engine - INFO - RAGEngine: Stored/updated text map with 20 new entries. Total map size: 20.
+2025-05-22 21:00:55,843 - rag_engine - INFO - RAGEngine: Upserting 20 processed chunks to VectorDB.
+2025-05-22 21:00:55,974 - rag_vector_db - INFO - Upserting 20 datapoints to index travel_documents_index (projects/708208532564/locations/us-central1/indexes/514151428357357568)
+2025-05-22 21:00:56,140 - rag_vector_db - ERROR - Failed to upsert datapoints to index travel_documents_index
+2025-05-22 21:00:56,299 - test_rag_query - ERROR - FAILURE during data ingestion step in query test script.
+2025-05-22 21:04:02,910 - rag_embedding_service - INFO - EmbeddingService configured
+2025-05-22 21:04:07,778 - test_rag_query - INFO - Starting RAG query test...
+2025-05-22 21:04:08,583 - test_rag_query - INFO - Using data file for ingestion: /Users/debicabrera/.cursor-tutor/L200-upskilling/data/travel/sample_travel.ndjson
+2025-05-22 21:04:08,731 - rag_vector_db - INFO - VectorSearchDB configured:
+2025-05-22 21:04:09,579 - rag_document_processor - INFO - DocumentProcessor initialized
+2025-05-22 21:04:10,510 - rag_engine - INFO - RAGEngine initialized.
+2025-05-22 21:04:11,286 - test_rag_query - INFO - Performing data ingestion first to populate text map and ensure index has data...
+2025-05-22 21:04:11,430 - rag_engine - INFO - RAGEngine: Starting dataset processing for /Users/debicabrera/.cursor-tutor/L200-upskilling/data/travel/sample_travel.ndjson
+2025-05-22 21:04:11,602 - rag_vector_db - INFO - Initializing Vertex AI SDK for project: learningemini, location: us-central1
+2025-05-22 21:04:13,370 - rag_vector_db - INFO - Using existing Vector Search index: travel_documents_index (projects/708208532564/locations/us-central1/indexes/514151428357357568)
+2025-05-22 21:04:14,438 - rag_vector_db - INFO - Found existing Vector Search endpoint: travel_index_endpoint (projects/708208532564/locations/us-central1/indexEndpoints/5284202305556578304). Re-instantiating with explicit credentials.
+2025-05-22 21:04:15,285 - rag_vector_db - INFO - Re-instantiated existing endpoint: travel_index_endpoint
+2025-05-22 21:04:15,443 - rag_vector_db - INFO - Endpoint public domain name: 1930169006.us-central1-708208532564.vdb.vertexai.goog
+2025-05-22 21:04:15,603 - rag_vector_db - INFO - Entering _deploy_index_to_endpoint. Type of self.index: <class 'google.cloud.aiplatform.matching_engine.matching_engine_index.MatchingEngineIndex'>, Value: <google.cloud.aiplatform.matching_engine.matching_engine_index.MatchingEngineIndex object at 0x11eee5700> 
+resource name: projects/708208532564/locations/us-central1/indexes/514151428357357568
+2025-05-22 21:04:15,748 - rag_vector_db - INFO - Type of self.index_endpoint: <class 'google.cloud.aiplatform.matching_engine.matching_engine_index_endpoint.MatchingEngineIndexEndpoint'>, Value: <google.cloud.aiplatform.matching_engine.matching_engine_index_endpoint.MatchingEngineIndexEndpoint object at 0x11eebc730> 
+resource name: projects/708208532564/locations/us-central1/indexEndpoints/5284202305556578304
+2025-05-22 21:04:15,908 - rag_vector_db - INFO - Index 'travel_documents_index' (as 'travel_index_deploy_v2') already deployed.
+2025-05-22 21:04:16,069 - rag_vector_db - INFO - VectorSearchDB initialized successfully (infrastructure checked/created/deployed).
+2025-05-22 21:04:16,182 - rag_embedding_service - INFO - Initializing Vertex AI for Embedding Service: project=learningemini, location=us-central1
+2025-05-22 21:04:17,157 - rag_embedding_service - INFO - Embedding model 'text-embedding-005' loaded successfully.
+2025-05-22 21:04:21,633 - rag_document_processor - INFO - Successfully processed. Total chunks for upsert: 20. Total chunk data mappings: 20 from /Users/debicabrera/.cursor-tutor/L200-upskilling/data/travel/sample_travel.ndjson.
+2025-05-22 21:04:21,830 - rag_engine - INFO - RAGEngine: Stored/updated chunk data map with 20 new entries. Total map size: 20.
+2025-05-22 21:04:21,964 - rag_engine - INFO - RAGEngine: Upserting 20 processed chunks to VectorDB.
+2025-05-22 21:04:22,097 - rag_vector_db - INFO - Upserting 20 datapoints to index travel_documents_index (projects/708208532564/locations/us-central1/indexes/514151428357357568)
+2025-05-22 21:04:23,365 - rag_vector_db - INFO - Successfully upserted 20 documents.
+2025-05-22 21:04:23,512 - rag_engine - INFO - RAGEngine: Completed upserting. 20 chunks confirmed upserted.
+2025-05-22 21:04:23,684 - test_rag_query - INFO - Data ingestion step completed. 20 items processed/upserted.
+2025-05-22 21:04:23,847 - test_rag_query - INFO - 
+--- Test Case 1: Querying for: 'Are there any art-themed hotels in Recoleta?' ---
+2025-05-22 21:04:26,795 - rag_vector_db - INFO - VectorSearchDB configured:
+2025-05-22 21:04:26,931 - rag_document_processor - INFO - DocumentProcessor initialized
+2025-05-22 21:04:27,069 - rag_engine - INFO - RAGEngine initialized.
+2025-05-22 21:04:27,218 - rag_engine - INFO - RAGEngine: Received query: 'Are there any art-themed hotels in Recoleta?...'
+2025-05-22 21:04:27,371 - rag_vector_db - INFO - VectorSearchDB already initialized.
+2025-05-22 21:04:27,558 - rag_vector_db - INFO - Performing search for query: 'Are there any art-themed hotels in Recoleta?...' with top_k=3
+2025-05-22 21:04:29,034 - rag_vector_db - INFO - Search completed. Found 3 results.
+2025-05-22 21:04:29,171 - rag_engine - INFO - Augmented prompt for LLM (first 300 chars): 
+Context information is provided below.
+---------------------
+From hotel 'Alvear Art Hotel' (chunk: sample_travel.ndjson_Alvear Art Hotel_chunk_0):
+A luxurious art-themed hotel in Recoleta, offering a sophisticated experience for art connoisseurs and culture enthusiasts. Expect elegantly appointed r...
+2025-05-22 21:04:29,302 - gemini_model - INFO - Using base model
+2025-05-22 21:04:31,425 - gemini_model - INFO - Model response generated
+2025-05-22 21:04:31,582 - rag_engine - INFO - RAGEngine: Query processing complete. LLM Call Succeeded: True. Found 3 relevant chunks.
+2025-05-22 21:04:31,739 - test_rag_query - INFO - 
+--- Test Case 2: Querying for: 'What are the best surf spots in Buenos Aires?' ---
+2025-05-22 21:04:31,945 - rag_engine - INFO - RAGEngine: Received query: 'What are the best surf spots in Buenos Aires?...'
+2025-05-22 21:04:32,118 - rag_vector_db - INFO - VectorSearchDB already initialized.
+2025-05-22 21:04:32,246 - rag_vector_db - INFO - Performing search for query: 'What are the best surf spots in Buenos Aires?...' with top_k=3
+2025-05-22 21:04:32,866 - rag_vector_db - INFO - Search completed. Found 3 results.
+2025-05-22 21:04:33,024 - rag_engine - INFO - Augmented prompt for LLM (first 300 chars): 
+Context information is provided below.
+---------------------
+From hotel 'Monserrat Heritage Inn' (chunk: sample_travel.ndjson_Monserrat Heritage Inn_chunk_0):
+A charming hotel housed in a historic building, reflecting Buenos Aires' Belle Époque architecture. Ideal for history enthusiasts and cultur...
+2025-05-22 21:04:33,164 - gemini_model - INFO - Using base model
+2025-05-22 21:04:34,288 - gemini_model - INFO - Model response generated
+2025-05-22 21:04:34,450 - rag_engine - INFO - RAGEngine: Query processing complete. LLM Call Succeeded: True. Found 3 relevant chunks.
+2025-05-22 21:08:13,400 - gemini_model - INFO - Model preference set to: Base Model
+2025-05-22 21:08:14,658 - gemini_rag_model - INFO - RAG Chat: Received prompt: 'which are the best hotels located in palermo in buenos aires...'
+2025-05-22 21:08:14,920 - rag_engine - INFO - RAGEngine: Received query: 'which are the best hotels located in palermo in buenos aires...'
+2025-05-22 21:08:15,219 - rag_vector_db - INFO - VectorSearchDB already initialized.
+2025-05-22 21:08:15,511 - rag_vector_db - INFO - Performing search for query: 'which are the best hotels located in palermo in buenos aires...' with top_k=3
+2025-05-22 21:08:16,401 - rag_vector_db - ERROR - Error during vector search operation
+2025-05-22 21:12:51,088 - rag_embedding_service - INFO - EmbeddingService configured
+2025-05-22 21:12:55,940 - rag_vector_db - INFO - VectorSearchDB configured:
+2025-05-22 21:12:56,761 - rag_document_processor - INFO - DocumentProcessor initialized
+2025-05-22 21:12:57,560 - rag_engine - INFO - RAGEngine initialized.
+2025-05-22 21:13:20,024 - gemini_model - INFO - Model preference set to: Base Model
+2025-05-22 21:13:21,552 - gemini_model - INFO - Using base model
+2025-05-22 21:13:33,217 - gemini_model - INFO - Model response generated
+2025-05-22 21:13:35,957 - gemini_model - INFO - Model preference set to: Base Model
+2025-05-22 21:13:37,004 - gemini_rag_model - INFO - Loading RAG data from: /Users/debicabrera/.cursor-tutor/L200-upskilling/data/travel/sample_travel.ndjson...
+2025-05-22 21:13:37,808 - rag_engine - INFO - RAGEngine: Starting dataset processing for /Users/debicabrera/.cursor-tutor/L200-upskilling/data/travel/sample_travel.ndjson
+2025-05-22 21:13:37,973 - rag_vector_db - INFO - Initializing Vertex AI SDK for project: learningemini, location: us-central1
+2025-05-22 21:13:38,954 - rag_vector_db - INFO - Using existing Vector Search index: travel_documents_index (projects/708208532564/locations/us-central1/indexes/514151428357357568)
+2025-05-22 21:13:39,760 - rag_vector_db - INFO - Found existing Vector Search endpoint: travel_index_endpoint (projects/708208532564/locations/us-central1/indexEndpoints/5284202305556578304). Re-instantiating with explicit credentials.
+2025-05-22 21:13:40,682 - rag_vector_db - INFO - Re-instantiated existing endpoint: travel_index_endpoint
+2025-05-22 21:13:40,851 - rag_vector_db - INFO - Endpoint public domain name: 1930169006.us-central1-708208532564.vdb.vertexai.goog
+2025-05-22 21:13:41,035 - rag_vector_db - INFO - Entering _deploy_index_to_endpoint. Type of self.index: <class 'google.cloud.aiplatform.matching_engine.matching_engine_index.MatchingEngineIndex'>, Value: <google.cloud.aiplatform.matching_engine.matching_engine_index.MatchingEngineIndex object at 0x156c2bc10> 
+resource name: projects/708208532564/locations/us-central1/indexes/514151428357357568
+2025-05-22 21:13:41,175 - rag_vector_db - INFO - Type of self.index_endpoint: <class 'google.cloud.aiplatform.matching_engine.matching_engine_index_endpoint.MatchingEngineIndexEndpoint'>, Value: <google.cloud.aiplatform.matching_engine.matching_engine_index_endpoint.MatchingEngineIndexEndpoint object at 0x156c2b880> 
+resource name: projects/708208532564/locations/us-central1/indexEndpoints/5284202305556578304
+2025-05-22 21:13:41,351 - rag_vector_db - INFO - Index 'travel_documents_index' (as 'travel_index_deploy_v2') already deployed.
+2025-05-22 21:13:41,536 - rag_vector_db - INFO - VectorSearchDB initialized successfully (infrastructure checked/created/deployed).
+2025-05-22 21:13:41,711 - rag_embedding_service - INFO - Initializing Vertex AI for Embedding Service: project=learningemini, location=us-central1
+2025-05-22 21:13:42,668 - rag_embedding_service - INFO - Embedding model 'text-embedding-005' loaded successfully.
+2025-05-22 21:13:46,996 - rag_document_processor - INFO - Successfully processed. Total chunks for upsert: 20. Total chunk data mappings: 20 from /Users/debicabrera/.cursor-tutor/L200-upskilling/data/travel/sample_travel.ndjson.
+2025-05-22 21:13:47,151 - rag_engine - INFO - RAGEngine: Stored/updated chunk data map with 20 new entries. Total map size: 20.
+2025-05-22 21:13:47,303 - rag_engine - INFO - RAGEngine: Upserting 20 processed chunks to VectorDB.
+2025-05-22 21:13:47,428 - rag_vector_db - INFO - Upserting 20 datapoints to index travel_documents_index (projects/708208532564/locations/us-central1/indexes/514151428357357568)
+2025-05-22 21:13:48,444 - rag_vector_db - INFO - Successfully upserted 20 documents.
+2025-05-22 21:13:48,608 - rag_engine - INFO - RAGEngine: Completed upserting. 20 chunks confirmed upserted.
+2025-05-22 21:13:48,781 - gemini_rag_model - INFO - RAG data loaded and processed. 20 items upserted/indexed.
+2025-05-22 21:13:48,928 - gemini_rag_model - INFO - RAG Chat: Received prompt: 'What are the most luxurious hotels to stay in buenos aires?...'
+2025-05-22 21:13:49,078 - rag_engine - INFO - RAGEngine: Received query: 'What are the most luxurious hotels to stay in buenos aires?...'
+2025-05-22 21:13:49,273 - rag_vector_db - INFO - VectorSearchDB already initialized.
+2025-05-22 21:13:49,418 - rag_vector_db - INFO - Performing search for query: 'What are the most luxurious hotels to stay in buenos aires?...' with top_k=3
+2025-05-22 21:13:50,638 - rag_vector_db - INFO - Search completed. Found 3 results.
+2025-05-22 21:13:50,765 - rag_engine - INFO - Augmented prompt for LLM (first 300 chars): 
+Context information is provided below.
+---------------------
+From hotel 'Monserrat Heritage Inn' (chunk: sample_travel.ndjson_Monserrat Heritage Inn_chunk_0):
+A charming hotel housed in a historic building, reflecting Buenos Aires' Belle Époque architecture. Ideal for history enthusiasts and cultur...
+2025-05-22 21:13:50,915 - gemini_model - INFO - Using base model
+2025-05-22 21:13:52,470 - gemini_model - INFO - Model response generated
+2025-05-22 21:13:52,582 - rag_engine - INFO - RAGEngine: Query processing complete. LLM Call Succeeded: True. Found 3 relevant chunks.
+2025-05-22 21:16:41,415 - gemini_model - INFO - Model preference set to: Base Model
+2025-05-22 21:16:42,317 - gemini_model - INFO - Using base model
+2025-05-22 21:16:50,873 - gemini_model - INFO - Model response generated
+2025-05-22 21:18:20,791 - rag_embedding_service - INFO - EmbeddingService configured
+2025-05-22 21:18:25,473 - rag_vector_db - INFO - VectorSearchDB configured:
+2025-05-22 21:18:26,243 - rag_document_processor - INFO - DocumentProcessor initialized
+2025-05-22 21:18:27,014 - rag_engine - INFO - RAGEngine initialized.
+2025-05-22 21:19:04,572 - gemini_model - INFO - Model preference set to: Base Model
+2025-05-22 21:19:06,353 - gemini_rag_model - INFO - Loading RAG data from: /Users/debicabrera/.cursor-tutor/L200-upskilling/data/travel/sample_travel.ndjson...
+2025-05-22 21:19:07,146 - rag_engine - INFO - RAGEngine: Starting dataset processing for /Users/debicabrera/.cursor-tutor/L200-upskilling/data/travel/sample_travel.ndjson
+2025-05-22 21:19:07,302 - rag_vector_db - INFO - Initializing Vertex AI SDK for project: learningemini, location: us-central1
+2025-05-22 21:19:09,334 - rag_vector_db - INFO - Using existing Vector Search index: travel_documents_index (projects/708208532564/locations/us-central1/indexes/514151428357357568)
+2025-05-22 21:19:10,356 - rag_vector_db - INFO - Found existing Vector Search endpoint: travel_index_endpoint (projects/708208532564/locations/us-central1/indexEndpoints/5284202305556578304). Re-instantiating with explicit credentials.
+2025-05-22 21:19:11,249 - rag_vector_db - INFO - Re-instantiated existing endpoint: travel_index_endpoint
+2025-05-22 21:19:11,375 - rag_vector_db - INFO - Endpoint public domain name: 1930169006.us-central1-708208532564.vdb.vertexai.goog
+2025-05-22 21:19:11,538 - rag_vector_db - INFO - Entering _deploy_index_to_endpoint. Type of self.index: <class 'google.cloud.aiplatform.matching_engine.matching_engine_index.MatchingEngineIndex'>, Value: <google.cloud.aiplatform.matching_engine.matching_engine_index.MatchingEngineIndex object at 0x1174eb9d0> 
+resource name: projects/708208532564/locations/us-central1/indexes/514151428357357568
+2025-05-22 21:19:11,687 - rag_vector_db - INFO - Type of self.index_endpoint: <class 'google.cloud.aiplatform.matching_engine.matching_engine_index_endpoint.MatchingEngineIndexEndpoint'>, Value: <google.cloud.aiplatform.matching_engine.matching_engine_index_endpoint.MatchingEngineIndexEndpoint object at 0x117750760> 
+resource name: projects/708208532564/locations/us-central1/indexEndpoints/5284202305556578304
+2025-05-22 21:19:11,861 - rag_vector_db - INFO - Index 'travel_documents_index' (as 'travel_index_deploy_v2') already deployed.
+2025-05-22 21:19:12,011 - rag_vector_db - INFO - VectorSearchDB initialized successfully (infrastructure checked/created/deployed).
+2025-05-22 21:19:12,205 - rag_embedding_service - INFO - Initializing Vertex AI for Embedding Service: project=learningemini, location=us-central1
+2025-05-22 21:19:13,073 - rag_embedding_service - INFO - Embedding model 'text-embedding-005' loaded successfully.
+2025-05-22 21:19:17,545 - rag_document_processor - INFO - Successfully processed. Total chunks for upsert: 20. Total chunk data mappings: 20 from /Users/debicabrera/.cursor-tutor/L200-upskilling/data/travel/sample_travel.ndjson.
+2025-05-22 21:19:17,675 - rag_engine - INFO - RAGEngine: Stored/updated chunk data map with 20 new entries. Total map size: 20.
+2025-05-22 21:19:17,803 - rag_engine - INFO - RAGEngine: Upserting 20 processed chunks to VectorDB.
+2025-05-22 21:19:17,968 - rag_vector_db - INFO - Upserting 20 datapoints to index travel_documents_index (projects/708208532564/locations/us-central1/indexes/514151428357357568)
+2025-05-22 21:19:19,229 - rag_vector_db - INFO - Successfully upserted 20 documents.
+2025-05-22 21:19:19,350 - rag_engine - INFO - RAGEngine: Completed upserting. 20 chunks confirmed upserted.
+2025-05-22 21:19:19,514 - gemini_rag_model - INFO - RAG data loaded and processed. 20 items upserted/indexed.
+2025-05-22 21:19:19,670 - gemini_rag_model - INFO - RAG Chat: Received prompt: 'Tell me the best places to have tea in Buenos Aires...'
+2025-05-22 21:19:19,833 - rag_engine - INFO - RAGEngine: Received query: 'Tell me the best places to have tea in Buenos Aires...'
+2025-05-22 21:19:20,016 - rag_vector_db - INFO - VectorSearchDB already initialized.
+2025-05-22 21:19:20,144 - rag_vector_db - INFO - Performing search for query: 'Tell me the best places to have tea in Buenos Aires...' with top_k=3
+2025-05-22 21:19:21,362 - rag_vector_db - INFO - Search completed. Found 3 results.
+2025-05-22 21:19:21,508 - rag_engine - INFO - Augmented prompt for LLM (first 300 chars): 
+You are an expert and friendly AI travel assistant specializing in Buenos Aires.
+Your knowledge about specific hotels, their features, and locations comes ONLY from the following retrieved context from local travel documents.
+
+Please answer the user's query based on this context.
+
+- If the context ...
+2025-05-22 21:19:21,669 - gemini_model - INFO - Using base model
+2025-05-22 21:19:23,210 - gemini_model - INFO - Model response generated
+2025-05-22 21:19:23,358 - rag_engine - INFO - RAGEngine: Query processing complete. LLM Call Succeeded: True. Found 3 relevant chunks.
+2025-05-22 21:20:03,097 - gemini_model - INFO - Model preference set to: Base Model
+2025-05-22 21:20:04,141 - gemini_rag_model - INFO - RAG Chat: Received prompt: 'what is the most luxurious hotel in buenos aires?...'
+2025-05-22 21:20:04,291 - rag_engine - INFO - RAGEngine: Received query: 'what is the most luxurious hotel in buenos aires?...'
+2025-05-22 21:20:04,449 - rag_vector_db - INFO - VectorSearchDB already initialized.
+2025-05-22 21:20:04,584 - rag_vector_db - INFO - Performing search for query: 'what is the most luxurious hotel in buenos aires?...' with top_k=3
+2025-05-22 21:20:05,258 - rag_vector_db - INFO - Search completed. Found 3 results.
+2025-05-22 21:20:05,439 - rag_engine - INFO - Augmented prompt for LLM (first 300 chars): 
+You are an expert and friendly AI travel assistant specializing in Buenos Aires.
+Your knowledge about specific hotels, their features, and locations comes ONLY from the following retrieved context from local travel documents.
+
+Please answer the user's query based on this context.
+
+- If the context ...
+2025-05-22 21:20:05,612 - gemini_model - INFO - Using base model
+2025-05-22 21:20:07,242 - gemini_model - INFO - Model response generated
+2025-05-22 21:20:07,411 - rag_engine - INFO - RAGEngine: Query processing complete. LLM Call Succeeded: True. Found 3 relevant chunks.

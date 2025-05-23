@@ -1,6 +1,17 @@
+import sys
+import os
+
+# Add the project root (L200-upskilling) to sys.path
+# This allows 'from app...' imports to work correctly when running streamlit
+# Assumes chatbot_app.py is in L200-upskilling/app/frontend/
+APPLICATION_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
+if APPLICATION_ROOT not in sys.path:
+    sys.path.insert(0, APPLICATION_ROOT)
+
 import streamlit as st
 from app.backend.models.gemma_chat import chat_with_gemma
 from app.backend.models.gemini_chat import chat_with_gemini, set_model_preference, get_current_model_name
+from app.backend.models.gemini_rag import chat_with_gemini_rag
 from google.cloud import logging_v2
 from app.backend.storage.db_operations import ChatDatabase
 from app.backend.prompts.prompt_manager import PromptManager
@@ -45,6 +56,10 @@ if 'model_choice' not in st.session_state:
 if 'use_fine_tuned' not in st.session_state:
     st.session_state.use_fine_tuned = False
 
+# Initialize RAG mode preference
+if 'use_rag_mode' not in st.session_state:
+    st.session_state.use_rag_mode = False
+
 # Add a sidebar for session management, model selection, and prompt management
 with st.sidebar:
     st.title("💬 Chat Settings")
@@ -71,7 +86,19 @@ with st.sidebar:
             st.session_state.use_fine_tuned = use_fine_tuned
             set_model_preference(use_fine_tuned)
             st.success(f"Switched to {get_current_model_name()}")
-            time.sleep(1)
+            # time.sleep(1) # Consider removing for faster UI update
+            # st.rerun() # Re-run might be better here if prompt display needs to update
+
+        # Add RAG mode toggle when Gemini is selected
+        use_rag = st.checkbox(
+            "Enable RAG (Travel Knowledge Base)",
+            value=st.session_state.use_rag_mode,
+            help="Enhance responses with specific travel document knowledge."
+        )
+        if use_rag != st.session_state.use_rag_mode:
+            st.session_state.use_rag_mode = use_rag
+            st.success(f"RAG Mode {'Enabled' if use_rag else 'Disabled'}")
+            # st.rerun() # Optional: rerun if other UI elements depend on this state immediately
     
     # Prompt Management
     st.subheader("📝 Prompt Management")
@@ -126,8 +153,13 @@ with st.sidebar:
 
 # Update title to include model type information
 model_display_name = st.session_state.model_choice
-if st.session_state.model_choice == "Gemini" and st.session_state.use_fine_tuned:
-    model_display_name = "Gemini (Fine-tuned)"
+if st.session_state.model_choice == "Gemini":
+    if st.session_state.use_fine_tuned:
+        model_display_name = "Gemini (Fine-tuned)"
+    if st.session_state.use_rag_mode: # Check if RAG mode is active for Gemini
+        model_display_name += " [RAG]"
+    elif not st.session_state.use_fine_tuned: # If not fine-tuned and not RAG, just Gemini (Base)
+        model_display_name = "Gemini (Base)"
 
 # Main chat interface
 st.title(f"🌎 AI Travel Assistant ({model_display_name})")
@@ -172,12 +204,21 @@ if prompt := st.chat_input(
             start_time = time.time()
             current_model = st.session_state.model_choice.lower()
             system_prompt = prompt_manager.get_latest_prompt(current_model)
-            full_prompt = f"{system_prompt}\n\nUser: {prompt}\nAssistant:"
+            # full_prompt = f"{system_prompt}\n\nUser: {prompt}\nAssistant:"
             
-            if current_model == "gemma":
-                full_response = chat_with_gemma(full_prompt)
-            else:
-                full_response = chat_with_gemini(full_prompt)
+            # Pass only the user's direct prompt to RAG, RAGEngine handles its own templating
+            user_direct_prompt = prompt 
+
+            if st.session_state.model_choice == "Gemini" and st.session_state.use_rag_mode:
+                logger.log_text(f"Calling RAG model for session {st.session_state.session_id}")
+                full_response = chat_with_gemini_rag(user_direct_prompt) # Pass only user prompt
+            elif current_model == "gemma":
+                # Gemma might also need its system prompt handled differently if RAG were to be added
+                full_prompt_for_gemma = f"{system_prompt}\n\nUser: {user_direct_prompt}\nAssistant:"
+                full_response = chat_with_gemma(full_prompt_for_gemma)
+            else: # Default to Gemini (base or fine-tuned, non-RAG)
+                full_prompt_for_gemini = f"{system_prompt}\n\nUser: {user_direct_prompt}\nAssistant:"
+                full_response = chat_with_gemini(full_prompt_for_gemini)
             
             response_time = time.time() - start_time
 

@@ -10,6 +10,7 @@ Current Status:
 - Using Artifact Registry for container images
 - Advanced prompt management system with versioning
 - Comprehensive model evaluation framework
+- Retrieval Augmented Generation (RAG) for travel information, connected to a Vertex AI Vector Search index.
 
 Features:
 - Web-based chat interface with Streamlit
@@ -22,6 +23,15 @@ Features:
   - Gemini: Local-focused cultural guide
   - Gemma: Mexican pirate character
 - Model performance evaluation and comparison tools
+- RAG integration for Gemini model:
+  - Processes NDJSON travel data (hotel information for Buenos Aires).
+  - Generates embeddings using 'text-embedding-005'.
+  - Upserts embeddings to a pre-configured Vertex AI Vector Search index (Tree-AH, Cosine Distance, Stream Updates enabled).
+  - Retrieves relevant text chunks and associated metadata based on semantic similarity to user queries.
+  - Augments prompts for the Gemini LLM ('gemini-2.0-flash') with retrieved context.
+  - Provides contextually aware answers based on the travel documents.
+  - In-memory map for quick retrieval of original text and metadata for chunks.
+  - UI toggle in Streamlit app to enable/disable RAG mode for Gemini.
 
 To get started:
 1. Activate virtual environment: 
@@ -41,8 +51,10 @@ To get started:
 
 4. Run app locally: 
    ```bash
-   streamlit run chatbot_app.py
+   # Ensure you are in the L200-upskilling directory
+   streamlit run app/frontend/chatbot_app.py
    ```
+   (Select Gemini model and enable the "Enable RAG" checkbox in the sidebar to test RAG functionality)
 
 5. Deploy changes using Cloud Build and Cloud Run: 
    ```bash
@@ -70,6 +82,13 @@ To get started:
    ./evaluate_models.sh pairwise
    ```
 
+7. Test RAG module directly (optional):
+   ```bash
+   # Ensure you are in the L200-upskilling directory (parent of 'app')
+   # This script will process data and run test queries against the RAG system
+   python -m app.backend.models.gemini_rag
+   ```
+
 Local Development:
 - All code is in L200-upskilling directory
 - Using virtual environment for Python dependencies
@@ -78,11 +97,11 @@ Local Development:
 - Cloud Logging for monitoring
 
 Dependencies:
-- google-cloud-aiplatform
+- google-cloud-aiplatform (ensure version >= 1.49.0 for stable Vector Search and Gemini 1.5+ features)
+- google-genai (consider for future Gemini 1.5+ calls if `google-cloud-aiplatform` has issues with newest models)
 - google-cloud-logging>=3.8.0
 - google-cloud-firestore
 - streamlit
-- google-genai
 - pandas and matplotlib (for evaluation)
 
 Prompt Management:
@@ -104,6 +123,23 @@ Model Evaluation Framework:
 - Customizable test queries and evaluation criteria
 - Lab guide for running evaluations and interpreting results
 
+RAG System for Travel Information:
+- **Core Components (in `app/backend/rag/`):**
+  - `config.py`: RAG-specific configurations (VectorDB, Embedding Model, Document Processing, Prompts).
+  - `embedding_service.py`: Generates embeddings using Vertex AI's 'text-embedding-005' model.
+  - `document_processor.py`: Reads NDJSON data, chunks documents, extracts metadata, and prepares data for embedding.
+  - `vector_db.py`: Manages interactions with a pre-existing, deployed Vertex AI Vector Search index. Assumes index is configured for stream updates. Includes logic to create/deploy if necessary, but primarily connects to existing infrastructure defined in `config.py` by resource IDs.
+  - `rag_engine.py`: Orchestrates the RAG pipeline. 
+    - Processes datasets by calling the document processor and then upserting to the vector database.
+    - Stores a map of `chunk_id` to its original text and metadata in memory for quick context retrieval.
+    - For queries, retrieves relevant chunk IDs from the vector DB, looks up their text/metadata from the in-memory map, constructs an augmented prompt, and calls the LLM.
+- **Integration (`app/backend/models/gemini_rag.py`):**
+  - Provides `chat_with_gemini_rag()` function that uses the `RAGEngine`.
+  - Handles lazy loading of the travel dataset into the RAG engine on first use.
+- **Data:** Uses `sample_travel.ndjson` for Buenos Aires hotel information.
+- **LLM Used for RAG:** `gemini-2.0-flash` (via alias in `app/config.py`).
+- **User Interface:** Integrated into the main Streamlit app (`app/frontend/chatbot_app.py`) with a toggle to enable/disable RAG for the Gemini model.
+
 Documentation:
 - `README.md`: Main project documentation (this file)
 - `evaluation/README.md`: Technical overview of the evaluation pipeline
@@ -113,6 +149,9 @@ Documentation:
 - `evaluation/LAB_README.md`: Instructions for lab instructors
 
 Recent Updates:
+- Implemented Retrieval Augmented Generation (RAG) system for travel queries using Gemini and Vertex AI Vector Search.
+- Integrated RAG functionality into the Streamlit application with a UI toggle.
+- RAG system processes local NDJSON data, generates embeddings, and retrieves context to enhance LLM responses.
 - Migrated to Vertex AI SDK
 - Implemented prompt version control system
 - Added specialized travel agent personas
@@ -125,67 +164,4 @@ Recent Updates:
 ## Deployment
 The chatbot is currently deployed and accessible at:
 https://chatbot-app-708208532564.us-central1.run.app
-
-## Next Steps (Week 3)
-
-### Model Fine-tuning and Deployment
-
-1. **Fine-tune Gemini Model with OpenAssistant Guanaco Dataset**
-   - Set up fine-tuning environment with Vertex AI
-   - Acquire and preprocess the OpenAssistant Guanaco dataset from HuggingFace
-   - Format the dataset for Gemini fine-tuning requirements
-   - Configure training hyperparameters for optimal learning
-   - Execute fine-tuning process on Vertex AI
-   - Monitor training metrics and early stopping criteria
-   - Validate model performance with test set
-
-2. **Model Registry and Deployment**
-   - Save the fine-tuned model to Model Registry / Model Garden
-   - Alternatively, upload the model to Hugging Face for community use
-   - Document model architecture, training dataset, and performance metrics
-   - Set up a Vertex AI endpoint for model serving
-   - Configure scaling parameters and resource allocation
-   - Deploy the model to the endpoint
-   - Set up monitoring and logging for the deployed model
-
-3. **Integration with Existing Application**
-   - Update the API client code to support the new model endpoint
-   - Add functionality to switch between base and fine-tuned models
-   - Implement fallback mechanisms for endpoint failures
-   - Create a benchmark system to compare model versions
-   - Develop A/B testing framework to evaluate user satisfaction
-   - Add user feedback collection to further improve the model
-
-4. **Evaluation Framework**
-   - Define evaluation metrics for the fine-tuned model:
-     - Response relevance and quality
-     - Domain-specific knowledge accuracy
-     - Personality consistency
-     - Response time and latency
-   - Compare fine-tuned model performance against baseline
-   - Gather user feedback through the application interface
-   - Analyze improvements and areas for further refinement
-   - Use the new evaluation framework to measure improvements:
-     ```bash
-     # Compare base model vs fine-tuned model
-     cd evaluation
-     ./evaluate_models.sh pairwise --model1 gemini-base --model2 gemini-tuned
-     ```
-
-### Implementation Timeline
-- Week 3.1: Dataset acquisition and preprocessing
-- Week 3.2: Fine-tuning execution and model validation
-- Week 3.3: Model registry and endpoint deployment
-- Week 3.4: Application integration and testing
-- Week 3.5: Performance evaluation and documentation
-
-### Success Criteria
-- Fine-tuned model should:
-  - Demonstrate improved domain expertise in travel and culture
-  - Maintain consistent personality traits based on selected persona
-  - Achieve higher relevance scores compared to the base model
-  - Show reduced latency in real-world application usage
-  - Receive positive user feedback on response quality
-  - Show measurable improvements in the evaluation framework metrics
-
 

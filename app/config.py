@@ -21,7 +21,7 @@ GCP_LOCATION = os.environ.get("GCP_LOCATION", "us-central1")
 # Model settings
 class ModelConfig:
     # Gemini models
-    GEMINI_BASE_MODEL_ID = os.environ.get("GEMINI_BASE_MODEL_ID", "gemini-2.0-flash-001")
+    GEMINI_BASE_MODEL_ID = os.environ.get("GEMINI_BASE_MODEL_ID", "gemini-2.0-flash")
     GEMINI_TUNED_MODEL_PROJECT_NUM = os.environ.get("GEMINI_TUNED_MODEL_PROJECT_NUM", "708208532564")
     GEMINI_TUNED_MODEL_REGION = os.environ.get("GEMINI_TUNED_MODEL_REGION", "us-central1")
     GEMINI_TUNED_MODEL_ID = os.environ.get("GEMINI_TUNED_MODEL_ID", "2279310694123831296")
