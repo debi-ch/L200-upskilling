@@ -12,6 +12,7 @@ import streamlit as st
 from app.backend.models.gemma_chat import chat_with_gemma
 from app.backend.models.gemini_chat import chat_with_gemini, set_model_preference, get_current_model_name
 from app.backend.models.gemini_rag import chat_with_gemini_rag
+from app.backend.models.gemini_memory_rag import chat_with_memory_rag, get_memory_rag_status, add_user_interaction
 from google.cloud import logging_v2
 from app.backend.storage.db_operations import ChatDatabase
 from app.backend.prompts.prompt_manager import PromptManager
@@ -60,6 +61,14 @@ if 'use_fine_tuned' not in st.session_state:
 if 'use_rag_mode' not in st.session_state:
     st.session_state.use_rag_mode = False
 
+# Initialize Memory RAG mode preference
+if 'use_memory_rag_mode' not in st.session_state:
+    st.session_state.use_memory_rag_mode = False
+
+# Initialize user identification
+if 'user_id' not in st.session_state:
+    st.session_state.user_id = f"user_{st.session_state.session_id}"
+
 # Add a sidebar for session management, model selection, and prompt management
 with st.sidebar:
     st.title("💬 Chat Settings")
@@ -99,6 +108,61 @@ with st.sidebar:
             st.session_state.use_rag_mode = use_rag
             st.success(f"RAG Mode {'Enabled' if use_rag else 'Disabled'}")
             # st.rerun() # Optional: rerun if other UI elements depend on this state immediately
+
+        # Add Memory RAG mode toggle when Gemini is selected
+        use_memory_rag = st.checkbox(
+            "Enable Memory RAG (Personalized AI)",
+            value=st.session_state.use_memory_rag_mode,
+            help="Enable personalized responses based on your conversation history and preferences."
+        )
+        if use_memory_rag != st.session_state.use_memory_rag_mode:
+            st.session_state.use_memory_rag_mode = use_memory_rag
+            st.success(f"Memory RAG Mode {'Enabled' if use_memory_rag else 'Disabled'}")
+            
+            # Initialize Memory RAG when enabled
+            if use_memory_rag:
+                from app.backend.models.gemini_memory_rag import _ensure_memory_rag_initialized
+                with st.spinner("Initializing Memory RAG system..."):
+                    if _ensure_memory_rag_initialized():
+                        st.success("✅ Memory RAG system initialized successfully!")
+                    else:
+                        st.error("❌ Failed to initialize Memory RAG system")
+            
+            # Show Memory RAG status
+            if use_memory_rag:
+                status = get_memory_rag_status()
+                if status["ready"]:
+                    st.info("🧠 Memory RAG system is ready for personalization!")
+                else:
+                    st.warning("⚠️ Memory RAG system is initializing...")
+            
+            # Add reload button for troubleshooting
+            if st.button("🔄 Reload Memory RAG", help="Force reload if getting generic responses"):
+                from app.backend.models.gemini_memory_rag import force_memory_rag_reload
+                with st.spinner("Reloading Memory RAG..."):
+                    reload_result = force_memory_rag_reload()
+                    if reload_result.get('rag_context_length', 0) > 0:
+                        st.success("✅ Memory RAG reloaded successfully!")
+                    else:
+                        st.warning("⚠️ Memory RAG reloaded but content retrieval may still have issues")
+                    st.json(reload_result)
+    
+    # User identification section
+    st.subheader("👤 User Profile")
+    current_user_id = st.text_input(
+        "User ID",
+        value=st.session_state.user_id,
+        help="Your unique identifier for personalized responses"
+    )
+    if current_user_id != st.session_state.user_id:
+        st.session_state.user_id = current_user_id
+        st.success(f"User ID updated to: {current_user_id}")
+    
+    # Show Memory RAG status if enabled
+    if st.session_state.use_memory_rag_mode:
+        with st.expander("🧠 Memory RAG Status"):
+            status = get_memory_rag_status()
+            st.json(status)
     
     # Prompt Management
     st.subheader("📝 Prompt Management")
@@ -156,7 +220,9 @@ model_display_name = st.session_state.model_choice
 if st.session_state.model_choice == "Gemini":
     if st.session_state.use_fine_tuned:
         model_display_name = "Gemini (Fine-tuned)"
-    if st.session_state.use_rag_mode: # Check if RAG mode is active for Gemini
+    if st.session_state.use_memory_rag_mode:
+        model_display_name += " [Memory RAG]"
+    elif st.session_state.use_rag_mode: # Check if RAG mode is active for Gemini
         model_display_name += " [RAG]"
     elif not st.session_state.use_fine_tuned: # If not fine-tuned and not RAG, just Gemini (Base)
         model_display_name = "Gemini (Base)"
@@ -209,7 +275,13 @@ if prompt := st.chat_input(
             # Pass only the user's direct prompt to RAG, RAGEngine handles its own templating
             user_direct_prompt = prompt 
 
-            if st.session_state.model_choice == "Gemini" and st.session_state.use_rag_mode:
+            if st.session_state.model_choice == "Gemini" and st.session_state.use_memory_rag_mode:
+                logger.log_text(f"Calling Memory RAG model for session {st.session_state.session_id}")
+                full_response = chat_with_memory_rag(
+                    user_prompt=user_direct_prompt,
+                    user_id=st.session_state.user_id
+                )
+            elif st.session_state.model_choice == "Gemini" and st.session_state.use_rag_mode:
                 logger.log_text(f"Calling RAG model for session {st.session_state.session_id}")
                 full_response = chat_with_gemini_rag(user_direct_prompt) # Pass only user prompt
             elif current_model == "gemma":
@@ -237,6 +309,14 @@ if prompt := st.chat_input(
             db.save_message(st.session_state.session_id, "assistant", full_response)
             st.session_state.messages.append({"role": "assistant", "content": full_response})
             st.markdown(full_response)
+
+            # Record interaction for Memory RAG if enabled
+            if st.session_state.model_choice == "Gemini" and st.session_state.use_memory_rag_mode:
+                add_user_interaction(
+                    user_id=st.session_state.user_id,
+                    user_message=prompt,
+                    assistant_response=full_response
+                )
 
 # Add footer
 st.markdown("---")

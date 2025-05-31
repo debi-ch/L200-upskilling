@@ -1,6 +1,12 @@
-FROM python:3.9-slim
+FROM python:3.9-slim-bullseye
 
 WORKDIR /app
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    libpq-dev \
+    && rm -rf /var/lib/apt/lists/*
 
 # Copy requirements first for better caching
 COPY requirements.txt .
@@ -16,8 +22,11 @@ ENV GCP_PROJECT_ID=learningemini
 ENV USE_TUNED_MODEL=true
 ENV PORT=8080
 
-# Create logs directory
+# Create necessary directories
 RUN mkdir -p logs
+RUN mkdir -p data/embeddings
+RUN mkdir -p documents/pdfs
+RUN mkdir -p documents/images
 
 # Create a non-root user to run the app
 RUN useradd -m appuser

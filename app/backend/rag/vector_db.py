@@ -23,12 +23,14 @@ from app.backend.rag.embedding_service import embedding_service
 logger = ChatbotLogger("rag_vector_db")
 
 class VectorSearchDB:
-    def __init__(self):
+    def __init__(self, index_id: Optional[str] = None, dimensions: Optional[int] = None, description: Optional[str] = None):
         self.project_id = EmbeddingModelConfig.PROJECT_ID
         self.location = EmbeddingModelConfig.LOCATION
-        self.index_display_name = VectorDBConfig.VECTOR_SEARCH_INDEX_DISPLAY_NAME
+        self.index_display_name = index_id or VectorDBConfig.VECTOR_SEARCH_INDEX_DISPLAY_NAME
         self.endpoint_display_name = VectorDBConfig.VECTOR_SEARCH_ENDPOINT_DISPLAY_NAME
-        self.deployed_index_id = VectorDBConfig.VECTOR_SEARCH_DEPLOYED_INDEX_ID
+        self.deployed_index_id = f"{self.index_display_name}_deploy"  # Unique deployment ID for each index
+        self.dimensions = dimensions or VectorDBConfig.EMBEDDING_DIMENSIONS
+        self.description = description or "Vector search index for RAG system"
 
         self.index: Optional[aiplatform.MatchingEngineIndex] = None
         self.index_endpoint: Optional[aiplatform.MatchingEngineIndexEndpoint] = None
@@ -40,7 +42,9 @@ class VectorSearchDB:
             location=self.location,
             index_display_name=self.index_display_name,
             endpoint_display_name=self.endpoint_display_name,
-            deployed_index_id=self.deployed_index_id
+            deployed_index_id=self.deployed_index_id,
+            dimensions=self.dimensions,
+            description=self.description
         )
     
     def initialize(self) -> bool:
@@ -96,7 +100,7 @@ class VectorSearchDB:
             logger.info(f"Creating new Vector Search index '{self.index_display_name}' with Stream Updates.")
             self.index = aiplatform.MatchingEngineIndex.create_tree_ah_index(
                 display_name=self.index_display_name,
-                dimensions=VectorDBConfig.EMBEDDING_DIMENSIONS,
+                dimensions=self.dimensions,
                 approximate_neighbors_count=VectorDBConfig.APPROXIMATE_NEIGHBORS_COUNT,
                 distance_measure_type=VectorDBConfig.SIMILARITY_MEASURE,
                 leaf_node_embedding_count=VectorDBConfig.LEAF_NODE_EMBEDDING_COUNT,
@@ -104,6 +108,7 @@ class VectorSearchDB:
                 project=self.project_id,
                 location=self.location,
                 index_update_method="STREAM_UPDATE",
+                description=self.description,
                 sync=True
             )
             logger.info(
@@ -165,7 +170,7 @@ class VectorSearchDB:
                     return
                 elif deployed_index_obj.id == self.deployed_index_id: # Conflicting deployment ID
                     logger.warning(f"Deployment ID '{self.deployed_index_id}' on endpoint points to different index ({deployed_index_obj.index}). Undeploying.")
-                    self.index_endpoint.undeploy_index(deployed_index_id=self.deployed_index_id, sync=True)
+                    self.index_endpoint.undeploy_index(deployed_index_id=self.deployed_index_id)
                     logger.info(f"Undeployed conflicting ID '{self.deployed_index_id}'.")
                     break 
             
@@ -233,60 +238,51 @@ class VectorSearchDB:
             print("--- TRACEBACK END (direct print for upsert) ---")
             raise 
 
-    def search(self, query_text: str, top_k: Optional[int] = None) -> List[Dict[str, Any]]:
-        if not self.initialized or not self.index_endpoint:
-            logger.error("VectorSearchDB not initialized or endpoint not available for search.")
-            # Simplified: if not initialized, the query will likely fail if it tries to initialize and that fails.
-            # The RAGEngine's call to initialize() should handle this before calling search.
-            # If we reach here and not initialized, something is wrong with the RAGEngine flow.
-            # Let's ensure initialize is called if needed, but this could lead to repeated init attempts.
-            if not self.initialize():
-                logger.error("Failed to initialize during search attempt.")
-                return []
-            if not self.index_endpoint: # Check again
-                 logger.error("Endpoint still not available after re-initialization attempt during search.")
-                 return []
-
-        actual_top_k = top_k or VectorDBConfig.DEFAULT_TOP_K
-        logger.info(f"Performing search for query: '{query_text[:100]}...' with top_k={actual_top_k}")
+    def search(self, query_text: Optional[str] = None, query_embedding: Optional[List[float]] = None, top_k: Optional[int] = None) -> List[Dict[str, Any]]:
+        """Search using either text or a pre-computed embedding"""
+        logger.info(f"Performing search with top_k={top_k}")
         
-        try:
-            query_embedding = embedding_service.generate_embedding(query_text)
-            if not query_embedding:
-                logger.error(f"Failed to generate embedding for query: {query_text[:100]}...")
+        if not self.initialized:
+            if not self.initialize():
+                logger.error("Failed to initialize vector database for search")
                 return []
 
-            logger.debug(f"Searching deployed index '{self.deployed_index_id}' on endpoint '{self.index_endpoint.resource_name}'")
-            
+        try:
+            if query_embedding is None and query_text:
+                # Generate embedding from text
+                query_embedding = embedding_service.generate_embedding(query_text)
+                if not query_embedding:
+                    logger.error(f"Failed to generate embedding for query: {query_text[:100]}...")
+                    return []
+            elif query_embedding is None:
+                logger.error("Neither query_text nor query_embedding provided")
+                return []
+
+            # Perform nearest neighbor search
             search_response = self.index_endpoint.find_neighbors(
                 deployed_index_id=self.deployed_index_id,
                 queries=[query_embedding],
-                num_neighbors=actual_top_k,
-                return_full_datapoint=True
+                num_neighbors=top_k or VectorDBConfig.DEFAULT_TOP_K
             )
             
             results = []
-            if search_response:
-                # search_response is a list of lists of MatchNeighbor objects.
-                # For a single query, search_response will be like [[neighbor1, neighbor2, ...]]
-                # So, search_response[0] is the list of neighbors for our query.
-                if search_response[0]: # Check if the inner list (neighbors for our query) exists and is not empty
-                    for neighbor in search_response[0]: # Correctly iterate through the list of MatchNeighbor objects
-                        restrictions_dict = {}
-                        if hasattr(neighbor, 'datapoint') and neighbor.datapoint and \
-                           hasattr(neighbor.datapoint, 'restricts') and neighbor.datapoint.restricts:
-                            try:
-                                restrictions_dict = json_format.MessageToDict(neighbor.datapoint.restricts)
-                            except Exception as e:
-                                logger.warning(f"Could not parse restricts for datapoint {neighbor.id}: {e}")
-                        
-                        result = {
-                            'id': neighbor.id, 
-                            'score': neighbor.distance, 
-                            'text': "", 
-                            'metadata': restrictions_dict
-                        }
-                        results.append(result)
+            if search_response and search_response[0]:
+                for neighbor in search_response[0]:
+                    restrictions_dict = {}
+                    if hasattr(neighbor, 'datapoint') and neighbor.datapoint and \
+                       hasattr(neighbor.datapoint, 'restricts') and neighbor.datapoint.restricts:
+                        try:
+                            restrictions_dict = json_format.MessageToDict(neighbor.datapoint.restricts)
+                        except Exception as e:
+                            logger.warning(f"Could not parse restricts for datapoint {neighbor.id}: {e}")
+                    
+                    result = {
+                        'id': neighbor.id, 
+                        'score': neighbor.distance, 
+                        'text': "", 
+                        'metadata': restrictions_dict
+                    }
+                    results.append(result)
             
             logger.info(f"Search completed. Found {len(results)} results.")
             return results
@@ -294,11 +290,9 @@ class VectorSearchDB:
             logger.error(
                 "Error during vector search operation",
                 error_type=type(e).__name__,
-                error_message=str(e),
-                query=query_text[:100]
+                error_message=str(e)
             )
             print("--- TRACEBACK START (direct print for search failure) ---")
-            # import traceback # Already at top of file
             print(traceback.format_exc())
             print("--- TRACEBACK END (direct print for search failure) ---")
             raise

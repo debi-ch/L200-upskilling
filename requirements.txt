@@ -1,8 +1,23 @@
-google-cloud-aiplatform
-google-cloud-logging>=3.8.0
+PyMuPDF==1.23.26  # For PDF processing
+google-cloud-aiplatform>=1.38.1
+google-cloud-logging>=3.9.0
 google-cloud-firestore
-streamlit
+streamlit>=1.31.1
 google-genai
-pandas>=1.3.0
+pandas>=2.2.1
 matplotlib>=3.4.0
-numpy>=1.20.0
+numpy>=1.26.4
+google-cloud-storage>=2.14.0
+pillow>=10.2.0
+vertexai>=0.0.1
+python-dotenv>=1.0.1
+langchain>=0.1.9
+langchain-core>=0.1.27
+langchain-google-vertexai>=0.0.5
+deepeval>=0.20.9
+ragas>=0.0.22  # For RAG evaluation
+transformers>=4.38.2  # For image embeddings
+torch>=2.2.1  # For image processing
+torchvision>=0.17.1  # For image transforms
+pytest>=8.0.2  # For testing
+pytest-cov>=4.1.0  # For test coverage

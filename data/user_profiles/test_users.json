@@ -1,0 +1,227 @@
+[
+  {
+    "user_id": "user_001",
+    "name": "Aisha Rodriguez",
+    "age": 38,
+    "location": "Toronto, Canada",
+    "travel_preferences": {
+      "budget_range": "mid-range",
+      "travel_style": "cultural",
+      "accommodation_type": "hotel",
+      "group_size": "couple",
+      "interests": [
+        "history",
+        "art",
+        "food",
+        "architecture",
+        "local markets"
+      ]
+    },
+    "past_trips": [
+      {
+        "destination": "Rome, Italy",
+        "year": 2021,
+        "purpose": "vacation",
+        "highlights": [
+          "Colosseum tour",
+          "Vatican City visit",
+          "Pasta making class"
+        ],
+        "accommodation": "Boutique Hotel near the Trevi Fountain",
+        "duration": "7 days"
+      },
+      {
+        "destination": "Kyoto, Japan",
+        "year": 2022,
+        "purpose": "vacation",
+        "highlights": [
+          "Fushimi Inari Shrine",
+          "Kinkaku-ji (Golden Pavilion)",
+          "Traditional Tea Ceremony"
+        ],
+        "accommodation": "Ryokan with onsen",
+        "duration": "10 days"
+      },
+      {
+        "destination": "Montreal, Canada",
+        "year": 2023,
+        "purpose": "family",
+        "highlights": [
+          "Old Montreal",
+          "Biodome",
+          "Jean-Talon Market"
+        ],
+        "accommodation": "Airbnb apartment",
+        "duration": "5 days"
+      }
+    ],
+    "dietary_restrictions": [
+      "None"
+    ],
+    "languages": [
+      "English",
+      "Spanish (conversational)"
+    ],
+    "accessibility_needs": "None",
+    "travel_goals": [
+      "Explore South America, visit historical sites in Greece, improve Spanish language skills while traveling."
+    ],
+    "personality_traits": [
+      "organized",
+      "curious",
+      "open-minded",
+      "appreciates local experiences"
+    ]
+  },
+  {
+    "user_id": "user_002",
+    "name": "Aisha Rodriguez",
+    "age": 38,
+    "location": "Sao Paulo, Brazil",
+    "travel_preferences": {
+      "budget_range": "mid-range",
+      "travel_style": "cultural",
+      "accommodation_type": "hotel",
+      "group_size": "couple",
+      "interests": [
+        "history",
+        "art",
+        "food",
+        "local markets",
+        "live music"
+      ]
+    },
+    "past_trips": [
+      {
+        "destination": "Buenos Aires, Argentina",
+        "year": 2021,
+        "purpose": "vacation",
+        "highlights": [
+          "Tango show in San Telmo",
+          "Exploring Recoleta Cemetery",
+          "Wine tasting"
+        ],
+        "accommodation": "Boutique hotel in Palermo",
+        "duration": "7 days"
+      },
+      {
+        "destination": "Lisbon, Portugal",
+        "year": 2023,
+        "purpose": "vacation",
+        "highlights": [
+          "Visiting Jer\u00f3nimos Monastery",
+          "Riding Tram 28",
+          "Enjoying Fado music"
+        ],
+        "accommodation": "Hotel near Alfama district",
+        "duration": "5 days"
+      },
+      {
+        "destination": "Salvador, Brazil",
+        "year": 2020,
+        "purpose": "family",
+        "highlights": [
+          "Pelourinho historical center",
+          "Capoeira lessons",
+          "Sampling local Bahian cuisine"
+        ],
+        "accommodation": "Family-owned pousada",
+        "duration": "10 days"
+      }
+    ],
+    "dietary_restrictions": [
+      "lactose intolerance"
+    ],
+    "languages": [
+      "Portuguese",
+      "English",
+      "Spanish"
+    ],
+    "accessibility_needs": "None",
+    "travel_goals": [
+      "Visit Southeast Asia",
+      "Learn more about indigenous cultures",
+      "Attend a cooking class in Italy"
+    ],
+    "personality_traits": [
+      "curious",
+      "open-minded",
+      "organized",
+      "appreciates authenticity"
+    ]
+  },
+  {
+    "user_id": "user_003",
+    "name": "Maria Rodriguez",
+    "age": 42,
+    "location": "Miami, USA",
+    "travel_preferences": {
+      "budget_range": "mid-range",
+      "travel_style": "cultural",
+      "accommodation_type": "hotel",
+      "group_size": "couple",
+      "interests": [
+        "history",
+        "art",
+        "local cuisine",
+        "museums",
+        "architecture"
+      ]
+    },
+    "past_trips": [
+      {
+        "destination": "Rome, Italy",
+        "year": 2021,
+        "purpose": "vacation",
+        "highlights": [
+          "Colosseum tour",
+          "Vatican City visit",
+          "Pasta making class"
+        ],
+        "accommodation": "Boutique Hotel near the Pantheon",
+        "duration": "7 days"
+      },
+      {
+        "destination": "Mexico City, Mexico",
+        "year": 2022,
+        "purpose": "vacation",
+        "highlights": [
+          "Teotihuacan pyramids",
+          "Frida Kahlo Museum",
+          "Xochimilco canals"
+        ],
+        "accommodation": "Airbnb in the Roma Norte neighborhood",
+        "duration": "5 days"
+      },
+      {
+        "destination": "San Francisco, USA",
+        "year": 2023,
+        "purpose": "business",
+        "highlights": [
+          "Meeting with colleagues",
+          "Golden Gate Bridge sightseeing",
+          "Exploring Fisherman's Wharf"
+        ],
+        "accommodation": "Hotel near the Moscone Center",
+        "duration": "3 days"
+      }
+    ],
+    "dietary_restrictions": [],
+    "languages": [
+      "English",
+      "Spanish"
+    ],
+    "accessibility_needs": "None",
+    "travel_goals": [
+      "Visit Southeast Asia (Thailand, Vietnam)",
+      "Explore the Greek Islands",
+      "Experience a safari in Africa"
+    ],
+    "personality_traits": [
+      "curious",
+      "organized",
+      "appreciates authenticity",
+      "values comfort"
+    ]
+  }
+]

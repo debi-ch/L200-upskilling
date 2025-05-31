@@ -16,8 +16,8 @@ from app.utils.logging_utils import ChatbotLogger
 logger = ChatbotLogger("rag_engine")
 
 class RAGEngine:
-    def __init__(self):
-        self.vector_db = VectorSearchDB() 
+    def __init__(self, vector_db: Optional[VectorSearchDB] = None):
+        self.vector_db = vector_db or VectorSearchDB() 
         self.document_processor = DocumentProcessor()
         # This map will store chunk_id -> {'text': chunk_text, 'metadata': original_doc_metadata}
         self.chunk_data_map: Dict[str, Dict[str, Any]] = {} 

@@ -32,6 +32,13 @@ Features:
   - Provides contextually aware answers based on the travel documents.
   - In-memory map for quick retrieval of original text and metadata for chunks.
   - UI toggle in Streamlit app to enable/disable RAG mode for Gemini.
+- RAG Evaluation System:
+  - Custom metrics without requiring external LLM APIs
+  - Answer Presence checking
+  - Context Utilization measurement
+  - Response Length optimization
+  - Response Time tracking
+  - Comprehensive test suite for all RAG components
 
 To get started:
 1. Activate virtual environment: 
@@ -58,15 +65,8 @@ To get started:
 
 5. Deploy changes using Cloud Build and Cloud Run: 
    ```bash
-   # Build and submit to Artifact Registry
-   gcloud builds submit --tag gcr.io/learningemini/chatbot-app
-
-   # Deploy to Cloud Run
-   gcloud run deploy chatbot-app \
-     --image gcr.io/learningemini/chatbot-app \
-     --platform managed \
-     --region us-west1 \
-     --allow-unauthenticated
+   # Deploy using the deployment script
+   ./deploy_cloud_run.sh
    ```
 
 6. Evaluate model performance:
@@ -89,6 +89,12 @@ To get started:
    python -m app.backend.models.gemini_rag
    ```
 
+8. Run RAG evaluation:
+   ```bash
+   # Run the comprehensive RAG evaluation suite
+   python -m test_rag_evaluation
+   ```
+
 Local Development:
 - All code is in L200-upskilling directory
 - Using virtual environment for Python dependencies
@@ -103,6 +109,8 @@ Dependencies:
 - google-cloud-firestore
 - streamlit
 - pandas and matplotlib (for evaluation)
+- torch and torchvision (for image processing)
+- transformers (for multimodal embeddings)
 
 Prompt Management:
 - Support for multiple prompt versions per model
@@ -123,22 +131,29 @@ Model Evaluation Framework:
 - Customizable test queries and evaluation criteria
 - Lab guide for running evaluations and interpreting results
 
-RAG System for Travel Information:
-- **Core Components (in `app/backend/rag/`):**
-  - `config.py`: RAG-specific configurations (VectorDB, Embedding Model, Document Processing, Prompts).
-  - `embedding_service.py`: Generates embeddings using Vertex AI's 'text-embedding-005' model.
-  - `document_processor.py`: Reads NDJSON data, chunks documents, extracts metadata, and prepares data for embedding.
-  - `vector_db.py`: Manages interactions with a pre-existing, deployed Vertex AI Vector Search index. Assumes index is configured for stream updates. Includes logic to create/deploy if necessary, but primarily connects to existing infrastructure defined in `config.py` by resource IDs.
-  - `rag_engine.py`: Orchestrates the RAG pipeline. 
-    - Processes datasets by calling the document processor and then upserting to the vector database.
-    - Stores a map of `chunk_id` to its original text and metadata in memory for quick context retrieval.
-    - For queries, retrieves relevant chunk IDs from the vector DB, looks up their text/metadata from the in-memory map, constructs an augmented prompt, and calls the LLM.
-- **Integration (`app/backend/models/gemini_rag.py`):**
-  - Provides `chat_with_gemini_rag()` function that uses the `RAGEngine`.
-  - Handles lazy loading of the travel dataset into the RAG engine on first use.
-- **Data:** Uses `sample_travel.ndjson` for Buenos Aires hotel information.
-- **LLM Used for RAG:** `gemini-2.0-flash` (via alias in `app/config.py`).
-- **User Interface:** Integrated into the main Streamlit app (`app/frontend/chatbot_app.py`) with a toggle to enable/disable RAG for the Gemini model.
+RAG System Components:
+1. Text RAG:
+   - Chat history and user preferences integration
+   - Context-aware responses
+   - Personalized information retrieval
+
+2. PDF RAG:
+   - PDF document processing and chunking
+   - Metadata extraction and storage
+   - Semantic search capabilities
+   - Tested with travel guides
+
+3. Multimodal RAG:
+   - Image processing and embedding
+   - Combined text-image queries
+   - Visual information retrieval
+   - Travel image understanding
+
+4. RAG Evaluation:
+   - Custom metrics suite
+   - No external API dependencies
+   - Performance monitoring
+   - Quality assurance checks
 
 Documentation:
 - `README.md`: Main project documentation (this file)
@@ -149,19 +164,15 @@ Documentation:
 - `evaluation/LAB_README.md`: Instructions for lab instructors
 
 Recent Updates:
-- Implemented Retrieval Augmented Generation (RAG) system for travel queries using Gemini and Vertex AI Vector Search.
-- Integrated RAG functionality into the Streamlit application with a UI toggle.
-- RAG system processes local NDJSON data, generates embeddings, and retrieves context to enhance LLM responses.
-- Migrated to Vertex AI SDK
-- Implemented prompt version control system
-- Added specialized travel agent personas
-- Enhanced error handling and debugging
-- Added support for both Gemini and Gemma models
-- Updated deployment process for new dependencies
-- Implemented comprehensive model evaluation framework
-- Created lab materials for model evaluation training
+- Implemented comprehensive RAG evaluation system
+- Added custom metrics without external API dependencies
+- Updated deployment process to use Cloud Build
+- Enhanced RAG system with PDF and image processing
+- Added multimodal search capabilities
+- Implemented evaluation framework for all RAG components
+- Updated deployment scripts and documentation
 
 ## Deployment
 The chatbot is currently deployed and accessible at:
-https://chatbot-app-708208532564.us-central1.run.app
+https://rag-chatbot-708208532564.us-central1.run.app
 
