@@ -1,9 +1,14 @@
+"""
+Main Streamlit application for the chatbot interface.
+"""
+
 import sys
 import os
+from pathlib import Path
+import time
+import base64
 
-# Add the project root (L200-upskilling) to sys.path
-# This allows 'from app...' imports to work correctly when running streamlit
-# Assumes chatbot_app.py is in L200-upskilling/app/frontend/
+# Add the project root to sys.path
 APPLICATION_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 if APPLICATION_ROOT not in sys.path:
     sys.path.insert(0, APPLICATION_ROOT)
@@ -16,9 +21,7 @@ from app.backend.models.gemini_memory_rag import chat_with_memory_rag, get_memor
 from google.cloud import logging_v2
 from app.backend.storage.db_operations import ChatDatabase
 from app.backend.prompts.prompt_manager import PromptManager
-import time
-import base64
-from pathlib import Path
+from app.backend.models.weather_chat import chat_with_weather, get_weather_tool
 
 # Initialize Cloud Logging
 logging_client = logging_v2.Client()
@@ -30,8 +33,8 @@ prompt_manager = PromptManager()
 
 # Set page config
 st.set_page_config(
-    page_title="AI Travel Assistant",
-    page_icon="🌎",
+    page_title="Travel & Weather Assistant",
+    page_icon="🌍",
     layout="wide"
 )
 
@@ -69,6 +72,14 @@ if 'use_memory_rag_mode' not in st.session_state:
 if 'user_id' not in st.session_state:
     st.session_state.user_id = f"user_{st.session_state.session_id}"
 
+# Initialize weather preference
+if "use_weather" not in st.session_state:
+    st.session_state.use_weather = True
+
+# Initialize messages if not present
+if "messages" not in st.session_state:
+    st.session_state.messages = []
+
 # Add a sidebar for session management, model selection, and prompt management
 with st.sidebar:
     st.title("💬 Chat Settings")
@@ -95,9 +106,7 @@ with st.sidebar:
             st.session_state.use_fine_tuned = use_fine_tuned
             set_model_preference(use_fine_tuned)
             st.success(f"Switched to {get_current_model_name()}")
-            # time.sleep(1) # Consider removing for faster UI update
-            # st.rerun() # Re-run might be better here if prompt display needs to update
-
+        
         # Add RAG mode toggle when Gemini is selected
         use_rag = st.checkbox(
             "Enable RAG (Travel Knowledge Base)",
@@ -107,8 +116,7 @@ with st.sidebar:
         if use_rag != st.session_state.use_rag_mode:
             st.session_state.use_rag_mode = use_rag
             st.success(f"RAG Mode {'Enabled' if use_rag else 'Disabled'}")
-            # st.rerun() # Optional: rerun if other UI elements depend on this state immediately
-
+        
         # Add Memory RAG mode toggle when Gemini is selected
         use_memory_rag = st.checkbox(
             "Enable Memory RAG (Personalized AI)",
@@ -146,6 +154,13 @@ with st.sidebar:
                     else:
                         st.warning("⚠️ Memory RAG reloaded but content retrieval may still have issues")
                     st.json(reload_result)
+    
+    # Weather integration toggle
+    st.session_state.use_weather = st.checkbox(
+        "Include Weather Information",
+        value=True,
+        help="Get real-time weather data for travel destinations"
+    )
     
     # User identification section
     st.subheader("👤 User Profile")
@@ -222,13 +237,13 @@ if st.session_state.model_choice == "Gemini":
         model_display_name = "Gemini (Fine-tuned)"
     if st.session_state.use_memory_rag_mode:
         model_display_name += " [Memory RAG]"
-    elif st.session_state.use_rag_mode: # Check if RAG mode is active for Gemini
+    elif st.session_state.use_rag_mode:
         model_display_name += " [RAG]"
-    elif not st.session_state.use_fine_tuned: # If not fine-tuned and not RAG, just Gemini (Base)
+    elif not st.session_state.use_fine_tuned:
         model_display_name = "Gemini (Base)"
 
 # Main chat interface
-st.title(f"🌎 AI Travel Assistant ({model_display_name})")
+st.title(f"🌍 Travel & Weather Assistant ({model_display_name})")
 st.write("Your personal guide to exploring the world's cultures and destinations!")
 
 # Initialize or load chat history
@@ -242,9 +257,7 @@ for message in st.session_state.messages:
         st.markdown(message["content"])
 
 # Chat input with custom placeholder
-if prompt := st.chat_input(
-    "Ask about travel destinations, local culture, or anything you'd like to know!"
-):
+if prompt := st.chat_input("Ask about travel destinations, local culture, weather, or anything you'd like to know!"):
     # Apply the current fine-tuned model preference
     if st.session_state.model_choice == "Gemini":
         set_model_preference(st.session_state.use_fine_tuned)
@@ -257,12 +270,12 @@ if prompt := st.chat_input(
         'message': prompt,
         'timestamp': time.strftime('%Y-%m-%d %H:%M:%S')
     })
-
+    
     # Display user message
     st.session_state.messages.append({"role": "user", "content": prompt})
     with st.chat_message("user", avatar="🧑‍💻"):
         st.markdown(prompt)
-
+    
     # Show typing indicator
     with st.chat_message("assistant", avatar="🤖"):
         with st.spinner("Thinking..."):
@@ -270,30 +283,35 @@ if prompt := st.chat_input(
             start_time = time.time()
             current_model = st.session_state.model_choice.lower()
             system_prompt = prompt_manager.get_latest_prompt(current_model)
-            # full_prompt = f"{system_prompt}\n\nUser: {prompt}\nAssistant:"
             
             # Pass only the user's direct prompt to RAG, RAGEngine handles its own templating
-            user_direct_prompt = prompt 
+            user_direct_prompt = prompt
+            
+            # Define the tools to be used based on the session state
+            tools = [get_weather_tool] if st.session_state.use_weather else None
 
             if st.session_state.model_choice == "Gemini" and st.session_state.use_memory_rag_mode:
                 logger.log_text(f"Calling Memory RAG model for session {st.session_state.session_id}")
                 full_response = chat_with_memory_rag(
                     user_prompt=user_direct_prompt,
-                    user_id=st.session_state.user_id
+                    user_id=st.session_state.user_id,
+                    tools=tools
                 )
             elif st.session_state.model_choice == "Gemini" and st.session_state.use_rag_mode:
                 logger.log_text(f"Calling RAG model for session {st.session_state.session_id}")
-                full_response = chat_with_gemini_rag(user_direct_prompt) # Pass only user prompt
+                full_response = chat_with_gemini_rag(user_direct_prompt, tools=tools)
             elif current_model == "gemma":
-                # Gemma might also need its system prompt handled differently if RAG were to be added
-                full_prompt_for_gemma = f"{system_prompt}\n\nUser: {user_direct_prompt}\nAssistant:"
+                # Note: Function calling is typically a feature of more advanced models like Gemini.
+                # Gemma might not support the 'tools' parameter as effectively.
+                # For this example, we'll keep its original logic.
+                full_prompt_for_gemma = f"{system_prompt}\\n\\nUser: {user_direct_prompt}\\nAssistant:"
                 full_response = chat_with_gemma(full_prompt_for_gemma)
-            else: # Default to Gemini (base or fine-tuned, non-RAG)
-                full_prompt_for_gemini = f"{system_prompt}\n\nUser: {user_direct_prompt}\nAssistant:"
-                full_response = chat_with_gemini(full_prompt_for_gemini)
+            else:  # Default to Gemini (base or fine-tuned, non-RAG)
+                full_prompt_for_gemini = f"{system_prompt}\\n\\nUser: {user_direct_prompt}\\nAssistant:"
+                full_response = chat_with_gemini(full_prompt_for_gemini, tools=tools)
             
             response_time = time.time() - start_time
-
+            
             # Log response
             logger.log_struct({
                 'event_type': 'model_response',
@@ -304,12 +322,12 @@ if prompt := st.chat_input(
                 'response_time': response_time,
                 'timestamp': time.strftime('%Y-%m-%d %H:%M:%S')
             })
-
+            
             # Save and display response
             db.save_message(st.session_state.session_id, "assistant", full_response)
             st.session_state.messages.append({"role": "assistant", "content": full_response})
             st.markdown(full_response)
-
+            
             # Record interaction for Memory RAG if enabled
             if st.session_state.model_choice == "Gemini" and st.session_state.use_memory_rag_mode:
                 add_user_interaction(

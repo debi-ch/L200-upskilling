@@ -4,7 +4,7 @@ Gemini RAG Model Integration
 This module provides RAG-enhanced chat functionality using the RAGEngine.
 """
 import os
-from typing import Dict, Any
+from typing import Dict, Any, Optional, List
 
 from app.backend.rag.rag_engine import RAGEngine
 from app.utils.logging_utils import ChatbotLogger
@@ -67,7 +67,7 @@ def _ensure_rag_data_loaded(data_file_path: str = None) -> bool:
         logger.error(f"Exception during RAG data loading: {e}", exc_info=True)
         return False
 
-def chat_with_gemini_rag(user_prompt: str, top_k: int = 3, data_file_path: str = None) -> str:
+def chat_with_gemini_rag(user_prompt: str, top_k: int = 3, data_file_path: str = None, tools: Optional[List[Any]] = None) -> str:
     """
     Chat with Gemini using RAG enhancement.
     Ensures data is loaded, then queries the RAGEngine.
@@ -79,7 +79,7 @@ def chat_with_gemini_rag(user_prompt: str, top_k: int = 3, data_file_path: str =
         return "I am having trouble accessing the travel knowledge base right now. Please try again later."
 
     logger.info(f"RAG Chat: Received prompt: '{user_prompt[:100]}...'")
-    rag_response_dict = rag_engine_instance.query(user_prompt, top_k=top_k)
+    rag_response_dict = rag_engine_instance.query(user_prompt, top_k=top_k, tools=tools)
     return rag_response_dict.get("response", "Sorry, I encountered an issue retrieving an answer.")
 
 # Placeholder for other RAG-related control functions if needed in the future

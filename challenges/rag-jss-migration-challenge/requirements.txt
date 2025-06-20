@@ -1,0 +1,6 @@
+functions-framework==3.*
+pg8000
+cloud-sql-python-connector
+Flask
+SQLAlchemy
+google-cloud-aiplatform>=1.38.0 

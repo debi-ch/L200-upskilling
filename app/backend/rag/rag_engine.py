@@ -48,7 +48,7 @@ class RAGEngine:
             logger.warning("RAGEngine: Upsert operation returned no IDs. Check VectorDB logs.")
         return upserted_ids
 
-    def query(self, user_query: str, top_k: Optional[int] = None) -> Dict[str, Any]:
+    def query(self, user_query: str, top_k: Optional[int] = None, tools: Optional[List[Any]] = None) -> Dict[str, Any]:
         # Import here to break circular dependency
         from app.backend.models.gemini_chat_refactored import chat_with_model_internal
 
@@ -103,7 +103,8 @@ class RAGEngine:
                     project_id=GCP_PROJECT_ID, 
                     location=GCP_LOCATION, 
                     prompt_text=user_query, 
-                    model_type_str="base"
+                    model_type_str="base",
+                    tools=tools
                 )
                 llm_call_succeeded = True
                 if not response_text: response_text = "I can try to answer generally, but I couldn't find specific information in the travel documents."
@@ -119,7 +120,8 @@ class RAGEngine:
                     project_id=GCP_PROJECT_ID, 
                     location=GCP_LOCATION, 
                     prompt_text=final_augmented_prompt,
-                    model_type_str="base"
+                    model_type_str="base",
+                    tools=tools
                 )
                 llm_call_succeeded = True
                 if not response_text: response_text = "I received a response, but it was empty. Based on the documents, I found some information but couldn't synthesize a specific answer."

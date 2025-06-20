@@ -3589,3 +3589,3279 @@ Multimodal RAG Average Scores:
 2025-05-30 18:59:01,803 - rag_evaluation - INFO -   response_length: 0.000
 2025-05-30 18:59:01,928 - rag_evaluation - INFO -   response_time: 0.000
 2025-05-30 18:59:02,124 - rag_evaluation - INFO -   overall: 0.375
+2025-06-11 17:55:56,382 - rag_embedding_service - INFO - EmbeddingService configured
+2025-06-11 17:56:02,123 - rag_vector_db - INFO - VectorSearchDB configured:
+2025-06-11 17:56:02,989 - rag_document_processor - INFO - DocumentProcessor initialized
+2025-06-11 17:56:03,821 - rag_engine - INFO - RAGEngine initialized.
+2025-06-11 18:03:35,727 - rag_embedding_service - INFO - EmbeddingService configured
+2025-06-11 18:03:41,201 - rag_vector_db - INFO - VectorSearchDB configured:
+2025-06-11 18:03:42,004 - rag_document_processor - INFO - DocumentProcessor initialized
+2025-06-11 18:03:42,724 - rag_engine - INFO - RAGEngine initialized.
+2025-06-11 18:18:23,635 - rag_embedding_service - INFO - EmbeddingService configured
+2025-06-11 18:18:29,969 - rag_vector_db - INFO - VectorSearchDB configured:
+2025-06-11 18:18:30,766 - rag_document_processor - INFO - DocumentProcessor initialized
+2025-06-11 18:18:31,622 - rag_engine - INFO - RAGEngine initialized.
+2025-06-11 18:18:35,527 - google_adk.google.adk.models.registry - INFO - Updating LLM class for gemini-.* from <class 'google.adk.models.google_llm.Gemini'> to <class 'google.adk.models.google_llm.Gemini'>
+2025-06-11 18:18:35,527 - google_adk.google.adk.models.registry - INFO - Updating LLM class for projects\/.+\/locations\/.+\/endpoints\/.+ from <class 'google.adk.models.google_llm.Gemini'> to <class 'google.adk.models.google_llm.Gemini'>
+2025-06-11 18:18:35,527 - google_adk.google.adk.models.registry - INFO - Updating LLM class for projects\/.+\/locations\/.+\/publishers\/google\/models\/gemini.+ from <class 'google.adk.models.google_llm.Gemini'> to <class 'google.adk.models.google_llm.Gemini'>
+2025-06-11 18:18:35,527 - google_adk.google.adk.models.registry - INFO - Updating LLM class for gemini-.* from <class 'google.adk.models.google_llm.Gemini'> to <class 'google.adk.models.google_llm.Gemini'>
+2025-06-11 18:18:35,528 - google_adk.google.adk.models.registry - INFO - Updating LLM class for projects\/.+\/locations\/.+\/endpoints\/.+ from <class 'google.adk.models.google_llm.Gemini'> to <class 'google.adk.models.google_llm.Gemini'>
+2025-06-11 18:18:35,528 - google_adk.google.adk.models.registry - INFO - Updating LLM class for projects\/.+\/locations\/.+\/publishers\/google\/models\/gemini.+ from <class 'google.adk.models.google_llm.Gemini'> to <class 'google.adk.models.google_llm.Gemini'>
+2025-06-11 20:14:49,325 - rag_embedding_service - INFO - EmbeddingService configured
+2025-06-11 20:14:54,854 - rag_vector_db - INFO - VectorSearchDB configured:
+2025-06-11 20:14:55,646 - rag_document_processor - INFO - DocumentProcessor initialized
+2025-06-11 20:14:56,620 - rag_engine - INFO - RAGEngine initialized.
+2025-06-11 20:15:00,156 - google_adk.google.adk.models.registry - INFO - Updating LLM class for gemini-.* from <class 'google.adk.models.google_llm.Gemini'> to <class 'google.adk.models.google_llm.Gemini'>
+2025-06-11 20:15:00,156 - google_adk.google.adk.models.registry - INFO - Updating LLM class for projects\/.+\/locations\/.+\/endpoints\/.+ from <class 'google.adk.models.google_llm.Gemini'> to <class 'google.adk.models.google_llm.Gemini'>
+2025-06-11 20:15:00,156 - google_adk.google.adk.models.registry - INFO - Updating LLM class for projects\/.+\/locations\/.+\/publishers\/google\/models\/gemini.+ from <class 'google.adk.models.google_llm.Gemini'> to <class 'google.adk.models.google_llm.Gemini'>
+2025-06-11 20:15:00,156 - google_adk.google.adk.models.registry - INFO - Updating LLM class for gemini-.* from <class 'google.adk.models.google_llm.Gemini'> to <class 'google.adk.models.google_llm.Gemini'>
+2025-06-11 20:15:00,156 - google_adk.google.adk.models.registry - INFO - Updating LLM class for projects\/.+\/locations\/.+\/endpoints\/.+ from <class 'google.adk.models.google_llm.Gemini'> to <class 'google.adk.models.google_llm.Gemini'>
+2025-06-11 20:15:00,156 - google_adk.google.adk.models.registry - INFO - Updating LLM class for projects\/.+\/locations\/.+\/publishers\/google\/models\/gemini.+ from <class 'google.adk.models.google_llm.Gemini'> to <class 'google.adk.models.google_llm.Gemini'>
+2025-06-11 20:15:18,749 - gemini_memory_rag_model - INFO - Initializing Memory RAG system...
+2025-06-11 20:15:19,569 - gemini_memory_rag_model - INFO - Created new MemoryEnhancedRAG instance
+2025-06-11 20:15:19,701 - gemini_memory_rag_model - INFO - Loading travel data from: /Users/debicabrera/.cursor-tutor/L200-upskilling/data/travel/sample_travel.ndjson
+2025-06-11 20:15:19,839 - memory_enhanced_rag - INFO - Loading travel data...
+2025-06-11 20:15:20,621 - rag_vector_db - INFO - VectorSearchDB configured:
+2025-06-11 20:15:20,762 - rag_document_processor - INFO - DocumentProcessor initialized
+2025-06-11 20:15:20,880 - rag_engine - INFO - RAGEngine initialized.
+2025-06-11 20:15:21,071 - rag_engine - INFO - RAGEngine: Starting dataset processing for /Users/debicabrera/.cursor-tutor/L200-upskilling/data/travel/sample_travel.ndjson
+2025-06-11 20:15:21,207 - rag_vector_db - INFO - Initializing Vertex AI SDK for project: learningemini, location: us-central1
+2025-06-11 20:15:23,163 - rag_vector_db - INFO - Using existing Vector Search index: travel_documents_index (projects/708208532564/locations/us-central1/indexes/514151428357357568)
+2025-06-11 20:15:24,062 - rag_vector_db - INFO - Found existing Vector Search endpoint: travel_index_endpoint (projects/708208532564/locations/us-central1/indexEndpoints/5284202305556578304). Re-instantiating with explicit credentials.
+2025-06-11 20:15:24,928 - rag_vector_db - INFO - Re-instantiated existing endpoint: travel_index_endpoint
+2025-06-11 20:15:25,075 - rag_vector_db - INFO - Endpoint public domain name: 1930169006.us-central1-708208532564.vdb.vertexai.goog
+2025-06-11 20:15:25,241 - rag_vector_db - INFO - Entering _deploy_index_to_endpoint. Type of self.index: <class 'google.cloud.aiplatform.matching_engine.matching_engine_index.MatchingEngineIndex'>, Value: <google.cloud.aiplatform.matching_engine.matching_engine_index.MatchingEngineIndex object at 0x134cb0070> 
+resource name: projects/708208532564/locations/us-central1/indexes/514151428357357568
+2025-06-11 20:15:25,441 - rag_vector_db - INFO - Type of self.index_endpoint: <class 'google.cloud.aiplatform.matching_engine.matching_engine_index_endpoint.MatchingEngineIndexEndpoint'>, Value: <google.cloud.aiplatform.matching_engine.matching_engine_index_endpoint.MatchingEngineIndexEndpoint object at 0x133d887f0> 
+resource name: projects/708208532564/locations/us-central1/indexEndpoints/5284202305556578304
+2025-06-11 20:15:25,538 - rag_vector_db - INFO - Index 'travel_documents_index' (as 'travel_documents_index_deploy') already deployed.
+2025-06-11 20:15:25,685 - rag_vector_db - INFO - VectorSearchDB initialized successfully (infrastructure checked/created/deployed).
+2025-06-11 20:15:25,801 - rag_embedding_service - INFO - Initializing Vertex AI for Embedding Service: project=learningemini, location=us-central1
+2025-06-11 20:15:26,770 - rag_embedding_service - INFO - Embedding model 'text-embedding-005' loaded successfully.
+2025-06-11 20:15:31,386 - rag_document_processor - INFO - Successfully processed. Total chunks for upsert: 20. Total chunk data mappings: 20 from /Users/debicabrera/.cursor-tutor/L200-upskilling/data/travel/sample_travel.ndjson.
+2025-06-11 20:15:31,518 - rag_engine - INFO - RAGEngine: Stored/updated chunk data map with 20 new entries. Total map size: 20.
+2025-06-11 20:15:31,636 - rag_engine - INFO - RAGEngine: Upserting 20 processed chunks to VectorDB.
+2025-06-11 20:15:31,803 - rag_vector_db - INFO - Upserting 20 datapoints to index travel_documents_index (projects/708208532564/locations/us-central1/indexes/514151428357357568)
+2025-06-11 20:15:32,809 - rag_vector_db - INFO - Successfully upserted 20 documents.
+2025-06-11 20:15:32,941 - rag_engine - INFO - RAGEngine: Completed upserting. 20 chunks confirmed upserted.
+2025-06-11 20:15:33,077 - memory_enhanced_rag - INFO - Travel data loaded successfully
+2025-06-11 20:15:33,190 - gemini_memory_rag_model - INFO - Travel data loaded, is_initialized=True
+2025-06-11 20:15:33,317 - gemini_memory_rag_model - INFO - Loading user data from: /Users/debicabrera/.cursor-tutor/L200-upskilling/data/user_profiles/test_users.json
+2025-06-11 20:15:33,458 - rag_embedding_service - INFO - EmbeddingService configured
+2025-06-11 20:15:33,578 - rag_vector_db - INFO - VectorSearchDB configured:
+2025-06-11 20:15:33,724 - rag_embedding_service - INFO - Initializing Vertex AI for Embedding Service: project=learningemini, location=us-central1
+2025-06-11 20:15:34,463 - rag_embedding_service - INFO - Embedding model 'text-embedding-005' loaded successfully.
+2025-06-11 20:15:35,722 - rag_vector_db - WARNING - _get_index_handle called when self.index is None. Re-attempting _get_or_create_index.
+2025-06-11 20:15:36,657 - rag_vector_db - INFO - Using existing Vector Search index: travel_documents_index (projects/708208532564/locations/us-central1/indexes/514151428357357568)
+2025-06-11 20:15:36,820 - rag_vector_db - INFO - Upserting 1 datapoints to index travel_documents_index (projects/708208532564/locations/us-central1/indexes/514151428357357568)
+2025-06-11 20:15:37,639 - rag_vector_db - INFO - Successfully upserted 1 documents.
+2025-06-11 20:15:38,013 - rag_vector_db - INFO - Upserting 1 datapoints to index travel_documents_index (projects/708208532564/locations/us-central1/indexes/514151428357357568)
+2025-06-11 20:15:38,826 - rag_vector_db - INFO - Successfully upserted 1 documents.
+2025-06-11 20:15:39,132 - rag_vector_db - INFO - Upserting 1 datapoints to index travel_documents_index (projects/708208532564/locations/us-central1/indexes/514151428357357568)
+2025-06-11 20:15:40,574 - rag_vector_db - INFO - Successfully upserted 1 documents.
+2025-06-11 20:15:40,912 - rag_vector_db - INFO - Upserting 1 datapoints to index travel_documents_index (projects/708208532564/locations/us-central1/indexes/514151428357357568)
+2025-06-11 20:15:41,816 - rag_vector_db - INFO - Successfully upserted 1 documents.
+2025-06-11 20:15:42,320 - rag_vector_db - INFO - Upserting 1 datapoints to index travel_documents_index (projects/708208532564/locations/us-central1/indexes/514151428357357568)
+2025-06-11 20:15:43,374 - rag_vector_db - INFO - Successfully upserted 1 documents.
+2025-06-11 20:15:43,710 - rag_vector_db - INFO - Upserting 1 datapoints to index travel_documents_index (projects/708208532564/locations/us-central1/indexes/514151428357357568)
+2025-06-11 20:15:44,430 - rag_vector_db - INFO - Successfully upserted 1 documents.
+2025-06-11 20:15:44,755 - rag_vector_db - INFO - Upserting 1 datapoints to index travel_documents_index (projects/708208532564/locations/us-central1/indexes/514151428357357568)
+2025-06-11 20:15:45,782 - rag_vector_db - INFO - Successfully upserted 1 documents.
+2025-06-11 20:15:46,127 - rag_vector_db - INFO - Upserting 1 datapoints to index travel_documents_index (projects/708208532564/locations/us-central1/indexes/514151428357357568)
+2025-06-11 20:15:46,884 - rag_vector_db - INFO - Successfully upserted 1 documents.
+2025-06-11 20:15:47,205 - rag_vector_db - INFO - Upserting 1 datapoints to index travel_documents_index (projects/708208532564/locations/us-central1/indexes/514151428357357568)
+2025-06-11 20:15:47,968 - rag_vector_db - INFO - Successfully upserted 1 documents.
+2025-06-11 20:15:48,247 - rag_vector_db - INFO - Upserting 1 datapoints to index travel_documents_index (projects/708208532564/locations/us-central1/indexes/514151428357357568)
+2025-06-11 20:15:49,189 - rag_vector_db - INFO - Successfully upserted 1 documents.
+2025-06-11 20:15:49,519 - rag_vector_db - INFO - Upserting 1 datapoints to index travel_documents_index (projects/708208532564/locations/us-central1/indexes/514151428357357568)
+2025-06-11 20:15:50,286 - rag_vector_db - INFO - Successfully upserted 1 documents.
+2025-06-11 20:15:50,629 - rag_vector_db - INFO - Upserting 1 datapoints to index travel_documents_index (projects/708208532564/locations/us-central1/indexes/514151428357357568)
+2025-06-11 20:15:51,443 - rag_vector_db - INFO - Successfully upserted 1 documents.
+2025-06-11 20:15:51,775 - rag_vector_db - INFO - Upserting 1 datapoints to index travel_documents_index (projects/708208532564/locations/us-central1/indexes/514151428357357568)
+2025-06-11 20:15:52,575 - rag_vector_db - INFO - Successfully upserted 1 documents.
+2025-06-11 20:15:52,868 - rag_vector_db - INFO - Upserting 1 datapoints to index travel_documents_index (projects/708208532564/locations/us-central1/indexes/514151428357357568)
+2025-06-11 20:15:53,779 - rag_vector_db - INFO - Successfully upserted 1 documents.
+2025-06-11 20:15:54,086 - rag_vector_db - INFO - Upserting 1 datapoints to index travel_documents_index (projects/708208532564/locations/us-central1/indexes/514151428357357568)
+2025-06-11 20:15:54,925 - rag_vector_db - INFO - Successfully upserted 1 documents.
+2025-06-11 20:15:55,278 - rag_vector_db - INFO - Upserting 1 datapoints to index travel_documents_index (projects/708208532564/locations/us-central1/indexes/514151428357357568)
+2025-06-11 20:15:56,075 - rag_vector_db - INFO - Successfully upserted 1 documents.
+2025-06-11 20:15:56,379 - rag_vector_db - INFO - Upserting 1 datapoints to index travel_documents_index (projects/708208532564/locations/us-central1/indexes/514151428357357568)
+2025-06-11 20:15:57,085 - rag_vector_db - INFO - Successfully upserted 1 documents.
+2025-06-11 20:15:57,399 - rag_vector_db - INFO - Upserting 1 datapoints to index travel_documents_index (projects/708208532564/locations/us-central1/indexes/514151428357357568)
+2025-06-11 20:15:58,301 - rag_vector_db - INFO - Successfully upserted 1 documents.
+2025-06-11 20:15:58,641 - rag_vector_db - INFO - Upserting 1 datapoints to index travel_documents_index (projects/708208532564/locations/us-central1/indexes/514151428357357568)
+2025-06-11 20:15:59,616 - rag_vector_db - INFO - Successfully upserted 1 documents.
+2025-06-11 20:15:59,882 - rag_vector_db - INFO - Upserting 1 datapoints to index travel_documents_index (projects/708208532564/locations/us-central1/indexes/514151428357357568)
+2025-06-11 20:16:00,965 - rag_vector_db - INFO - Successfully upserted 1 documents.
+2025-06-11 20:16:01,234 - rag_vector_db - INFO - Upserting 1 datapoints to index travel_documents_index (projects/708208532564/locations/us-central1/indexes/514151428357357568)
+2025-06-11 20:16:02,076 - rag_vector_db - INFO - Successfully upserted 1 documents.
+2025-06-11 20:16:02,363 - rag_vector_db - INFO - Upserting 1 datapoints to index travel_documents_index (projects/708208532564/locations/us-central1/indexes/514151428357357568)
+2025-06-11 20:16:03,218 - rag_vector_db - INFO - Successfully upserted 1 documents.
+2025-06-11 20:16:03,585 - rag_vector_db - INFO - Upserting 1 datapoints to index travel_documents_index (projects/708208532564/locations/us-central1/indexes/514151428357357568)
+2025-06-11 20:16:04,435 - rag_vector_db - INFO - Successfully upserted 1 documents.
+2025-06-11 20:16:04,713 - rag_vector_db - INFO - Upserting 1 datapoints to index travel_documents_index (projects/708208532564/locations/us-central1/indexes/514151428357357568)
+2025-06-11 20:16:05,541 - rag_vector_db - INFO - Successfully upserted 1 documents.
+2025-06-11 20:16:05,880 - rag_vector_db - INFO - Upserting 1 datapoints to index travel_documents_index (projects/708208532564/locations/us-central1/indexes/514151428357357568)
+2025-06-11 20:16:06,794 - rag_vector_db - INFO - Successfully upserted 1 documents.
+2025-06-11 20:16:07,056 - rag_vector_db - INFO - Upserting 1 datapoints to index travel_documents_index (projects/708208532564/locations/us-central1/indexes/514151428357357568)
+2025-06-11 20:16:07,729 - rag_vector_db - INFO - Successfully upserted 1 documents.
+2025-06-11 20:16:08,030 - rag_vector_db - INFO - Upserting 1 datapoints to index travel_documents_index (projects/708208532564/locations/us-central1/indexes/514151428357357568)
+2025-06-11 20:16:08,820 - rag_vector_db - INFO - Successfully upserted 1 documents.
+2025-06-11 20:16:08,952 - gemini_memory_rag_model - INFO - User data loaded and initialized successfully
+2025-06-11 20:16:09,074 - gemini_memory_rag_model - INFO - Memory RAG system initialization complete. Status: {'initialized': True, 'instance_available': True, 'ready': True}
+2025-06-11 20:16:58,988 - gemini_model - INFO - Model preference set to: Base Model
+2025-06-11 20:17:00,806 - gemini_memory_rag_model - INFO - Memory RAG already initialized and instance exists
+2025-06-11 20:17:00,968 - gemini_memory_rag_model - INFO - Memory RAG Chat: User 'user_002' asked: 'Tell me about Buenos Aires and provide me some recommendations for what to do...'
+2025-06-11 20:17:01,121 - rag_engine - INFO - RAGEngine: Received query: 'Tell me about Buenos Aires and provide me some recommendations for what to do...'
+2025-06-11 20:17:01,253 - rag_vector_db - INFO - VectorSearchDB already initialized.
+2025-06-11 20:17:01,357 - rag_vector_db - INFO - Performing search with top_k=3
+2025-06-11 20:17:02,502 - rag_vector_db - INFO - Search completed. Found 3 results.
+2025-06-11 20:17:02,640 - rag_engine - WARNING - Data for chunk ID user_002_trip_1 not found in RAGEngine.chunk_data_map.
+2025-06-11 20:17:02,807 - rag_engine - INFO - Augmented prompt for LLM (first 300 chars): 
+You are an expert and friendly AI travel assistant specializing in Buenos Aires.
+Your knowledge about specific hotels, their features, and locations comes ONLY from the following retrieved context from local travel documents.
+
+Please answer the user's query based on this context.
+
+- If the context ...
+2025-06-11 20:17:02,967 - gemini_model - INFO - Using base model
+2025-06-11 20:17:05,272 - gemini_model - INFO - Model response generated
+2025-06-11 20:17:05,399 - rag_engine - INFO - RAGEngine: Query processing complete. LLM Call Succeeded: True. Found 3 relevant chunks.
+2025-06-11 20:17:05,505 - rag_vector_db - INFO - Performing search with top_k=4
+2025-06-11 20:17:05,609 - rag_vector_db - INFO - Initializing Vertex AI SDK for project: learningemini, location: us-central1
+2025-06-11 20:17:06,413 - rag_vector_db - INFO - Using existing Vector Search index: travel_documents_index (projects/708208532564/locations/us-central1/indexes/514151428357357568)
+2025-06-11 20:17:07,234 - rag_vector_db - INFO - Found existing Vector Search endpoint: travel_index_endpoint (projects/708208532564/locations/us-central1/indexEndpoints/5284202305556578304). Re-instantiating with explicit credentials.
+2025-06-11 20:17:08,089 - rag_vector_db - INFO - Re-instantiated existing endpoint: travel_index_endpoint
+2025-06-11 20:17:08,239 - rag_vector_db - INFO - Endpoint public domain name: 1930169006.us-central1-708208532564.vdb.vertexai.goog
+2025-06-11 20:17:08,392 - rag_vector_db - INFO - Entering _deploy_index_to_endpoint. Type of self.index: <class 'google.cloud.aiplatform.matching_engine.matching_engine_index.MatchingEngineIndex'>, Value: <google.cloud.aiplatform.matching_engine.matching_engine_index.MatchingEngineIndex object at 0x134fbc1f0> 
+resource name: projects/708208532564/locations/us-central1/indexes/514151428357357568
+2025-06-11 20:17:08,530 - rag_vector_db - INFO - Type of self.index_endpoint: <class 'google.cloud.aiplatform.matching_engine.matching_engine_index_endpoint.MatchingEngineIndexEndpoint'>, Value: <google.cloud.aiplatform.matching_engine.matching_engine_index_endpoint.MatchingEngineIndexEndpoint object at 0x134f92d00> 
+resource name: projects/708208532564/locations/us-central1/indexEndpoints/5284202305556578304
+2025-06-11 20:17:08,690 - rag_vector_db - INFO - Index 'travel_documents_index' (as 'travel_documents_index_deploy') already deployed.
+2025-06-11 20:17:08,809 - rag_vector_db - INFO - VectorSearchDB initialized successfully (infrastructure checked/created/deployed).
+2025-06-11 20:17:09,696 - rag_vector_db - INFO - Search completed. Found 4 results.
+2025-06-11 20:17:09,818 - gemini_model - INFO - Using base model
+2025-06-11 20:17:13,869 - gemini_model - INFO - Model response generated
+2025-06-11 20:17:14,018 - gemini_memory_rag_model - INFO - Generated personalized response for user 'user_002' (length: 1990)
+2025-06-11 20:17:14,473 - gemini_memory_rag_model - INFO - Memory RAG already initialized and instance exists
+2025-06-11 20:17:14,583 - gemini_memory_rag_model - INFO - Recording interaction for user 'user_002': Tell me about Buenos Aires and provide me some rec...
+2025-06-11 20:18:10,632 - gemini_model - INFO - Model preference set to: Base Model
+2025-06-11 20:18:11,721 - gemini_memory_rag_model - INFO - Memory RAG already initialized and instance exists
+2025-06-11 20:18:11,853 - gemini_memory_rag_model - INFO - Memory RAG Chat: User 'user_002' asked: 'hows the weather there?...'
+2025-06-11 20:18:12,002 - rag_engine - INFO - RAGEngine: Received query: 'hows the weather there?...'
+2025-06-11 20:18:12,123 - rag_vector_db - INFO - VectorSearchDB already initialized.
+2025-06-11 20:18:12,300 - rag_vector_db - INFO - Performing search with top_k=3
+2025-06-11 20:18:12,779 - rag_vector_db - INFO - Search completed. Found 3 results.
+2025-06-11 20:18:12,934 - rag_engine - WARNING - Data for chunk ID user_001_conversation_1 not found in RAGEngine.chunk_data_map.
+2025-06-11 20:18:13,050 - rag_engine - WARNING - Data for chunk ID user_003_conversation_1 not found in RAGEngine.chunk_data_map.
+2025-06-11 20:18:13,169 - rag_engine - WARNING - Data for chunk ID user_001_conversation_2 not found in RAGEngine.chunk_data_map.
+2025-06-11 20:18:13,335 - rag_engine - INFO - No relevant context found or context is empty. Calling LLM with original query only.
+2025-06-11 20:18:13,435 - gemini_model - INFO - Using base model
+2025-06-11 20:18:15,390 - gemini_model - INFO - Model response generated
+2025-06-11 20:18:15,534 - rag_engine - INFO - RAGEngine: Query processing complete. LLM Call Succeeded: True. Found 3 relevant chunks.
+2025-06-11 20:18:15,673 - rag_vector_db - INFO - Performing search with top_k=4
+2025-06-11 20:18:16,135 - rag_vector_db - INFO - Search completed. Found 4 results.
+2025-06-11 20:18:16,280 - gemini_model - INFO - Using base model
+2025-06-11 20:18:18,728 - gemini_model - INFO - Model response generated
+2025-06-11 20:18:18,896 - gemini_memory_rag_model - INFO - Generated personalized response for user 'user_002' (length: 817)
+2025-06-11 20:18:19,354 - gemini_memory_rag_model - INFO - Memory RAG already initialized and instance exists
+2025-06-11 20:18:19,524 - gemini_memory_rag_model - INFO - Recording interaction for user 'user_002': hows the weather there?...
+2025-06-11 20:22:40,609 - gemini_model - INFO - Model preference set to: Base Model
+2025-06-11 20:22:41,650 - gemini_model - INFO - Using base model
+2025-06-11 20:22:56,307 - gemini_model - INFO - Model response generated
+2025-06-11 22:10:49,786 - rag_embedding_service - INFO - EmbeddingService configured
+2025-06-11 22:10:54,324 - rag_vector_db - INFO - VectorSearchDB configured:
+2025-06-11 22:10:55,024 - rag_document_processor - INFO - DocumentProcessor initialized
+2025-06-11 22:10:55,719 - rag_engine - INFO - RAGEngine initialized.
+2025-06-11 22:14:33,477 - gemini_model - INFO - Model preference set to: Base Model
+2025-06-11 22:14:34,872 - gemini_model - INFO - Using base model
+2025-06-11 22:14:50,413 - gemini_model - INFO - Model response generated
+2025-06-11 22:16:41,397 - gemini_model - INFO - Model preference set to: Base Model
+2025-06-11 22:16:42,331 - weather_model - INFO - Getting coordinates for location: the weather in buenos aires and give me some recommendations for my trip there in august
+2025-06-11 22:16:43,104 - weather_model - ERROR - Failed to get coordinates
+2025-06-12 11:42:59,254 - rag_embedding_service - INFO - EmbeddingService configured
+2025-06-12 11:43:10,693 - rag_vector_db - INFO - VectorSearchDB configured:
+2025-06-12 11:43:27,619 - rag_document_processor - INFO - DocumentProcessor initialized
+2025-06-12 11:43:29,043 - rag_engine - INFO - RAGEngine initialized.
+2025-06-12 11:49:31,949 - gemini_model - INFO - Model preference set to: Base Model
+2025-06-12 11:49:37,356 - gemini_model - INFO - Using base model
+2025-06-12 11:49:39,502 - gemini_model - ERROR - Error during prediction with base model
+2025-06-12 12:04:17,032 - rag_embedding_service - INFO - EmbeddingService configured
+2025-06-12 12:04:23,942 - rag_vector_db - INFO - VectorSearchDB configured:
+2025-06-12 12:04:25,911 - rag_document_processor - INFO - DocumentProcessor initialized
+2025-06-12 12:04:29,169 - rag_engine - INFO - RAGEngine initialized.
+2025-06-12 12:31:55,040 - gemini_model - INFO - Model preference set to: Base Model
+2025-06-12 12:31:56,606 - gemini_model - INFO - Using base model
+2025-06-12 12:31:58,517 - gemini_model - ERROR - Error during prediction with base model
+2025-06-12 13:15:02,946 - rag_embedding_service - INFO - EmbeddingService configured
+2025-06-12 13:15:08,517 - rag_vector_db - INFO - VectorSearchDB configured:
+2025-06-12 13:15:09,312 - rag_document_processor - INFO - DocumentProcessor initialized
+2025-06-12 13:15:10,058 - rag_engine - INFO - RAGEngine initialized.
+2025-06-12 13:20:26,023 - gemini_model - INFO - Model preference set to: Base Model
+2025-06-12 13:20:27,590 - gemini_model - INFO - Using base model
+2025-06-12 13:20:29,830 - gemini_model - INFO - Model requested a function call
+2025-06-12 13:20:29,926 - weather_model - INFO - Getting coordinates for location: New York, NY
+2025-06-12 13:20:30,713 - weather_model - ERROR - Failed to get coordinates
+2025-06-12 13:20:30,873 - gemini_model - INFO - Sending function response back to the model
+2025-06-12 15:53:51,305 - rag_embedding_service - INFO - EmbeddingService configured
+2025-06-12 15:53:56,531 - rag_vector_db - INFO - VectorSearchDB configured:
+2025-06-12 15:53:57,292 - rag_document_processor - INFO - DocumentProcessor initialized
+2025-06-12 15:53:58,358 - rag_engine - INFO - RAGEngine initialized.
+2025-06-12 15:56:15,387 - gemini_model - INFO - Model preference set to: Base Model
+2025-06-12 15:56:16,846 - gemini_model - INFO - Using base model
+2025-06-12 15:56:19,865 - gemini_model - INFO - Model requested a function call
+2025-06-12 15:56:20,022 - weather_model - INFO - Getting coordinates for location: Miami, FL
+2025-06-12 15:56:20,733 - app.backend.tools.geocoding - INFO - Attempting to get coordinates for location: Miami, FL
+2025-06-12 15:56:20,733 - app.backend.tools.geocoding - INFO - API Key present: No
+2025-06-12 15:56:20,733 - app.backend.tools.geocoding - ERROR - Google Maps API key not found in environment
+2025-06-12 15:56:20,733 - weather_model - ERROR - Failed to get coordinates
+2025-06-12 15:56:20,868 - gemini_model - INFO - Sending function response back to the model
+2025-06-12 15:57:04,288 - rag_embedding_service - INFO - EmbeddingService configured
+2025-06-12 15:57:08,895 - rag_vector_db - INFO - VectorSearchDB configured:
+2025-06-12 15:57:09,580 - rag_document_processor - INFO - DocumentProcessor initialized
+2025-06-12 15:57:10,314 - rag_engine - INFO - RAGEngine initialized.
+2025-06-12 16:07:25,973 - gemini_model - INFO - Model preference set to: Base Model
+2025-06-12 16:07:27,604 - gemini_model - INFO - Using base model
+2025-06-12 16:07:29,762 - gemini_model - INFO - Model returned a direct text response.
+2025-06-12 16:07:29,934 - gemini_model - ERROR - Error during prediction with base model
+2025-06-12 16:08:03,603 - gemini_model - INFO - Model preference set to: Base Model
+2025-06-12 16:08:04,626 - gemini_model - INFO - Using base model
+2025-06-12 16:08:06,139 - gemini_model - INFO - Model returned a direct text response.
+2025-06-12 16:08:19,884 - gemini_model - INFO - Model preference set to: Base Model
+2025-06-12 16:08:20,872 - gemini_model - INFO - Using base model
+2025-06-12 16:08:22,257 - gemini_model - INFO - Model requested a function call
+2025-06-12 16:08:22,419 - weather_model - INFO - Getting coordinates for location: Miami, Florida
+2025-06-12 16:08:23,179 - app.backend.tools.geocoding - INFO - Attempting to get coordinates for location: Miami, Florida
+2025-06-12 16:08:23,180 - app.backend.tools.geocoding - INFO - API Key present: Yes
+2025-06-12 16:08:23,180 - app.backend.tools.geocoding - INFO - Making geocoding request for: Miami, Florida
+2025-06-12 16:08:23,515 - app.backend.tools.geocoding - INFO - Successfully got coordinates for Miami, Florida: {'status': 'success', 'latitude': 25.7616798, 'longitude': -80.1917902, 'formatted_address': 'Miami, FL, USA'}
+2025-06-12 16:08:23,518 - weather_model - INFO - Getting weather data for coordinates: 25.7616798, -80.1917902
+2025-06-12 16:08:24,764 - weather_model - ERROR - Failed to fetch weather data
+2025-06-12 16:08:24,891 - weather_model - ERROR - Failed to get weather data
+2025-06-12 16:08:24,892 - weather_model - ERROR - Failed to log to Google Cloud: Invalid log entry: Value (25.7616798, -80.1917902) has unexpected type <class 'tuple'> at LogEntry.jsonPayload.coordinates
+2025-06-12 16:08:24,892 - gemini_model - INFO - Sending function response back to the model
+2025-06-12 16:11:45,597 - rag_embedding_service - INFO - EmbeddingService configured
+2025-06-12 16:11:50,049 - rag_vector_db - INFO - VectorSearchDB configured:
+2025-06-12 16:11:50,763 - rag_document_processor - INFO - DocumentProcessor initialized
+2025-06-12 16:11:51,535 - rag_engine - INFO - RAGEngine initialized.
+2025-06-12 16:12:50,390 - gemini_model - INFO - Model preference set to: Base Model
+2025-06-12 16:12:51,882 - gemini_model - INFO - Using base model
+2025-06-12 16:12:53,960 - gemini_model - INFO - Model requested a function call
+2025-06-12 16:12:54,078 - weather_model - INFO - Getting coordinates for location: Miami, FL
+2025-06-12 16:12:54,827 - app.backend.tools.geocoding - INFO - Attempting to get coordinates for location: Miami, FL
+2025-06-12 16:12:54,828 - app.backend.tools.geocoding - INFO - API Key present: Yes
+2025-06-12 16:12:54,828 - app.backend.tools.geocoding - INFO - Making geocoding request for: Miami, FL
+2025-06-12 16:12:55,100 - app.backend.tools.geocoding - INFO - Successfully got coordinates for Miami, FL: {'status': 'success', 'latitude': 25.7616798, 'longitude': -80.1917902, 'formatted_address': 'Miami, FL, USA'}
+2025-06-12 16:12:55,102 - weather_model - INFO - Getting weather data for coordinates: 25.7616798, -80.1917902
+2025-06-12 16:12:56,333 - weather_model - ERROR - Failed to fetch weather data
+2025-06-12 16:12:56,514 - weather_model - ERROR - Failed to get weather data
+2025-06-12 16:12:56,514 - weather_model - ERROR - Failed to log to Google Cloud: Invalid log entry: Value (25.7616798, -80.1917902) has unexpected type <class 'tuple'> at LogEntry.jsonPayload.coordinates
+2025-06-12 16:12:56,515 - gemini_model - INFO - Sending function response back to the model
+2025-06-13 11:10:12,182 - rag_embedding_service - INFO - EmbeddingService configured
+2025-06-13 11:10:16,792 - rag_vector_db - INFO - VectorSearchDB configured:
+2025-06-13 11:10:17,793 - rag_document_processor - INFO - DocumentProcessor initialized
+2025-06-13 11:10:18,869 - rag_engine - INFO - RAGEngine initialized.
+2025-06-13 11:10:58,221 - rag_embedding_service - INFO - EmbeddingService configured
+2025-06-13 11:11:03,175 - rag_vector_db - INFO - VectorSearchDB configured:
+2025-06-13 11:11:04,046 - rag_document_processor - INFO - DocumentProcessor initialized
+2025-06-13 11:11:04,876 - rag_engine - INFO - RAGEngine initialized.
+2025-06-13 11:11:05,834 - weather_model - INFO - Getting coordinates for location: Miami, FL
+2025-06-13 11:11:06,659 - app.backend.tools.geocoding - INFO - Attempting to get coordinates for location: Miami, FL
+2025-06-13 11:11:06,660 - app.backend.tools.geocoding - INFO - API Key present: Yes
+2025-06-13 11:11:06,660 - app.backend.tools.geocoding - INFO - Making geocoding request for: Miami, FL
+2025-06-13 11:11:06,987 - app.backend.tools.geocoding - ERROR - Geocoding failed for Miami, FL: The provided API key is invalid. 
+2025-06-13 11:11:06,989 - weather_model - ERROR - Failed to get coordinates
+2025-06-13 11:15:55,583 - rag_embedding_service - INFO - EmbeddingService configured
+2025-06-13 11:16:00,312 - rag_vector_db - INFO - VectorSearchDB configured:
+2025-06-13 11:16:01,409 - rag_document_processor - INFO - DocumentProcessor initialized
+2025-06-13 11:16:02,266 - rag_engine - INFO - RAGEngine initialized.
+2025-06-13 11:16:27,028 - rag_embedding_service - INFO - EmbeddingService configured
+2025-06-13 11:16:31,830 - rag_vector_db - INFO - VectorSearchDB configured:
+2025-06-13 11:16:32,850 - rag_document_processor - INFO - DocumentProcessor initialized
+2025-06-13 11:16:34,208 - rag_engine - INFO - RAGEngine initialized.
+2025-06-13 11:19:49,004 - rag_embedding_service - INFO - EmbeddingService configured
+2025-06-13 11:19:54,587 - rag_vector_db - INFO - VectorSearchDB configured:
+2025-06-13 11:19:55,427 - rag_document_processor - INFO - DocumentProcessor initialized
+2025-06-13 11:19:56,252 - rag_engine - INFO - RAGEngine initialized.
+2025-06-13 11:19:57,114 - weather_model - INFO - Getting coordinates for location: Miami, FL
+2025-06-13 11:19:57,971 - app.backend.tools.geocoding - INFO - Attempting to get coordinates for location: Miami, FL
+2025-06-13 11:19:57,972 - app.backend.tools.geocoding - INFO - API Key present: Yes
+2025-06-13 11:19:57,972 - app.backend.tools.geocoding - INFO - Making geocoding request for: Miami, FL
+2025-06-13 11:19:58,325 - app.backend.tools.geocoding - INFO - Successfully got coordinates for Miami, FL: {'status': 'success', 'latitude': 25.7616798, 'longitude': -80.1917902, 'formatted_address': 'Miami, FL, USA'}
+2025-06-13 11:19:58,326 - weather_model - INFO - Getting weather data for coordinates: 25.7616798, -80.1917902
+2025-06-13 11:19:59,604 - weather_model - ERROR - Failed to fetch weather data
+2025-06-13 11:19:59,733 - weather_model - ERROR - Failed to get weather data
+2025-06-13 11:19:59,733 - weather_model - ERROR - Failed to log to Google Cloud: Invalid log entry: Value (25.7616798, -80.1917902) has unexpected type <class 'tuple'> at LogEntry.jsonPayload.coordinates
+2025-06-13 11:24:07,965 - rag_embedding_service - INFO - EmbeddingService configured
+2025-06-13 11:24:13,144 - rag_vector_db - INFO - VectorSearchDB configured:
+2025-06-13 11:24:14,010 - rag_document_processor - INFO - DocumentProcessor initialized
+2025-06-13 11:24:14,844 - rag_engine - INFO - RAGEngine initialized.
+2025-06-13 11:24:15,643 - weather_model - INFO - Getting coordinates for location: Miami, FL
+2025-06-13 11:24:16,668 - app.backend.tools.geocoding - INFO - Attempting to get coordinates for location: Miami, FL
+2025-06-13 11:24:16,668 - app.backend.tools.geocoding - INFO - API Key present: Yes
+2025-06-13 11:24:16,668 - app.backend.tools.geocoding - INFO - Making geocoding request for: Miami, FL
+2025-06-13 11:24:16,991 - app.backend.tools.geocoding - INFO - Successfully got coordinates for Miami, FL: {'status': 'success', 'latitude': 25.7616798, 'longitude': -80.1917902, 'formatted_address': 'Miami, FL, USA'}
+2025-06-13 11:24:16,993 - weather_model - INFO - Getting weather data for coordinates: 25.7616798, -80.1917902
+2025-06-13 11:24:17,144 - weather_model - INFO - Using API Key ending in: ...Kry4
+2025-06-13 11:24:17,293 - weather_model - INFO - Requesting CURRENT conditions from URL: https://weather.googleapis.com/v1/currentConditions:lookup
+2025-06-13 11:24:17,481 - weather_model - INFO - With PARAMS: {'key': 'AIzaSyBPYcSejsvuaM4dEZpexIeq3eOVUiPKry4', 'location.latitude': 25.7616798, 'location.longitude': -80.1917902}
+2025-06-13 11:24:18,104 - weather_model - INFO - CURRENT conditions response status: 200
+2025-06-13 11:24:18,232 - weather_model - INFO - CURRENT conditions response text: {
+  "currentTime": "2025-06-13T18:24:18.102357573Z",
+  "timeZone": {
+    "id": "America/New_York"
+  },
+  "isDaytime": true,
+  "weatherCondition": {
+    "iconBaseUri": "https://maps.gstatic.com/weather/v1/party_cloudy",
+    "description": {
+      "text": "Partly sunny",
+      "languageCode": "en"
+    },
+    "type": "PARTLY_CLOUDY"
+  },
+  "temperature": {
+    "degrees": 30.9,
+    "unit": "CELSIUS"
+  },
+  "feelsLikeTemperature": {
+    "degrees": 35.7,
+    "unit": "CELSIUS"
+  },
+  "dewPoint": {
+    "degrees": 23.2,
+    "unit": "CELSIUS"
+  },
+  "heatIndex": {
+    "degrees": 35.7,
+    "unit": "CELSIUS"
+  },
+  "windChill": {
+    "degrees": 30.9,
+    "unit": "CELSIUS"
+  },
+  "relativeHumidity": 64,
+  "uvIndex": 9,
+  "precipitation": {
+    "probability": {
+      "percent": 0,
+      "type": "RAIN"
+    },
+    "snowQpf": {
+      "quantity": 0,
+      "unit": "MILLIMETERS"
+    },
+    "qpf": {
+      "quantity": 0,
+      "unit": "MILLIMETERS"
+    }
+  },
+  "thunderstormProbability": 0,
+  "airPressure": {
+    "meanSeaLevelMillibars": 1019.37
+  },
+  "wind": {
+    "direction": {
+      "degrees": 125,
+      "cardinal": "SOUTHEAST"
+    },
+    "speed": {
+      "value": 19,
+      "unit": "KILOMETERS_PER_HOUR"
+    },
+    "gust": {
+      "value": 30,
+      "unit": "KILOMETERS_PER_HOUR"
+    }
+  },
+  "visibility": {
+    "distance": 16,
+    "unit": "KILOMETERS"
+  },
+  "cloudCover": 30,
+  "currentConditionsHistory": {
+    "temperatureChange": {
+      "degrees": -0.5,
+      "unit": "CELSIUS"
+    },
+    "maxTemperature": {
+      "degrees": 31.4,
+      "unit": "CELSIUS"
+    },
+    "minTemperature": {
+      "degrees": 27.3,
+      "unit": "CELSIUS"
+    },
+    "snowQpf": {
+      "quantity": 0,
+      "unit": "MILLIMETERS"
+    },
+    "qpf": {
+      "quantity": 1.2344,
+      "unit": "MILLIMETERS"
+    }
+  }
+}
+
+2025-06-13 11:28:46,690 - rag_embedding_service - INFO - EmbeddingService configured
+2025-06-13 11:28:51,909 - rag_vector_db - INFO - VectorSearchDB configured:
+2025-06-13 11:28:52,785 - rag_document_processor - INFO - DocumentProcessor initialized
+2025-06-13 11:28:53,700 - rag_engine - INFO - RAGEngine initialized.
+2025-06-13 11:28:54,536 - weather_model - INFO - Getting coordinates for location: Miami, FL
+2025-06-13 11:29:00,565 - app.backend.tools.geocoding - INFO - Attempting to get coordinates for location: Miami, FL
+2025-06-13 11:29:00,565 - app.backend.tools.geocoding - INFO - API Key present: Yes
+2025-06-13 11:29:00,566 - app.backend.tools.geocoding - INFO - Making geocoding request for: Miami, FL
+2025-06-13 11:29:05,568 - app.backend.tools.geocoding - INFO - Successfully got coordinates for Miami, FL: {'status': 'success', 'latitude': 25.7616798, 'longitude': -80.1917902, 'formatted_address': 'Miami, FL, USA'}
+2025-06-13 11:29:05,570 - weather_model - INFO - Getting weather data for coordinates: 25.7616798, -80.1917902
+2025-06-13 11:29:06,073 - weather_model - INFO - Using API Key ending in: ...Kry4
+2025-06-13 11:29:06,589 - weather_model - INFO - Requesting CURRENT conditions from URL: https://weather.googleapis.com/v1/currentConditions:lookup
+2025-06-13 11:29:07,381 - weather_model - INFO - With PARAMS: {'key': 'AIzaSyBPYcSejsvuaM4dEZpexIeq3eOVUiPKry4', 'location.latitude': 25.7616798, 'location.longitude': -80.1917902}
+2025-06-13 11:29:11,715 - weather_model - INFO - CURRENT conditions response status: 200
+2025-06-13 11:29:11,922 - weather_model - INFO - CURRENT conditions response text: {
+  "currentTime": "2025-06-13T18:29:11.690539191Z",
+  "timeZone": {
+    "id": "America/New_York"
+  },
+  "isDaytime": true,
+  "weatherCondition": {
+    "iconBaseUri": "https://maps.gstatic.com/weather/v1/party_cloudy",
+    "description": {
+      "text": "Partly sunny",
+      "languageCode": "en"
+    },
+    "type": "PARTLY_CLOUDY"
+  },
+  "temperature": {
+    "degrees": 30.9,
+    "unit": "CELSIUS"
+  },
+  "feelsLikeTemperature": {
+    "degrees": 35.7,
+    "unit": "CELSIUS"
+  },
+  "dewPoint": {
+    "degrees": 23.2,
+    "unit": "CELSIUS"
+  },
+  "heatIndex": {
+    "degrees": 35.7,
+    "unit": "CELSIUS"
+  },
+  "windChill": {
+    "degrees": 30.9,
+    "unit": "CELSIUS"
+  },
+  "relativeHumidity": 64,
+  "uvIndex": 9,
+  "precipitation": {
+    "probability": {
+      "percent": 0,
+      "type": "RAIN"
+    },
+    "snowQpf": {
+      "quantity": 0,
+      "unit": "MILLIMETERS"
+    },
+    "qpf": {
+      "quantity": 0,
+      "unit": "MILLIMETERS"
+    }
+  },
+  "thunderstormProbability": 0,
+  "airPressure": {
+    "meanSeaLevelMillibars": 1019.34
+  },
+  "wind": {
+    "direction": {
+      "degrees": 125,
+      "cardinal": "SOUTHEAST"
+    },
+    "speed": {
+      "value": 19,
+      "unit": "KILOMETERS_PER_HOUR"
+    },
+    "gust": {
+      "value": 30,
+      "unit": "KILOMETERS_PER_HOUR"
+    }
+  },
+  "visibility": {
+    "distance": 16,
+    "unit": "KILOMETERS"
+  },
+  "cloudCover": 30,
+  "currentConditionsHistory": {
+    "temperatureChange": {
+      "degrees": -0.5,
+      "unit": "CELSIUS"
+    },
+    "maxTemperature": {
+      "degrees": 31.4,
+      "unit": "CELSIUS"
+    },
+    "minTemperature": {
+      "degrees": 27.3,
+      "unit": "CELSIUS"
+    },
+    "snowQpf": {
+      "quantity": 0,
+      "unit": "MILLIMETERS"
+    },
+    "qpf": {
+      "quantity": 1.2344,
+      "unit": "MILLIMETERS"
+    }
+  }
+}
+
+2025-06-13 11:29:12,839 - weather_model - ERROR - Failed to fetch weather data
+2025-06-13 11:29:13,326 - weather_model - ERROR - Failed to get weather data
+2025-06-13 11:47:31,272 - rag_embedding_service - INFO - EmbeddingService configured
+2025-06-13 11:47:36,128 - rag_vector_db - INFO - VectorSearchDB configured:
+2025-06-13 11:47:37,753 - rag_document_processor - INFO - DocumentProcessor initialized
+2025-06-13 11:47:39,436 - rag_engine - INFO - RAGEngine initialized.
+2025-06-13 11:47:40,812 - weather_model - INFO - Getting coordinates for location: Miami, FL
+2025-06-13 11:47:42,423 - app.backend.tools.geocoding - INFO - Attempting to get coordinates for location: Miami, FL
+2025-06-13 11:47:42,424 - app.backend.tools.geocoding - INFO - API Key present: Yes
+2025-06-13 11:47:42,424 - app.backend.tools.geocoding - INFO - Making geocoding request for: Miami, FL
+2025-06-13 11:47:42,929 - app.backend.tools.geocoding - INFO - Successfully got coordinates for Miami, FL: {'status': 'success', 'latitude': 25.7616798, 'longitude': -80.1917902, 'formatted_address': 'Miami, FL, USA'}
+2025-06-13 11:47:42,931 - weather_model - INFO - Getting weather data for coordinates: 25.7616798, -80.1917902
+2025-06-13 11:47:43,061 - weather_model - INFO - Using API Key ending in: ...Kry4
+2025-06-13 11:47:43,186 - weather_model - INFO - Requesting CURRENT conditions from URL: https://weather.googleapis.com/v1/currentConditions:lookup
+2025-06-13 11:47:43,325 - weather_model - INFO - With PARAMS: {'key': 'AIzaSyBPYcSejsvuaM4dEZpexIeq3eOVUiPKry4', 'location.latitude': 25.7616798, 'location.longitude': -80.1917902}
+2025-06-13 11:47:44,085 - weather_model - INFO - CURRENT conditions response status: 200
+2025-06-13 11:47:44,210 - weather_model - INFO - CURRENT conditions response text: {
+  "currentTime": "2025-06-13T18:47:44.092007597Z",
+  "timeZone": {
+    "id": "America/New_York"
+  },
+  "isDaytime": true,
+  "weatherCondition": {
+    "iconBaseUri": "https://maps.gstatic.com/weather/v1/party_cloudy",
+    "description": {
+      "text": "Partly sunny",
+      "languageCode": "en"
+    },
+    "type": "PARTLY_CLOUDY"
+  },
+  "temperature": {
+    "degrees": 30.6,
+    "unit": "CELSIUS"
+  },
+  "feelsLikeTemperature": {
+    "degrees": 35.2,
+    "unit": "CELSIUS"
+  },
+  "dewPoint": {
+    "degrees": 23.2,
+    "unit": "CELSIUS"
+  },
+  "heatIndex": {
+    "degrees": 35.2,
+    "unit": "CELSIUS"
+  },
+  "windChill": {
+    "degrees": 30.6,
+    "unit": "CELSIUS"
+  },
+  "relativeHumidity": 64,
+  "uvIndex": 9,
+  "precipitation": {
+    "probability": {
+      "percent": 0,
+      "type": "RAIN"
+    },
+    "snowQpf": {
+      "quantity": 0,
+      "unit": "MILLIMETERS"
+    },
+    "qpf": {
+      "quantity": 0,
+      "unit": "MILLIMETERS"
+    }
+  },
+  "thunderstormProbability": 0,
+  "airPressure": {
+    "meanSeaLevelMillibars": 1019.22
+  },
+  "wind": {
+    "direction": {
+      "degrees": 125,
+      "cardinal": "SOUTHEAST"
+    },
+    "speed": {
+      "value": 19,
+      "unit": "KILOMETERS_PER_HOUR"
+    },
+    "gust": {
+      "value": 29,
+      "unit": "KILOMETERS_PER_HOUR"
+    }
+  },
+  "visibility": {
+    "distance": 16,
+    "unit": "KILOMETERS"
+  },
+  "cloudCover": 30,
+  "currentConditionsHistory": {
+    "temperatureChange": {
+      "degrees": -0.8,
+      "unit": "CELSIUS"
+    },
+    "maxTemperature": {
+      "degrees": 31.4,
+      "unit": "CELSIUS"
+    },
+    "minTemperature": {
+      "degrees": 27.3,
+      "unit": "CELSIUS"
+    },
+    "snowQpf": {
+      "quantity": 0,
+      "unit": "MILLIMETERS"
+    },
+    "qpf": {
+      "quantity": 1.2344,
+      "unit": "MILLIMETERS"
+    }
+  }
+}
+
+2025-06-13 11:56:05,009 - rag_embedding_service - INFO - EmbeddingService configured
+2025-06-13 11:56:09,777 - rag_vector_db - INFO - VectorSearchDB configured:
+2025-06-13 11:56:10,649 - rag_document_processor - INFO - DocumentProcessor initialized
+2025-06-13 11:56:11,724 - rag_engine - INFO - RAGEngine initialized.
+2025-06-13 11:56:12,529 - weather_model - INFO - Getting coordinates for location: Miami, FL
+2025-06-13 11:56:13,328 - app.backend.tools.geocoding - INFO - Attempting to get coordinates for location: Miami, FL
+2025-06-13 11:56:13,329 - app.backend.tools.geocoding - INFO - API Key present: Yes
+2025-06-13 11:56:13,329 - app.backend.tools.geocoding - INFO - Making geocoding request for: Miami, FL
+2025-06-13 11:56:13,617 - app.backend.tools.geocoding - INFO - Successfully got coordinates for Miami, FL: {'status': 'success', 'latitude': 25.7616798, 'longitude': -80.1917902, 'formatted_address': 'Miami, FL, USA'}
+2025-06-13 11:56:13,619 - weather_model - INFO - Getting weather data for coordinates: 25.7616798, -80.1917902
+2025-06-13 11:56:13,726 - weather_model - INFO - Using API Key ending in: ...Kry4
+2025-06-13 11:56:13,883 - weather_model - INFO - Requesting CURRENT conditions from URL: https://weather.googleapis.com/v1/currentConditions:lookup
+2025-06-13 11:56:14,006 - weather_model - INFO - With PARAMS: {'key': 'AIzaSyBPYcSejsvuaM4dEZpexIeq3eOVUiPKry4', 'location.latitude': 25.7616798, 'location.longitude': -80.1917902}
+2025-06-13 11:56:14,716 - weather_model - INFO - CURRENT conditions response status: 200
+2025-06-13 11:56:14,835 - weather_model - INFO - CURRENT conditions response text: {
+  "currentTime": "2025-06-13T18:56:14.746456243Z",
+  "timeZone": {
+    "id": "America/New_York"
+  },
+  "isDaytime": true,
+  "weatherCondition": {
+    "iconBaseUri": "https://maps.gstatic.com/weather/v1/party_cloudy",
+    "description": {
+      "text": "Partly sunny",
+      "languageCode": "en"
+    },
+    "type": "PARTLY_CLOUDY"
+  },
+  "temperature": {
+    "degrees": 30.6,
+    "unit": "CELSIUS"
+  },
+  "feelsLikeTemperature": {
+    "degrees": 35.1,
+    "unit": "CELSIUS"
+  },
+  "dewPoint": {
+    "degrees": 23.1,
+    "unit": "CELSIUS"
+  },
+  "heatIndex": {
+    "degrees": 35.1,
+    "unit": "CELSIUS"
+  },
+  "windChill": {
+    "degrees": 30.6,
+    "unit": "CELSIUS"
+  },
+  "relativeHumidity": 64,
+  "uvIndex": 9,
+  "precipitation": {
+    "probability": {
+      "percent": 0,
+      "type": "RAIN"
+    },
+    "snowQpf": {
+      "quantity": 0,
+      "unit": "MILLIMETERS"
+    },
+    "qpf": {
+      "quantity": 0,
+      "unit": "MILLIMETERS"
+    }
+  },
+  "thunderstormProbability": 0,
+  "airPressure": {
+    "meanSeaLevelMillibars": 1019.16
+  },
+  "wind": {
+    "direction": {
+      "degrees": 125,
+      "cardinal": "SOUTHEAST"
+    },
+    "speed": {
+      "value": 19,
+      "unit": "KILOMETERS_PER_HOUR"
+    },
+    "gust": {
+      "value": 29,
+      "unit": "KILOMETERS_PER_HOUR"
+    }
+  },
+  "visibility": {
+    "distance": 16,
+    "unit": "KILOMETERS"
+  },
+  "cloudCover": 30,
+  "currentConditionsHistory": {
+    "temperatureChange": {
+      "degrees": -0.8,
+      "unit": "CELSIUS"
+    },
+    "maxTemperature": {
+      "degrees": 31.4,
+      "unit": "CELSIUS"
+    },
+    "minTemperature": {
+      "degrees": 27.3,
+      "unit": "CELSIUS"
+    },
+    "snowQpf": {
+      "quantity": 0,
+      "unit": "MILLIMETERS"
+    },
+    "qpf": {
+      "quantity": 1.2344,
+      "unit": "MILLIMETERS"
+    }
+  }
+}
+
+2025-06-13 12:02:29,153 - rag_embedding_service - INFO - EmbeddingService configured
+2025-06-13 12:02:34,138 - rag_vector_db - INFO - VectorSearchDB configured:
+2025-06-13 12:02:34,937 - rag_document_processor - INFO - DocumentProcessor initialized
+2025-06-13 12:02:35,726 - rag_engine - INFO - RAGEngine initialized.
+2025-06-13 12:02:36,488 - weather_model - INFO - Getting coordinates for location: Miami, FL
+2025-06-13 12:02:37,224 - app.backend.tools.geocoding - INFO - Attempting to get coordinates for location: Miami, FL
+2025-06-13 12:02:37,225 - app.backend.tools.geocoding - INFO - API Key present: Yes
+2025-06-13 12:02:37,225 - app.backend.tools.geocoding - INFO - Making geocoding request for: Miami, FL
+2025-06-13 12:02:37,517 - app.backend.tools.geocoding - INFO - Successfully got coordinates for Miami, FL: {'status': 'success', 'latitude': 25.7616798, 'longitude': -80.1917902, 'formatted_address': 'Miami, FL, USA'}
+2025-06-13 12:02:37,519 - weather_model - INFO - Getting weather data for coordinates: 25.7616798, -80.1917902
+2025-06-13 12:02:37,625 - weather_model - INFO - Using API Key ending in: ...Kry4
+2025-06-13 12:02:37,757 - weather_model - INFO - Requesting CURRENT conditions from URL: https://weather.googleapis.com/v1/currentConditions:lookup
+2025-06-13 12:02:37,905 - weather_model - INFO - With PARAMS: {'key': 'AIzaSyBPYcSejsvuaM4dEZpexIeq3eOVUiPKry4', 'location.latitude': 25.7616798, 'location.longitude': -80.1917902}
+2025-06-13 12:02:38,789 - weather_model - INFO - CURRENT conditions response status: 200
+2025-06-13 12:02:38,927 - weather_model - INFO - CURRENT conditions response text: {
+  "currentTime": "2025-06-13T19:02:38.816106553Z",
+  "timeZone": {
+    "id": "America/New_York"
+  },
+  "isDaytime": true,
+  "weatherCondition": {
+    "iconBaseUri": "https://maps.gstatic.com/weather/v1/party_cloudy",
+    "description": {
+      "text": "Partly sunny",
+      "languageCode": "en"
+    },
+    "type": "PARTLY_CLOUDY"
+  },
+  "temperature": {
+    "degrees": 30.5,
+    "unit": "CELSIUS"
+  },
+  "feelsLikeTemperature": {
+    "degrees": 35.1,
+    "unit": "CELSIUS"
+  },
+  "dewPoint": {
+    "degrees": 23.1,
+    "unit": "CELSIUS"
+  },
+  "heatIndex": {
+    "degrees": 35.1,
+    "unit": "CELSIUS"
+  },
+  "windChill": {
+    "degrees": 30.5,
+    "unit": "CELSIUS"
+  },
+  "relativeHumidity": 64,
+  "uvIndex": 8,
+  "precipitation": {
+    "probability": {
+      "percent": 0,
+      "type": "RAIN"
+    },
+    "snowQpf": {
+      "quantity": 0,
+      "unit": "MILLIMETERS"
+    },
+    "qpf": {
+      "quantity": 0,
+      "unit": "MILLIMETERS"
+    }
+  },
+  "thunderstormProbability": 0,
+  "airPressure": {
+    "meanSeaLevelMillibars": 1019.11
+  },
+  "wind": {
+    "direction": {
+      "degrees": 125,
+      "cardinal": "SOUTHEAST"
+    },
+    "speed": {
+      "value": 19,
+      "unit": "KILOMETERS_PER_HOUR"
+    },
+    "gust": {
+      "value": 29,
+      "unit": "KILOMETERS_PER_HOUR"
+    }
+  },
+  "visibility": {
+    "distance": 16,
+    "unit": "KILOMETERS"
+  },
+  "cloudCover": 30,
+  "currentConditionsHistory": {
+    "temperatureChange": {
+      "degrees": -0.7,
+      "unit": "CELSIUS"
+    },
+    "maxTemperature": {
+      "degrees": 31.2,
+      "unit": "CELSIUS"
+    },
+    "minTemperature": {
+      "degrees": 27.3,
+      "unit": "CELSIUS"
+    },
+    "snowQpf": {
+      "quantity": 0,
+      "unit": "MILLIMETERS"
+    },
+    "qpf": {
+      "quantity": 1.2344,
+      "unit": "MILLIMETERS"
+    }
+  }
+}
+
+2025-06-13 12:02:39,071 - weather_model - INFO - Requesting FORECAST from URL: https://weather.googleapis.com/v1/forecast/days:lookup
+2025-06-13 12:02:39,711 - weather_model - INFO - FORECAST response status: 200
+2025-06-13 12:02:39,873 - weather_model - INFO - FORECAST response text: {
+  "forecastDays": [
+    {
+      "interval": {
+        "startTime": "2025-06-13T11:00:00Z",
+        "endTime": "2025-06-14T11:00:00Z"
+      },
+      "displayDate": {
+        "year": 2025,
+        "month": 6,
+        "day": 13
+      },
+      "daytimeForecast": {
+        "interval": {
+          "startTime": "2025-06-13T11:00:00Z",
+          "endTime": "2025-06-13T23:00:00Z"
+        },
+        "weatherCondition": {
+          "iconBaseUri": "https://maps.gstatic.com/weather/v1/party_cloudy",
+          "description": {
+            "text": "Partly sunny",
+            "languageCode": "en"
+          },
+          "type": "PARTLY_CLOUDY"
+        },
+        "relativeHumidity": 68,
+        "uvIndex": 10,
+        "precipitation": {
+          "probability": {
+            "percent": 0,
+            "type": "RAIN"
+          },
+          "snowQpf": {
+            "quantity": 0,
+            "unit": "MILLIMETERS"
+          },
+          "qpf": {
+            "quantity": 0,
+            "unit": "MILLIMETERS"
+          }
+        },
+        "thunderstormProbability": 0,
+        "wind": {
+          "direction": {
+            "degrees": 125,
+            "cardinal": "SOUTHEAST"
+          },
+          "speed": {
+            "value": 21,
+            "unit": "KILOMETERS_PER_HOUR"
+          },
+          "gust": {
+            "value": 31,
+            "unit": "KILOMETERS_PER_HOUR"
+          }
+        },
+        "cloudCover": 33,
+        "iceThickness": {
+          "thickness": 0,
+          "unit": "MILLIMETERS"
+        }
+      },
+      "nighttimeForecast": {
+        "interval": {
+          "startTime": "2025-06-13T23:00:00Z",
+          "endTime": "2025-06-14T11:00:00Z"
+        },
+        "weatherCondition": {
+          "iconBaseUri": "https://maps.gstatic.com/weather/v1/partly_clear",
+          "description": {
+            "text": "Partly cloudy",
+            "languageCode": "en"
+          },
+          "type": "PARTLY_CLOUDY"
+        },
+        "relativeHumidity": 73,
+        "uvIndex": 0,
+        "precipitation": {
+          "probability": {
+            "percent": 25,
+            "type": "RAIN"
+          },
+          "snowQpf": {
+            "quantity": 0,
+            "unit": "MILLIMETERS"
+          },
+          "qpf": {
+            "quantity": 0.7391,
+            "unit": "MILLIMETERS"
+          }
+        },
+        "thunderstormProbability": 70,
+        "wind": {
+          "direction": {
+            "degrees": 129,
+            "cardinal": "SOUTHEAST"
+          },
+          "speed": {
+            "value": 18,
+            "unit": "KILOMETERS_PER_HOUR"
+          },
+          "gust": {
+            "value": 26,
+            "unit": "KILOMETERS_PER_HOUR"
+          }
+        },
+        "cloudCover": 51,
+        "iceThickness": {
+          "thickness": 0,
+          "unit": "MILLIMETERS"
+        }
+      },
+      "maxTemperature": {
+        "degrees": 31,
+        "unit": "CELSIUS"
+      },
+      "minTemperature": {
+        "degrees": 27.9,
+        "unit": "CELSIUS"
+      },
+      "feelsLikeMaxTemperature": {
+        "degrees": 36,
+        "unit": "CELSIUS"
+      },
+      "feelsLikeMinTemperature": {
+        "degrees": 31.6,
+        "unit": "CELSIUS"
+      },
+      "sunEvents": {
+        "sunriseTime": "2025-06-13T10:28:56.609822756Z",
+        "sunsetTime": "2025-06-14T00:13:02.976137194Z"
+      },
+      "moonEvents": {
+        "moonPhase": "WANING_GIBBOUS",
+        "moonriseTimes": [
+          "2025-06-14T02:35:55.052035913Z"
+        ],
+        "moonsetTimes": [
+          "2025-06-13T12:16:37.800967697Z"
+        ]
+      },
+      "maxHeatIndex": {
+        "degrees": 36,
+        "unit": "CELSIUS"
+      }
+    },
+    {
+      "interval": {
+        "startTime": "2025-06-14T11:00:00Z",
+        "endTime": "2025-06-15T11:00:00Z"
+      },
+      "displayDate": {
+        "year": 2025,
+        "month": 6,
+        "day": 14
+      },
+      "daytimeForecast": {
+        "interval": {
+          "startTime": "2025-06-14T11:00:00Z",
+          "endTime": "2025-06-14T23:00:00Z"
+        },
+        "weatherCondition": {
+          "iconBaseUri": "https://maps.gstatic.com/weather/v1/party_cloudy",
+          "description": {
+            "text": "Partly sunny",
+            "languageCode": "en"
+          },
+          "type": "PARTLY_CLOUDY"
+        },
+        "relativeHumidity": 66,
+        "uvIndex": 10,
+        "precipitation": {
+          "probability": {
+            "percent": 15,
+            "type": "RAIN"
+          },
+          "snowQpf": {
+            "quantity": 0,
+            "unit": "MILLIMETERS"
+          },
+          "qpf": {
+            "quantity": 0,
+            "unit": "MILLIMETERS"
+          }
+        },
+        "thunderstormProbability": 40,
+        "wind": {
+          "direction": {
+            "degrees": 125,
+            "cardinal": "SOUTHEAST"
+          },
+          "speed": {
+            "value": 19,
+            "unit": "KILOMETERS_PER_HOUR"
+          },
+          "gust": {
+            "value": 29,
+            "unit": "KILOMETERS_PER_HOUR"
+          }
+        },
+        "cloudCover": 55,
+        "iceThickness": {
+          "thickness": 0,
+          "unit": "MILLIMETERS"
+        }
+      },
+      "nighttimeForecast": {
+        "interval": {
+          "startTime": "2025-06-14T23:00:00Z",
+          "endTime": "2025-06-15T11:00:00Z"
+        },
+        "weatherCondition": {
+          "iconBaseUri": "https://maps.gstatic.com/weather/v1/partly_clear",
+          "description": {
+            "text": "Partly cloudy",
+            "languageCode": "en"
+          },
+          "type": "PARTLY_CLOUDY"
+        },
+        "relativeHumidity": 71,
+        "uvIndex": 0,
+        "precipitation": {
+          "probability": {
+            "percent": 20,
+            "type": "RAIN"
+          },
+          "snowQpf": {
+            "quantity": 0,
+            "unit": "MILLIMETERS"
+          },
+          "qpf": {
+            "quantity": 0.3861,
+            "unit": "MILLIMETERS"
+          }
+        },
+        "thunderstormProbability": 60,
+        "wind": {
+          "direction": {
+            "degrees": 126,
+            "cardinal": "SOUTHEAST"
+          },
+          "speed": {
+            "value": 16,
+            "unit": "KILOMETERS_PER_HOUR"
+          },
+          "gust": {
+            "value": 24,
+            "unit": "KILOMETERS_PER_HOUR"
+          }
+        },
+        "cloudCover": 45,
+        "iceThickness": {
+          "thickness": 0,
+          "unit": "MILLIMETERS"
+        }
+      },
+      "maxTemperature": {
+        "degrees": 30.4,
+        "unit": "CELSIUS"
+      },
+      "minTemperature": {
+        "degrees": 27.3,
+        "unit": "CELSIUS"
+      },
+      "feelsLikeMaxTemperature": {
+        "degrees": 34.4,
+        "unit": "CELSIUS"
+      },
+      "feelsLikeMinTemperature": {
+        "degrees": 30.6,
+        "unit": "CELSIUS"
+      },
+      "sunEvents": {
+        "sunriseTime": "2025-06-14T10:29:02.248612134Z",
+        "sunsetTime": "2025-06-15T00:13:22.210240151Z"
+      },
+      "moonEvents": {
+        "moonPhase": "WANING_GIBBOUS",
+        "moonriseTimes": [
+          "2025-06-15T03:18:20.841033732Z"
+        ],
+        "moonsetTimes": [
+          "2025-06-14T13:16:57.468262597Z"
+        ]
+      },
+      "maxHeatIndex": {
+        "degrees": 34.4,
+        "unit": "CELSIUS"
+      }
+    },
+    {
+      "interval": {
+        "startTime": "2025-06-15T11:00:00Z",
+        "endTime": "2025-06-16T11:00:00Z"
+      },
+      "displayDate": {
+        "year": 2025,
+        "month": 6,
+        "day": 15
+      },
+      "daytimeForecast": {
+        "interval": {
+          "startTime": "2025-06-15T11:00:00Z",
+          "endTime": "2025-06-15T23:00:00Z"
+        },
+        "weatherCondition": {
+          "iconBaseUri": "https://maps.gstatic.com/weather/v1/mostly_sunny",
+          "description": {
+            "text": "Mostly sunny",
+            "languageCode": "en"
+          },
+          "type": "MOSTLY_CLEAR"
+        },
+        "relativeHumidity": 66,
+        "uvIndex": 10,
+        "precipitation": {
+          "probability": {
+            "percent": 25,
+            "type": "RAIN"
+          },
+          "snowQpf": {
+            "quantity": 0,
+            "unit": "MILLIMETERS"
+          },
+          "qpf": {
+            "quantity": 0.7264,
+            "unit": "MILLIMETERS"
+          }
+        },
+        "thunderstormProbability": 40,
+        "wind": {
+          "direction": {
+            "degrees": 134,
+            "cardinal": "SOUTHEAST"
+          },
+          "speed": {
+            "value": 18,
+            "unit": "KILOMETERS_PER_HOUR"
+          },
+          "gust": {
+            "value": 27,
+            "unit": "KILOMETERS_PER_HOUR"
+          }
+        },
+        "cloudCover": 43,
+        "iceThickness": {
+          "thickness": 0,
+          "unit": "MILLIMETERS"
+        }
+      },
+      "nighttimeForecast": {
+        "interval": {
+          "startTime": "2025-06-15T23:00:00Z",
+          "endTime": "2025-06-16T11:00:00Z"
+        },
+        "weatherCondition": {
+          "iconBaseUri": "https://maps.gstatic.com/weather/v1/drizzle",
+          "description": {
+            "text": "Chance of showers",
+            "languageCode": "en"
+          },
+          "type": "CHANCE_OF_SHOWERS"
+        },
+        "relativeHumidity": 72,
+        "uvIndex": 0,
+        "precipitation": {
+          "probability": {
+            "percent": 20,
+            "type": "RAIN"
+          },
+          "snowQpf": {
+            "quantity": 0,
+            "unit": "MILLIMETERS"
+          },
+          "qpf": {
+            "quantity": 0.7036,
+            "unit": "MILLIMETERS"
+          }
+        },
+        "thunderstormProbability": 70,
+        "wind": {
+          "direction": {
+            "degrees": 133,
+            "cardinal": "SOUTHEAST"
+          },
+          "speed": {
+            "value": 16,
+            "unit": "KILOMETERS_PER_HOUR"
+          },
+          "gust": {
+            "value": 21,
+            "unit": "KILOMETERS_PER_HOUR"
+          }
+        },
+        "cloudCover": 51,
+        "iceThickness": {
+          "thickness": 0,
+          "unit": "MILLIMETERS"
+        }
+      },
+      "maxTemperature": {
+        "degrees": 30.4,
+        "unit": "CELSIUS"
+      },
+      "minTemperature": {
+        "degrees": 27.3,
+        "unit": "CELSIUS"
+      },
+      "feelsLikeMaxTemperature": {
+        "degrees": 34.4,
+        "unit": "CELSIUS"
+      },
+      "feelsLikeMinTemperature": {
+        "degrees": 30.5,
+        "unit": "CELSIUS"
+      },
+      "sunEvents": {
+        "sunriseTime": "2025-06-15T10:29:08.983970784Z",
+        "sunsetTime": "2025-06-16T00:13:40.580163874Z"
+      },
+      "moonEvents": {
+        "moonPhase": "WANING_GIBBOUS",
+        "moonriseTimes": [
+          "2025-06-16T03:56:27.409705610Z"
+        ],
+        "moonsetTimes": [
+          "2025-06-15T14:17:41.994077411Z"
+        ]
+      },
+      "maxHeatIndex": {
+        "degrees": 34.4,
+        "unit": "CELSIUS"
+      }
+    },
+    {
+      "interval": {
+        "startTime": "2025-06-16T11:00:00Z",
+        "endTime": "2025-06-17T11:00:00Z"
+      },
+      "displayDate": {
+        "year": 2025,
+        "month": 6,
+        "day": 16
+      },
+      "daytimeForecast": {
+        "interval": {
+          "startTime": "2025-06-16T11:00:00Z",
+          "endTime": "2025-06-16T23:00:00Z"
+        },
+        "weatherCondition": {
+          "iconBaseUri": "https://maps.gstatic.com/weather/v1/mostly_sunny",
+          "description": {
+            "text": "Mostly sunny",
+            "languageCode": "en"
+          },
+          "type": "MOSTLY_CLEAR"
+        },
+        "relativeHumidity": 64,
+        "uvIndex": 10,
+        "precipitation": {
+          "probability": {
+            "percent": 20,
+            "type": "RAIN"
+          },
+          "snowQpf": {
+            "quantity": 0,
+            "unit": "MILLIMETERS"
+          },
+          "qpf": {
+            "quantity": 0.5004,
+            "unit": "MILLIMETERS"
+          }
+        },
+        "thunderstormProbability": 60,
+        "wind": {
+          "direction": {
+            "degrees": 138,
+            "cardinal": "SOUTHEAST"
+          },
+          "speed": {
+            "value": 18,
+            "unit": "KILOMETERS_PER_HOUR"
+          },
+          "gust": {
+            "value": 27,
+            "unit": "KILOMETERS_PER_HOUR"
+          }
+        },
+        "cloudCover": 50,
+        "iceThickness": {
+          "thickness": 0,
+          "unit": "MILLIMETERS"
+        }
+      },
+      "nighttimeForecast": {
+        "interval": {
+          "startTime": "2025-06-16T23:00:00Z",
+          "endTime": "2025-06-17T11:00:00Z"
+        },
+        "weatherCondition": {
+          "iconBaseUri": "https://maps.gstatic.com/weather/v1/partly_clear",
+          "description": {
+            "text": "Partly cloudy",
+            "languageCode": "en"
+          },
+          "type": "PARTLY_CLOUDY"
+        },
+        "relativeHumidity": 68,
+        "uvIndex": 0,
+        "precipitation": {
+          "probability": {
+            "percent": 15,
+            "type": "RAIN"
+          },
+          "snowQpf": {
+            "quantity": 0,
+            "unit": "MILLIMETERS"
+          },
+          "qpf": {
+            "quantity": 0,
+            "unit": "MILLIMETERS"
+          }
+        },
+        "thunderstormProbability": 50,
+        "wind": {
+          "direction": {
+            "degrees": 133,
+            "cardinal": "SOUTHEAST"
+          },
+          "speed": {
+            "value": 14,
+            "unit": "KILOMETERS_PER_HOUR"
+          },
+          "gust": {
+            "value": 23,
+            "unit": "KILOMETERS_PER_HOUR"
+          }
+        },
+        "cloudCover": 46,
+        "iceThickness": {
+          "thickness": 0,
+          "unit": "MILLIMETERS"
+        }
+      },
+      "maxTemperature": {
+        "degrees": 30.7,
+        "unit": "CELSIUS"
+      },
+      "minTemperature": {
+        "degrees": 26.6,
+        "unit": "CELSIUS"
+      },
+      "feelsLikeMaxTemperature": {
+        "degrees": 34.3,
+        "unit": "CELSIUS"
+      },
+      "feelsLikeMinTemperature": {
+        "degrees": 29.4,
+        "unit": "CELSIUS"
+      },
+      "sunEvents": {
+        "sunriseTime": "2025-06-16T10:29:16.797207648Z",
+        "sunsetTime": "2025-06-17T00:13:58.058992323Z"
+      },
+      "moonEvents": {
+        "moonPhase": "WANING_GIBBOUS",
+        "moonsetTimes": [
+          "2025-06-16T15:17:51.743748674Z"
+        ]
+      },
+      "maxHeatIndex": {
+        "degrees": 34.3,
+        "unit": "CELSIUS"
+      }
+    },
+    {
+      "interval": {
+        "startTime": "2025-06-17T11:00:00Z",
+        "endTime": "2025-06-18T11:00:00Z"
+      },
+      "displayDate": {
+        "year": 2025,
+        "month": 6,
+        "day": 17
+      },
+      "daytimeForecast": {
+        "interval": {
+          "startTime": "2025-06-17T11:00:00Z",
+          "endTime": "2025-06-17T23:00:00Z"
+        },
+        "weatherCondition": {
+          "iconBaseUri": "https://maps.gstatic.com/weather/v1/party_cloudy",
+          "description": {
+            "text": "Partly sunny",
+            "languageCode": "en"
+          },
+          "type": "PARTLY_CLOUDY"
+        },
+        "relativeHumidity": 64,
+        "uvIndex": 9,
+        "precipitation": {
+          "probability": {
+            "percent": 15,
+            "type": "RAIN"
+          },
+          "snowQpf": {
+            "quantity": 0,
+            "unit": "MILLIMETERS"
+          },
+          "qpf": {
+            "quantity": 0.1143,
+            "unit": "MILLIMETERS"
+          }
+        },
+        "thunderstormProbability": 50,
+        "wind": {
+          "direction": {
+            "degrees": 124,
+            "cardinal": "EAST_SOUTHEAST"
+          },
+          "speed": {
+            "value": 16,
+            "unit": "KILOMETERS_PER_HOUR"
+          },
+          "gust": {
+            "value": 26,
+            "unit": "KILOMETERS_PER_HOUR"
+          }
+        },
+        "cloudCover": 63,
+        "iceThickness": {
+          "thickness": 0,
+          "unit": "MILLIMETERS"
+        }
+      },
+      "nighttimeForecast": {
+        "interval": {
+          "startTime": "2025-06-17T23:00:00Z",
+          "endTime": "2025-06-18T11:00:00Z"
+        },
+        "weatherCondition": {
+          "iconBaseUri": "https://maps.gstatic.com/weather/v1/partly_clear",
+          "description": {
+            "text": "Partly cloudy",
+            "languageCode": "en"
+          },
+          "type": "PARTLY_CLOUDY"
+        },
+        "relativeHumidity": 70,
+        "uvIndex": 0,
+        "precipitation": {
+          "probability": {
+            "percent": 15,
+            "type": "RAIN"
+          },
+          "snowQpf": {
+            "quantity": 0,
+            "unit": "MILLIMETERS"
+          },
+          "qpf": {
+            "quantity": 0,
+            "unit": "MILLIMETERS"
+          }
+        },
+        "thunderstormProbability": 50,
+        "wind": {
+          "direction": {
+            "degrees": 131,
+            "cardinal": "SOUTHEAST"
+          },
+          "speed": {
+            "value": 13,
+            "unit": "KILOMETERS_PER_HOUR"
+          },
+          "gust": {
+            "value": 23,
+            "unit": "KILOMETERS_PER_HOUR"
+          }
+        },
+        "cloudCover": 53,
+        "iceThickness": {
+          "thickness": 0,
+          "unit": "MILLIMETERS"
+        }
+      },
+      "maxTemperature": {
+        "degrees": 30.9,
+        "unit": "CELSIUS"
+      },
+      "minTemperature": {
+        "degrees": 27.8,
+        "unit": "CELSIUS"
+      },
+      "feelsLikeMaxTemperature": {
+        "degrees": 34.8,
+        "unit": "CELSIUS"
+      },
+      "feelsLikeMinTemperature": {
+        "degrees": 31.1,
+        "unit": "CELSIUS"
+      },
+      "sunEvents": {
+        "sunriseTime": "2025-06-17T10:29:25.668688397Z",
+        "sunsetTime": "2025-06-18T00:14:14.620366820Z"
+      },
+      "moonEvents": {
+        "moonPhase": "WANING_GIBBOUS",
+        "moonriseTimes": [
+          "2025-06-17T04:31:23.343409494Z"
+        ],
+        "moonsetTimes": [
+          "2025-06-17T16:17:24.001909213Z"
+        ]
+      },
+      "maxHeatIndex": {
+        "degrees": 34.8,
+        "unit": "CELSIUS"
+      }
+    }
+  ],
+  "timeZone": {
+    "id": "America/New_York"
+  },
+  "nextPageToken": "ChYKEgkZBody_cI5QBFfLGdKRgxUwBAHEAUYBSIMCM_rscIGEOyDyOMCKhBBbWVyaWNhL05ld19Zb3Jr"
+}
+
+2025-06-13 12:06:32,425 - rag_embedding_service - INFO - EmbeddingService configured
+2025-06-13 12:06:38,530 - rag_vector_db - INFO - VectorSearchDB configured:
+2025-06-13 12:06:39,923 - rag_document_processor - INFO - DocumentProcessor initialized
+2025-06-13 12:06:41,017 - rag_engine - INFO - RAGEngine initialized.
+2025-06-13 12:06:41,801 - weather_model - INFO - Getting coordinates for location: Miami, FL
+2025-06-13 12:06:42,557 - app.backend.tools.geocoding - INFO - Attempting to get coordinates for location: Miami, FL
+2025-06-13 12:06:42,558 - app.backend.tools.geocoding - INFO - API Key present: Yes
+2025-06-13 12:06:42,558 - app.backend.tools.geocoding - INFO - Making geocoding request for: Miami, FL
+2025-06-13 12:06:42,824 - app.backend.tools.geocoding - INFO - Successfully got coordinates for Miami, FL: {'status': 'success', 'latitude': 25.7616798, 'longitude': -80.1917902, 'formatted_address': 'Miami, FL, USA'}
+2025-06-13 12:06:42,826 - weather_model - INFO - Getting weather data for coordinates: 25.7616798, -80.1917902
+2025-06-13 12:06:42,930 - weather_model - INFO - Using API Key ending in: ...Kry4
+2025-06-13 12:06:43,033 - weather_model - INFO - Requesting CURRENT conditions from URL: https://weather.googleapis.com/v1/currentConditions:lookup
+2025-06-13 12:06:43,165 - weather_model - INFO - With PARAMS: {'key': 'AIzaSyBPYcSejsvuaM4dEZpexIeq3eOVUiPKry4', 'location.latitude': 25.7616798, 'location.longitude': -80.1917902}
+2025-06-13 12:06:43,795 - weather_model - INFO - CURRENT conditions response status: 200
+2025-06-13 12:06:43,880 - weather_model - INFO - CURRENT conditions response text: {
+  "currentTime": "2025-06-13T19:06:43.833615817Z",
+  "timeZone": {
+    "id": "America/New_York"
+  },
+  "isDaytime": true,
+  "weatherCondition": {
+    "iconBaseUri": "https://maps.gstatic.com/weather/v1/party_cloudy",
+    "description": {
+      "text": "Partly sunny",
+      "languageCode": "en"
+    },
+    "type": "PARTLY_CLOUDY"
+  },
+  "temperature": {
+    "degrees": 30.5,
+    "unit": "CELSIUS"
+  },
+  "feelsLikeTemperature": {
+    "degrees": 35.1,
+    "unit": "CELSIUS"
+  },
+  "dewPoint": {
+    "degrees": 23.1,
+    "unit": "CELSIUS"
+  },
+  "heatIndex": {
+    "degrees": 35.1,
+    "unit": "CELSIUS"
+  },
+  "windChill": {
+    "degrees": 30.5,
+    "unit": "CELSIUS"
+  },
+  "relativeHumidity": 64,
+  "uvIndex": 8,
+  "precipitation": {
+    "probability": {
+      "percent": 0,
+      "type": "RAIN"
+    },
+    "snowQpf": {
+      "quantity": 0,
+      "unit": "MILLIMETERS"
+    },
+    "qpf": {
+      "quantity": 0,
+      "unit": "MILLIMETERS"
+    }
+  },
+  "thunderstormProbability": 0,
+  "airPressure": {
+    "meanSeaLevelMillibars": 1019.07
+  },
+  "wind": {
+    "direction": {
+      "degrees": 125,
+      "cardinal": "SOUTHEAST"
+    },
+    "speed": {
+      "value": 19,
+      "unit": "KILOMETERS_PER_HOUR"
+    },
+    "gust": {
+      "value": 29,
+      "unit": "KILOMETERS_PER_HOUR"
+    }
+  },
+  "visibility": {
+    "distance": 16,
+    "unit": "KILOMETERS"
+  },
+  "cloudCover": 30,
+  "currentConditionsHistory": {
+    "temperatureChange": {
+      "degrees": -0.7,
+      "unit": "CELSIUS"
+    },
+    "maxTemperature": {
+      "degrees": 31.2,
+      "unit": "CELSIUS"
+    },
+    "minTemperature": {
+      "degrees": 27.3,
+      "unit": "CELSIUS"
+    },
+    "snowQpf": {
+      "quantity": 0,
+      "unit": "MILLIMETERS"
+    },
+    "qpf": {
+      "quantity": 1.2344,
+      "unit": "MILLIMETERS"
+    }
+  }
+}
+
+2025-06-13 12:06:44,056 - weather_model - INFO - Requesting FORECAST from URL: https://weather.googleapis.com/v1/forecast/days:lookup
+2025-06-13 12:06:44,866 - weather_model - INFO - FORECAST response status: 200
+2025-06-13 12:06:44,964 - weather_model - INFO - FORECAST response text: {
+  "forecastDays": [
+    {
+      "interval": {
+        "startTime": "2025-06-13T11:00:00Z",
+        "endTime": "2025-06-14T11:00:00Z"
+      },
+      "displayDate": {
+        "year": 2025,
+        "month": 6,
+        "day": 13
+      },
+      "daytimeForecast": {
+        "interval": {
+          "startTime": "2025-06-13T11:00:00Z",
+          "endTime": "2025-06-13T23:00:00Z"
+        },
+        "weatherCondition": {
+          "iconBaseUri": "https://maps.gstatic.com/weather/v1/party_cloudy",
+          "description": {
+            "text": "Partly sunny",
+            "languageCode": "en"
+          },
+          "type": "PARTLY_CLOUDY"
+        },
+        "relativeHumidity": 68,
+        "uvIndex": 10,
+        "precipitation": {
+          "probability": {
+            "percent": 0,
+            "type": "RAIN"
+          },
+          "snowQpf": {
+            "quantity": 0,
+            "unit": "MILLIMETERS"
+          },
+          "qpf": {
+            "quantity": 0,
+            "unit": "MILLIMETERS"
+          }
+        },
+        "thunderstormProbability": 0,
+        "wind": {
+          "direction": {
+            "degrees": 125,
+            "cardinal": "SOUTHEAST"
+          },
+          "speed": {
+            "value": 21,
+            "unit": "KILOMETERS_PER_HOUR"
+          },
+          "gust": {
+            "value": 31,
+            "unit": "KILOMETERS_PER_HOUR"
+          }
+        },
+        "cloudCover": 33,
+        "iceThickness": {
+          "thickness": 0,
+          "unit": "MILLIMETERS"
+        }
+      },
+      "nighttimeForecast": {
+        "interval": {
+          "startTime": "2025-06-13T23:00:00Z",
+          "endTime": "2025-06-14T11:00:00Z"
+        },
+        "weatherCondition": {
+          "iconBaseUri": "https://maps.gstatic.com/weather/v1/partly_clear",
+          "description": {
+            "text": "Partly cloudy",
+            "languageCode": "en"
+          },
+          "type": "PARTLY_CLOUDY"
+        },
+        "relativeHumidity": 73,
+        "uvIndex": 0,
+        "precipitation": {
+          "probability": {
+            "percent": 25,
+            "type": "RAIN"
+          },
+          "snowQpf": {
+            "quantity": 0,
+            "unit": "MILLIMETERS"
+          },
+          "qpf": {
+            "quantity": 0.7391,
+            "unit": "MILLIMETERS"
+          }
+        },
+        "thunderstormProbability": 70,
+        "wind": {
+          "direction": {
+            "degrees": 129,
+            "cardinal": "SOUTHEAST"
+          },
+          "speed": {
+            "value": 18,
+            "unit": "KILOMETERS_PER_HOUR"
+          },
+          "gust": {
+            "value": 26,
+            "unit": "KILOMETERS_PER_HOUR"
+          }
+        },
+        "cloudCover": 51,
+        "iceThickness": {
+          "thickness": 0,
+          "unit": "MILLIMETERS"
+        }
+      },
+      "maxTemperature": {
+        "degrees": 31,
+        "unit": "CELSIUS"
+      },
+      "minTemperature": {
+        "degrees": 27.9,
+        "unit": "CELSIUS"
+      },
+      "feelsLikeMaxTemperature": {
+        "degrees": 36,
+        "unit": "CELSIUS"
+      },
+      "feelsLikeMinTemperature": {
+        "degrees": 31.6,
+        "unit": "CELSIUS"
+      },
+      "sunEvents": {
+        "sunriseTime": "2025-06-13T10:28:56.609822756Z",
+        "sunsetTime": "2025-06-14T00:13:02.976137194Z"
+      },
+      "moonEvents": {
+        "moonPhase": "WANING_GIBBOUS",
+        "moonriseTimes": [
+          "2025-06-14T02:35:55.052035913Z"
+        ],
+        "moonsetTimes": [
+          "2025-06-13T12:16:37.800967697Z"
+        ]
+      },
+      "maxHeatIndex": {
+        "degrees": 36,
+        "unit": "CELSIUS"
+      }
+    },
+    {
+      "interval": {
+        "startTime": "2025-06-14T11:00:00Z",
+        "endTime": "2025-06-15T11:00:00Z"
+      },
+      "displayDate": {
+        "year": 2025,
+        "month": 6,
+        "day": 14
+      },
+      "daytimeForecast": {
+        "interval": {
+          "startTime": "2025-06-14T11:00:00Z",
+          "endTime": "2025-06-14T23:00:00Z"
+        },
+        "weatherCondition": {
+          "iconBaseUri": "https://maps.gstatic.com/weather/v1/party_cloudy",
+          "description": {
+            "text": "Partly sunny",
+            "languageCode": "en"
+          },
+          "type": "PARTLY_CLOUDY"
+        },
+        "relativeHumidity": 66,
+        "uvIndex": 10,
+        "precipitation": {
+          "probability": {
+            "percent": 15,
+            "type": "RAIN"
+          },
+          "snowQpf": {
+            "quantity": 0,
+            "unit": "MILLIMETERS"
+          },
+          "qpf": {
+            "quantity": 0,
+            "unit": "MILLIMETERS"
+          }
+        },
+        "thunderstormProbability": 40,
+        "wind": {
+          "direction": {
+            "degrees": 125,
+            "cardinal": "SOUTHEAST"
+          },
+          "speed": {
+            "value": 19,
+            "unit": "KILOMETERS_PER_HOUR"
+          },
+          "gust": {
+            "value": 29,
+            "unit": "KILOMETERS_PER_HOUR"
+          }
+        },
+        "cloudCover": 55,
+        "iceThickness": {
+          "thickness": 0,
+          "unit": "MILLIMETERS"
+        }
+      },
+      "nighttimeForecast": {
+        "interval": {
+          "startTime": "2025-06-14T23:00:00Z",
+          "endTime": "2025-06-15T11:00:00Z"
+        },
+        "weatherCondition": {
+          "iconBaseUri": "https://maps.gstatic.com/weather/v1/partly_clear",
+          "description": {
+            "text": "Partly cloudy",
+            "languageCode": "en"
+          },
+          "type": "PARTLY_CLOUDY"
+        },
+        "relativeHumidity": 71,
+        "uvIndex": 0,
+        "precipitation": {
+          "probability": {
+            "percent": 20,
+            "type": "RAIN"
+          },
+          "snowQpf": {
+            "quantity": 0,
+            "unit": "MILLIMETERS"
+          },
+          "qpf": {
+            "quantity": 0.3861,
+            "unit": "MILLIMETERS"
+          }
+        },
+        "thunderstormProbability": 60,
+        "wind": {
+          "direction": {
+            "degrees": 126,
+            "cardinal": "SOUTHEAST"
+          },
+          "speed": {
+            "value": 16,
+            "unit": "KILOMETERS_PER_HOUR"
+          },
+          "gust": {
+            "value": 24,
+            "unit": "KILOMETERS_PER_HOUR"
+          }
+        },
+        "cloudCover": 45,
+        "iceThickness": {
+          "thickness": 0,
+          "unit": "MILLIMETERS"
+        }
+      },
+      "maxTemperature": {
+        "degrees": 30.4,
+        "unit": "CELSIUS"
+      },
+      "minTemperature": {
+        "degrees": 27.3,
+        "unit": "CELSIUS"
+      },
+      "feelsLikeMaxTemperature": {
+        "degrees": 34.4,
+        "unit": "CELSIUS"
+      },
+      "feelsLikeMinTemperature": {
+        "degrees": 30.6,
+        "unit": "CELSIUS"
+      },
+      "sunEvents": {
+        "sunriseTime": "2025-06-14T10:29:02.248612134Z",
+        "sunsetTime": "2025-06-15T00:13:22.210240151Z"
+      },
+      "moonEvents": {
+        "moonPhase": "WANING_GIBBOUS",
+        "moonriseTimes": [
+          "2025-06-15T03:18:20.841033732Z"
+        ],
+        "moonsetTimes": [
+          "2025-06-14T13:16:57.468262597Z"
+        ]
+      },
+      "maxHeatIndex": {
+        "degrees": 34.4,
+        "unit": "CELSIUS"
+      }
+    },
+    {
+      "interval": {
+        "startTime": "2025-06-15T11:00:00Z",
+        "endTime": "2025-06-16T11:00:00Z"
+      },
+      "displayDate": {
+        "year": 2025,
+        "month": 6,
+        "day": 15
+      },
+      "daytimeForecast": {
+        "interval": {
+          "startTime": "2025-06-15T11:00:00Z",
+          "endTime": "2025-06-15T23:00:00Z"
+        },
+        "weatherCondition": {
+          "iconBaseUri": "https://maps.gstatic.com/weather/v1/mostly_sunny",
+          "description": {
+            "text": "Mostly sunny",
+            "languageCode": "en"
+          },
+          "type": "MOSTLY_CLEAR"
+        },
+        "relativeHumidity": 66,
+        "uvIndex": 10,
+        "precipitation": {
+          "probability": {
+            "percent": 25,
+            "type": "RAIN"
+          },
+          "snowQpf": {
+            "quantity": 0,
+            "unit": "MILLIMETERS"
+          },
+          "qpf": {
+            "quantity": 0.7264,
+            "unit": "MILLIMETERS"
+          }
+        },
+        "thunderstormProbability": 40,
+        "wind": {
+          "direction": {
+            "degrees": 134,
+            "cardinal": "SOUTHEAST"
+          },
+          "speed": {
+            "value": 18,
+            "unit": "KILOMETERS_PER_HOUR"
+          },
+          "gust": {
+            "value": 27,
+            "unit": "KILOMETERS_PER_HOUR"
+          }
+        },
+        "cloudCover": 43,
+        "iceThickness": {
+          "thickness": 0,
+          "unit": "MILLIMETERS"
+        }
+      },
+      "nighttimeForecast": {
+        "interval": {
+          "startTime": "2025-06-15T23:00:00Z",
+          "endTime": "2025-06-16T11:00:00Z"
+        },
+        "weatherCondition": {
+          "iconBaseUri": "https://maps.gstatic.com/weather/v1/drizzle",
+          "description": {
+            "text": "Chance of showers",
+            "languageCode": "en"
+          },
+          "type": "CHANCE_OF_SHOWERS"
+        },
+        "relativeHumidity": 72,
+        "uvIndex": 0,
+        "precipitation": {
+          "probability": {
+            "percent": 20,
+            "type": "RAIN"
+          },
+          "snowQpf": {
+            "quantity": 0,
+            "unit": "MILLIMETERS"
+          },
+          "qpf": {
+            "quantity": 0.7036,
+            "unit": "MILLIMETERS"
+          }
+        },
+        "thunderstormProbability": 70,
+        "wind": {
+          "direction": {
+            "degrees": 133,
+            "cardinal": "SOUTHEAST"
+          },
+          "speed": {
+            "value": 16,
+            "unit": "KILOMETERS_PER_HOUR"
+          },
+          "gust": {
+            "value": 21,
+            "unit": "KILOMETERS_PER_HOUR"
+          }
+        },
+        "cloudCover": 51,
+        "iceThickness": {
+          "thickness": 0,
+          "unit": "MILLIMETERS"
+        }
+      },
+      "maxTemperature": {
+        "degrees": 30.4,
+        "unit": "CELSIUS"
+      },
+      "minTemperature": {
+        "degrees": 27.3,
+        "unit": "CELSIUS"
+      },
+      "feelsLikeMaxTemperature": {
+        "degrees": 34.4,
+        "unit": "CELSIUS"
+      },
+      "feelsLikeMinTemperature": {
+        "degrees": 30.5,
+        "unit": "CELSIUS"
+      },
+      "sunEvents": {
+        "sunriseTime": "2025-06-15T10:29:08.983970784Z",
+        "sunsetTime": "2025-06-16T00:13:40.580163874Z"
+      },
+      "moonEvents": {
+        "moonPhase": "WANING_GIBBOUS",
+        "moonriseTimes": [
+          "2025-06-16T03:56:27.409705610Z"
+        ],
+        "moonsetTimes": [
+          "2025-06-15T14:17:41.994077411Z"
+        ]
+      },
+      "maxHeatIndex": {
+        "degrees": 34.4,
+        "unit": "CELSIUS"
+      }
+    },
+    {
+      "interval": {
+        "startTime": "2025-06-16T11:00:00Z",
+        "endTime": "2025-06-17T11:00:00Z"
+      },
+      "displayDate": {
+        "year": 2025,
+        "month": 6,
+        "day": 16
+      },
+      "daytimeForecast": {
+        "interval": {
+          "startTime": "2025-06-16T11:00:00Z",
+          "endTime": "2025-06-16T23:00:00Z"
+        },
+        "weatherCondition": {
+          "iconBaseUri": "https://maps.gstatic.com/weather/v1/mostly_sunny",
+          "description": {
+            "text": "Mostly sunny",
+            "languageCode": "en"
+          },
+          "type": "MOSTLY_CLEAR"
+        },
+        "relativeHumidity": 64,
+        "uvIndex": 10,
+        "precipitation": {
+          "probability": {
+            "percent": 20,
+            "type": "RAIN"
+          },
+          "snowQpf": {
+            "quantity": 0,
+            "unit": "MILLIMETERS"
+          },
+          "qpf": {
+            "quantity": 0.5004,
+            "unit": "MILLIMETERS"
+          }
+        },
+        "thunderstormProbability": 60,
+        "wind": {
+          "direction": {
+            "degrees": 138,
+            "cardinal": "SOUTHEAST"
+          },
+          "speed": {
+            "value": 18,
+            "unit": "KILOMETERS_PER_HOUR"
+          },
+          "gust": {
+            "value": 27,
+            "unit": "KILOMETERS_PER_HOUR"
+          }
+        },
+        "cloudCover": 50,
+        "iceThickness": {
+          "thickness": 0,
+          "unit": "MILLIMETERS"
+        }
+      },
+      "nighttimeForecast": {
+        "interval": {
+          "startTime": "2025-06-16T23:00:00Z",
+          "endTime": "2025-06-17T11:00:00Z"
+        },
+        "weatherCondition": {
+          "iconBaseUri": "https://maps.gstatic.com/weather/v1/partly_clear",
+          "description": {
+            "text": "Partly cloudy",
+            "languageCode": "en"
+          },
+          "type": "PARTLY_CLOUDY"
+        },
+        "relativeHumidity": 68,
+        "uvIndex": 0,
+        "precipitation": {
+          "probability": {
+            "percent": 15,
+            "type": "RAIN"
+          },
+          "snowQpf": {
+            "quantity": 0,
+            "unit": "MILLIMETERS"
+          },
+          "qpf": {
+            "quantity": 0,
+            "unit": "MILLIMETERS"
+          }
+        },
+        "thunderstormProbability": 50,
+        "wind": {
+          "direction": {
+            "degrees": 133,
+            "cardinal": "SOUTHEAST"
+          },
+          "speed": {
+            "value": 14,
+            "unit": "KILOMETERS_PER_HOUR"
+          },
+          "gust": {
+            "value": 23,
+            "unit": "KILOMETERS_PER_HOUR"
+          }
+        },
+        "cloudCover": 46,
+        "iceThickness": {
+          "thickness": 0,
+          "unit": "MILLIMETERS"
+        }
+      },
+      "maxTemperature": {
+        "degrees": 30.7,
+        "unit": "CELSIUS"
+      },
+      "minTemperature": {
+        "degrees": 26.6,
+        "unit": "CELSIUS"
+      },
+      "feelsLikeMaxTemperature": {
+        "degrees": 34.3,
+        "unit": "CELSIUS"
+      },
+      "feelsLikeMinTemperature": {
+        "degrees": 29.4,
+        "unit": "CELSIUS"
+      },
+      "sunEvents": {
+        "sunriseTime": "2025-06-16T10:29:16.797207648Z",
+        "sunsetTime": "2025-06-17T00:13:58.058992323Z"
+      },
+      "moonEvents": {
+        "moonPhase": "WANING_GIBBOUS",
+        "moonsetTimes": [
+          "2025-06-16T15:17:51.743748674Z"
+        ]
+      },
+      "maxHeatIndex": {
+        "degrees": 34.3,
+        "unit": "CELSIUS"
+      }
+    },
+    {
+      "interval": {
+        "startTime": "2025-06-17T11:00:00Z",
+        "endTime": "2025-06-18T11:00:00Z"
+      },
+      "displayDate": {
+        "year": 2025,
+        "month": 6,
+        "day": 17
+      },
+      "daytimeForecast": {
+        "interval": {
+          "startTime": "2025-06-17T11:00:00Z",
+          "endTime": "2025-06-17T23:00:00Z"
+        },
+        "weatherCondition": {
+          "iconBaseUri": "https://maps.gstatic.com/weather/v1/party_cloudy",
+          "description": {
+            "text": "Partly sunny",
+            "languageCode": "en"
+          },
+          "type": "PARTLY_CLOUDY"
+        },
+        "relativeHumidity": 64,
+        "uvIndex": 9,
+        "precipitation": {
+          "probability": {
+            "percent": 15,
+            "type": "RAIN"
+          },
+          "snowQpf": {
+            "quantity": 0,
+            "unit": "MILLIMETERS"
+          },
+          "qpf": {
+            "quantity": 0.1143,
+            "unit": "MILLIMETERS"
+          }
+        },
+        "thunderstormProbability": 50,
+        "wind": {
+          "direction": {
+            "degrees": 124,
+            "cardinal": "EAST_SOUTHEAST"
+          },
+          "speed": {
+            "value": 16,
+            "unit": "KILOMETERS_PER_HOUR"
+          },
+          "gust": {
+            "value": 26,
+            "unit": "KILOMETERS_PER_HOUR"
+          }
+        },
+        "cloudCover": 63,
+        "iceThickness": {
+          "thickness": 0,
+          "unit": "MILLIMETERS"
+        }
+      },
+      "nighttimeForecast": {
+        "interval": {
+          "startTime": "2025-06-17T23:00:00Z",
+          "endTime": "2025-06-18T11:00:00Z"
+        },
+        "weatherCondition": {
+          "iconBaseUri": "https://maps.gstatic.com/weather/v1/partly_clear",
+          "description": {
+            "text": "Partly cloudy",
+            "languageCode": "en"
+          },
+          "type": "PARTLY_CLOUDY"
+        },
+        "relativeHumidity": 70,
+        "uvIndex": 0,
+        "precipitation": {
+          "probability": {
+            "percent": 15,
+            "type": "RAIN"
+          },
+          "snowQpf": {
+            "quantity": 0,
+            "unit": "MILLIMETERS"
+          },
+          "qpf": {
+            "quantity": 0,
+            "unit": "MILLIMETERS"
+          }
+        },
+        "thunderstormProbability": 50,
+        "wind": {
+          "direction": {
+            "degrees": 131,
+            "cardinal": "SOUTHEAST"
+          },
+          "speed": {
+            "value": 13,
+            "unit": "KILOMETERS_PER_HOUR"
+          },
+          "gust": {
+            "value": 23,
+            "unit": "KILOMETERS_PER_HOUR"
+          }
+        },
+        "cloudCover": 53,
+        "iceThickness": {
+          "thickness": 0,
+          "unit": "MILLIMETERS"
+        }
+      },
+      "maxTemperature": {
+        "degrees": 30.9,
+        "unit": "CELSIUS"
+      },
+      "minTemperature": {
+        "degrees": 27.8,
+        "unit": "CELSIUS"
+      },
+      "feelsLikeMaxTemperature": {
+        "degrees": 34.8,
+        "unit": "CELSIUS"
+      },
+      "feelsLikeMinTemperature": {
+        "degrees": 31.1,
+        "unit": "CELSIUS"
+      },
+      "sunEvents": {
+        "sunriseTime": "2025-06-17T10:29:25.668688397Z",
+        "sunsetTime": "2025-06-18T00:14:14.620366820Z"
+      },
+      "moonEvents": {
+        "moonPhase": "WANING_GIBBOUS",
+        "moonriseTimes": [
+          "2025-06-17T04:31:23.343409494Z"
+        ],
+        "moonsetTimes": [
+          "2025-06-17T16:17:24.001909213Z"
+        ]
+      },
+      "maxHeatIndex": {
+        "degrees": 34.8,
+        "unit": "CELSIUS"
+      }
+    }
+  ],
+  "timeZone": {
+    "id": "America/New_York"
+  },
+  "nextPageToken": "ChYKEgkZBody_cI5QBFfLGdKRgxUwBAHEAUYBSIMCMTtscIGEJuI_OICKhBBbWVyaWNhL05ld19Zb3Jr"
+}
+
+2025-06-13 12:06:45,086 - weather_model - INFO - Attempting to parse 'forecastDays' from a JSON object with keys: dict_keys(['forecastDays', 'timeZone', 'nextPageToken'])
+2025-06-13 12:06:45,202 - weather_model - INFO - Processing forecast for day 1...
+2025-06-13 12:06:45,385 - weather_model - INFO - Processing forecast for day 2...
+2025-06-13 12:06:45,538 - weather_model - INFO - Processing forecast for day 3...
+2025-06-13 12:06:45,683 - weather_model - INFO - Processing forecast for day 4...
+2025-06-13 12:06:45,830 - weather_model - INFO - Processing forecast for day 5...
+2025-06-13 12:06:45,964 - weather_model - INFO - Finished parsing daily forecast.
+2025-06-13 12:49:19,116 - rag_embedding_service - INFO - EmbeddingService configured
+2025-06-13 12:49:23,857 - rag_vector_db - INFO - VectorSearchDB configured:
+2025-06-13 12:49:24,599 - rag_document_processor - INFO - DocumentProcessor initialized
+2025-06-13 12:49:25,359 - rag_engine - INFO - RAGEngine initialized.
+2025-06-13 12:50:14,704 - gemini_model - INFO - Model preference set to: Base Model
+2025-06-13 12:50:16,283 - gemini_model - INFO - Using base model
+2025-06-13 12:50:18,470 - gemini_model - INFO - Model requested a function call
+2025-06-13 12:50:18,583 - weather_model - INFO - Getting coordinates for location: Miami, FL
+2025-06-13 12:50:19,387 - geocoding_tool - INFO - Attempting to get coordinates for location: Miami, FL
+2025-06-13 12:50:20,183 - geocoding_tool - INFO - API Key present: Yes
+2025-06-13 12:50:20,320 - geocoding_tool - INFO - Making geocoding request for: Miami, FL
+2025-06-13 12:50:20,740 - geocoding_tool - INFO - Successfully got coordinates for Miami, FL: {'status': 'success', 'latitude': 25.7616798, 'longitude': -80.1917902, 'formatted_address': 'Miami, FL, USA'}
+2025-06-13 12:50:20,878 - weather_model - INFO - Getting weather data for coordinates: 25.7616798, -80.1917902
+2025-06-13 12:50:21,036 - weather_model - INFO - Requesting CURRENT conditions from URL: https://weather.googleapis.com/v1/currentConditions:lookup
+2025-06-13 12:50:21,172 - weather_model - INFO - With PARAMS: {'key': 'AIzaSyBPYcSejsvuaM4dEZpexIeq3eOVUiPKry4', 'location.latitude': 25.7616798, 'location.longitude': -80.1917902}
+2025-06-13 12:50:22,125 - weather_model - INFO - CURRENT conditions response status: 200
+2025-06-13 12:50:22,288 - weather_model - INFO - CURRENT conditions response text: {
+  "currentTime": "2025-06-13T19:50:22.093888030Z",
+  "timeZone": {
+    "id": "America/New_York"
+  },
+  "isDaytime": true,
+  "weatherCondition": {
+    "iconBaseUri": "https://maps.gstatic.com/weather/v1/party_cloudy",
+    "description": {
+      "text": "Partly sunny",
+      "languageCode": "en"
+    },
+    "type": "PARTLY_CLOUDY"
+  },
+  "temperature": {
+    "degrees": 30,
+    "unit": "CELSIUS"
+  },
+  "feelsLikeTemperature": {
+    "degrees": 34.5,
+    "unit": "CELSIUS"
+  },
+  "dewPoint": {
+    "degrees": 23.4,
+    "unit": "CELSIUS"
+  },
+  "heatIndex": {
+    "degrees": 34.5,
+    "unit": "CELSIUS"
+  },
+  "windChill": {
+    "degrees": 30,
+    "unit": "CELSIUS"
+  },
+  "relativeHumidity": 68,
+  "uvIndex": 6,
+  "precipitation": {
+    "probability": {
+      "percent": 5,
+      "type": "RAIN"
+    },
+    "snowQpf": {
+      "quantity": 0,
+      "unit": "MILLIMETERS"
+    },
+    "qpf": {
+      "quantity": 0,
+      "unit": "MILLIMETERS"
+    }
+  },
+  "thunderstormProbability": 0,
+  "airPressure": {
+    "meanSeaLevelMillibars": 1018.8
+  },
+  "wind": {
+    "direction": {
+      "degrees": 125,
+      "cardinal": "SOUTHEAST"
+    },
+    "speed": {
+      "value": 18,
+      "unit": "KILOMETERS_PER_HOUR"
+    },
+    "gust": {
+      "value": 28,
+      "unit": "KILOMETERS_PER_HOUR"
+    }
+  },
+  "visibility": {
+    "distance": 16,
+    "unit": "KILOMETERS"
+  },
+  "cloudCover": 49,
+  "currentConditionsHistory": {
+    "temperatureChange": {
+      "degrees": -1.2,
+      "unit": "CELSIUS"
+    },
+    "maxTemperature": {
+      "degrees": 31.2,
+      "unit": "CELSIUS"
+    },
+    "minTemperature": {
+      "degrees": 27.3,
+      "unit": "CELSIUS"
+    },
+    "snowQpf": {
+      "quantity": 0,
+      "unit": "MILLIMETERS"
+    },
+    "qpf": {
+      "quantity": 1.2344,
+      "unit": "MILLIMETERS"
+    }
+  }
+}
+
+2025-06-13 12:50:22,439 - weather_model - INFO - Requesting FORECAST from URL: https://weather.googleapis.com/v1/forecast/days:lookup
+2025-06-13 12:50:23,128 - weather_model - INFO - FORECAST response status: 200
+2025-06-13 12:50:23,280 - weather_model - INFO - FORECAST response text: {
+  "forecastDays": [
+    {
+      "interval": {
+        "startTime": "2025-06-13T11:00:00Z",
+        "endTime": "2025-06-14T11:00:00Z"
+      },
+      "displayDate": {
+        "year": 2025,
+        "month": 6,
+        "day": 13
+      },
+      "daytimeForecast": {
+        "interval": {
+          "startTime": "2025-06-13T11:00:00Z",
+          "endTime": "2025-06-13T23:00:00Z"
+        },
+        "weatherCondition": {
+          "iconBaseUri": "https://maps.gstatic.com/weather/v1/party_cloudy",
+          "description": {
+            "text": "Partly sunny",
+            "languageCode": "en"
+          },
+          "type": "PARTLY_CLOUDY"
+        },
+        "relativeHumidity": 69,
+        "uvIndex": 10,
+        "precipitation": {
+          "probability": {
+            "percent": 5,
+            "type": "RAIN"
+          },
+          "snowQpf": {
+            "quantity": 0,
+            "unit": "MILLIMETERS"
+          },
+          "qpf": {
+            "quantity": 0,
+            "unit": "MILLIMETERS"
+          }
+        },
+        "thunderstormProbability": 0,
+        "wind": {
+          "direction": {
+            "degrees": 125,
+            "cardinal": "SOUTHEAST"
+          },
+          "speed": {
+            "value": 21,
+            "unit": "KILOMETERS_PER_HOUR"
+          },
+          "gust": {
+            "value": 31,
+            "unit": "KILOMETERS_PER_HOUR"
+          }
+        },
+        "cloudCover": 50,
+        "iceThickness": {
+          "thickness": 0,
+          "unit": "MILLIMETERS"
+        }
+      },
+      "nighttimeForecast": {
+        "interval": {
+          "startTime": "2025-06-13T23:00:00Z",
+          "endTime": "2025-06-14T11:00:00Z"
+        },
+        "weatherCondition": {
+          "iconBaseUri": "https://maps.gstatic.com/weather/v1/partly_clear",
+          "description": {
+            "text": "Partly cloudy",
+            "languageCode": "en"
+          },
+          "type": "PARTLY_CLOUDY"
+        },
+        "relativeHumidity": 73,
+        "uvIndex": 0,
+        "precipitation": {
+          "probability": {
+            "percent": 20,
+            "type": "RAIN"
+          },
+          "snowQpf": {
+            "quantity": 0,
+            "unit": "MILLIMETERS"
+          },
+          "qpf": {
+            "quantity": 0.5055,
+            "unit": "MILLIMETERS"
+          }
+        },
+        "thunderstormProbability": 70,
+        "wind": {
+          "direction": {
+            "degrees": 126,
+            "cardinal": "SOUTHEAST"
+          },
+          "speed": {
+            "value": 14,
+            "unit": "KILOMETERS_PER_HOUR"
+          },
+          "gust": {
+            "value": 24,
+            "unit": "KILOMETERS_PER_HOUR"
+          }
+        },
+        "cloudCover": 55,
+        "iceThickness": {
+          "thickness": 0,
+          "unit": "MILLIMETERS"
+        }
+      },
+      "maxTemperature": {
+        "degrees": 31,
+        "unit": "CELSIUS"
+      },
+      "minTemperature": {
+        "degrees": 27.8,
+        "unit": "CELSIUS"
+      },
+      "feelsLikeMaxTemperature": {
+        "degrees": 36,
+        "unit": "CELSIUS"
+      },
+      "feelsLikeMinTemperature": {
+        "degrees": 31.1,
+        "unit": "CELSIUS"
+      },
+      "sunEvents": {
+        "sunriseTime": "2025-06-13T10:28:56.609822756Z",
+        "sunsetTime": "2025-06-14T00:13:02.976137194Z"
+      },
+      "moonEvents": {
+        "moonPhase": "WANING_GIBBOUS",
+        "moonriseTimes": [
+          "2025-06-14T02:35:55.052035913Z"
+        ],
+        "moonsetTimes": [
+          "2025-06-13T12:16:37.800967697Z"
+        ]
+      },
+      "maxHeatIndex": {
+        "degrees": 36,
+        "unit": "CELSIUS"
+      }
+    },
+    {
+      "interval": {
+        "startTime": "2025-06-14T11:00:00Z",
+        "endTime": "2025-06-15T11:00:00Z"
+      },
+      "displayDate": {
+        "year": 2025,
+        "month": 6,
+        "day": 14
+      },
+      "daytimeForecast": {
+        "interval": {
+          "startTime": "2025-06-14T11:00:00Z",
+          "endTime": "2025-06-14T23:00:00Z"
+        },
+        "weatherCondition": {
+          "iconBaseUri": "https://maps.gstatic.com/weather/v1/party_cloudy",
+          "description": {
+            "text": "Partly sunny",
+            "languageCode": "en"
+          },
+          "type": "PARTLY_CLOUDY"
+        },
+        "relativeHumidity": 66,
+        "uvIndex": 10,
+        "precipitation": {
+          "probability": {
+            "percent": 20,
+            "type": "RAIN"
+          },
+          "snowQpf": {
+            "quantity": 0,
+            "unit": "MILLIMETERS"
+          },
+          "qpf": {
+            "quantity": 0.5258,
+            "unit": "MILLIMETERS"
+          }
+        },
+        "thunderstormProbability": 40,
+        "wind": {
+          "direction": {
+            "degrees": 124,
+            "cardinal": "EAST_SOUTHEAST"
+          },
+          "speed": {
+            "value": 19,
+            "unit": "KILOMETERS_PER_HOUR"
+          },
+          "gust": {
+            "value": 27,
+            "unit": "KILOMETERS_PER_HOUR"
+          }
+        },
+        "cloudCover": 45,
+        "iceThickness": {
+          "thickness": 0,
+          "unit": "MILLIMETERS"
+        }
+      },
+      "nighttimeForecast": {
+        "interval": {
+          "startTime": "2025-06-14T23:00:00Z",
+          "endTime": "2025-06-15T11:00:00Z"
+        },
+        "weatherCondition": {
+          "iconBaseUri": "https://maps.gstatic.com/weather/v1/partly_clear",
+          "description": {
+            "text": "Partly cloudy",
+            "languageCode": "en"
+          },
+          "type": "PARTLY_CLOUDY"
+        },
+        "relativeHumidity": 69,
+        "uvIndex": 0,
+        "precipitation": {
+          "probability": {
+            "percent": 20,
+            "type": "RAIN"
+          },
+          "snowQpf": {
+            "quantity": 0,
+            "unit": "MILLIMETERS"
+          },
+          "qpf": {
+            "quantity": 0.442,
+            "unit": "MILLIMETERS"
+          }
+        },
+        "thunderstormProbability": 60,
+        "wind": {
+          "direction": {
+            "degrees": 133,
+            "cardinal": "SOUTHEAST"
+          },
+          "speed": {
+            "value": 14,
+            "unit": "KILOMETERS_PER_HOUR"
+          },
+          "gust": {
+            "value": 21,
+            "unit": "KILOMETERS_PER_HOUR"
+          }
+        },
+        "cloudCover": 60,
+        "iceThickness": {
+          "thickness": 0,
+          "unit": "MILLIMETERS"
+        }
+      },
+      "maxTemperature": {
+        "degrees": 30.4,
+        "unit": "CELSIUS"
+      },
+      "minTemperature": {
+        "degrees": 27.9,
+        "unit": "CELSIUS"
+      },
+      "feelsLikeMaxTemperature": {
+        "degrees": 34.3,
+        "unit": "CELSIUS"
+      },
+      "feelsLikeMinTemperature": {
+        "degrees": 31.3,
+        "unit": "CELSIUS"
+      },
+      "sunEvents": {
+        "sunriseTime": "2025-06-14T10:29:02.248612134Z",
+        "sunsetTime": "2025-06-15T00:13:22.210240151Z"
+      },
+      "moonEvents": {
+        "moonPhase": "WANING_GIBBOUS",
+        "moonriseTimes": [
+          "2025-06-15T03:18:20.841033732Z"
+        ],
+        "moonsetTimes": [
+          "2025-06-14T13:16:57.468262597Z"
+        ]
+      },
+      "maxHeatIndex": {
+        "degrees": 34.3,
+        "unit": "CELSIUS"
+      }
+    },
+    {
+      "interval": {
+        "startTime": "2025-06-15T11:00:00Z",
+        "endTime": "2025-06-16T11:00:00Z"
+      },
+      "displayDate": {
+        "year": 2025,
+        "month": 6,
+        "day": 15
+      },
+      "daytimeForecast": {
+        "interval": {
+          "startTime": "2025-06-15T11:00:00Z",
+          "endTime": "2025-06-15T23:00:00Z"
+        },
+        "weatherCondition": {
+          "iconBaseUri": "https://maps.gstatic.com/weather/v1/mostly_sunny",
+          "description": {
+            "text": "Mostly sunny",
+            "languageCode": "en"
+          },
+          "type": "MOSTLY_CLEAR"
+        },
+        "relativeHumidity": 66,
+        "uvIndex": 10,
+        "precipitation": {
+          "probability": {
+            "percent": 20,
+            "type": "RAIN"
+          },
+          "snowQpf": {
+            "quantity": 0,
+            "unit": "MILLIMETERS"
+          },
+          "qpf": {
+            "quantity": 0.2692,
+            "unit": "MILLIMETERS"
+          }
+        },
+        "thunderstormProbability": 40,
+        "wind": {
+          "direction": {
+            "degrees": 138,
+            "cardinal": "SOUTHEAST"
+          },
+          "speed": {
+            "value": 18,
+            "unit": "KILOMETERS_PER_HOUR"
+          },
+          "gust": {
+            "value": 27,
+            "unit": "KILOMETERS_PER_HOUR"
+          }
+        },
+        "cloudCover": 42,
+        "iceThickness": {
+          "thickness": 0,
+          "unit": "MILLIMETERS"
+        }
+      },
+      "nighttimeForecast": {
+        "interval": {
+          "startTime": "2025-06-15T23:00:00Z",
+          "endTime": "2025-06-16T11:00:00Z"
+        },
+        "weatherCondition": {
+          "iconBaseUri": "https://maps.gstatic.com/weather/v1/drizzle",
+          "description": {
+            "text": "Chance of showers",
+            "languageCode": "en"
+          },
+          "type": "CHANCE_OF_SHOWERS"
+        },
+        "relativeHumidity": 72,
+        "uvIndex": 0,
+        "precipitation": {
+          "probability": {
+            "percent": 20,
+            "type": "RAIN"
+          },
+          "snowQpf": {
+            "quantity": 0,
+            "unit": "MILLIMETERS"
+          },
+          "qpf": {
+            "quantity": 0.7036,
+            "unit": "MILLIMETERS"
+          }
+        },
+        "thunderstormProbability": 70,
+        "wind": {
+          "direction": {
+            "degrees": 133,
+            "cardinal": "SOUTHEAST"
+          },
+          "speed": {
+            "value": 16,
+            "unit": "KILOMETERS_PER_HOUR"
+          },
+          "gust": {
+            "value": 24,
+            "unit": "KILOMETERS_PER_HOUR"
+          }
+        },
+        "cloudCover": 51,
+        "iceThickness": {
+          "thickness": 0,
+          "unit": "MILLIMETERS"
+        }
+      },
+      "maxTemperature": {
+        "degrees": 30.5,
+        "unit": "CELSIUS"
+      },
+      "minTemperature": {
+        "degrees": 27.2,
+        "unit": "CELSIUS"
+      },
+      "feelsLikeMaxTemperature": {
+        "degrees": 34.3,
+        "unit": "CELSIUS"
+      },
+      "feelsLikeMinTemperature": {
+        "degrees": 30.3,
+        "unit": "CELSIUS"
+      },
+      "sunEvents": {
+        "sunriseTime": "2025-06-15T10:29:08.983970784Z",
+        "sunsetTime": "2025-06-16T00:13:40.580163874Z"
+      },
+      "moonEvents": {
+        "moonPhase": "WANING_GIBBOUS",
+        "moonriseTimes": [
+          "2025-06-16T03:56:27.409705610Z"
+        ],
+        "moonsetTimes": [
+          "2025-06-15T14:17:41.994077411Z"
+        ]
+      },
+      "maxHeatIndex": {
+        "degrees": 34.3,
+        "unit": "CELSIUS"
+      }
+    },
+    {
+      "interval": {
+        "startTime": "2025-06-16T11:00:00Z",
+        "endTime": "2025-06-17T11:00:00Z"
+      },
+      "displayDate": {
+        "year": 2025,
+        "month": 6,
+        "day": 16
+      },
+      "daytimeForecast": {
+        "interval": {
+          "startTime": "2025-06-16T11:00:00Z",
+          "endTime": "2025-06-16T23:00:00Z"
+        },
+        "weatherCondition": {
+          "iconBaseUri": "https://maps.gstatic.com/weather/v1/mostly_sunny",
+          "description": {
+            "text": "Mostly sunny",
+            "languageCode": "en"
+          },
+          "type": "MOSTLY_CLEAR"
+        },
+        "relativeHumidity": 64,
+        "uvIndex": 10,
+        "precipitation": {
+          "probability": {
+            "percent": 20,
+            "type": "RAIN"
+          },
+          "snowQpf": {
+            "quantity": 0,
+            "unit": "MILLIMETERS"
+          },
+          "qpf": {
+            "quantity": 0.5004,
+            "unit": "MILLIMETERS"
+          }
+        },
+        "thunderstormProbability": 60,
+        "wind": {
+          "direction": {
+            "degrees": 138,
+            "cardinal": "SOUTHEAST"
+          },
+          "speed": {
+            "value": 18,
+            "unit": "KILOMETERS_PER_HOUR"
+          },
+          "gust": {
+            "value": 27,
+            "unit": "KILOMETERS_PER_HOUR"
+          }
+        },
+        "cloudCover": 50,
+        "iceThickness": {
+          "thickness": 0,
+          "unit": "MILLIMETERS"
+        }
+      },
+      "nighttimeForecast": {
+        "interval": {
+          "startTime": "2025-06-16T23:00:00Z",
+          "endTime": "2025-06-17T11:00:00Z"
+        },
+        "weatherCondition": {
+          "iconBaseUri": "https://maps.gstatic.com/weather/v1/partly_clear",
+          "description": {
+            "text": "Partly cloudy",
+            "languageCode": "en"
+          },
+          "type": "PARTLY_CLOUDY"
+        },
+        "relativeHumidity": 68,
+        "uvIndex": 0,
+        "precipitation": {
+          "probability": {
+            "percent": 15,
+            "type": "RAIN"
+          },
+          "snowQpf": {
+            "quantity": 0,
+            "unit": "MILLIMETERS"
+          },
+          "qpf": {
+            "quantity": 0,
+            "unit": "MILLIMETERS"
+          }
+        },
+        "thunderstormProbability": 50,
+        "wind": {
+          "direction": {
+            "degrees": 133,
+            "cardinal": "SOUTHEAST"
+          },
+          "speed": {
+            "value": 14,
+            "unit": "KILOMETERS_PER_HOUR"
+          },
+          "gust": {
+            "value": 23,
+            "unit": "KILOMETERS_PER_HOUR"
+          }
+        },
+        "cloudCover": 46,
+        "iceThickness": {
+          "thickness": 0,
+          "unit": "MILLIMETERS"
+        }
+      },
+      "maxTemperature": {
+        "degrees": 30.6,
+        "unit": "CELSIUS"
+      },
+      "minTemperature": {
+        "degrees": 26.6,
+        "unit": "CELSIUS"
+      },
+      "feelsLikeMaxTemperature": {
+        "degrees": 34.2,
+        "unit": "CELSIUS"
+      },
+      "feelsLikeMinTemperature": {
+        "degrees": 29.4,
+        "unit": "CELSIUS"
+      },
+      "sunEvents": {
+        "sunriseTime": "2025-06-16T10:29:16.797207648Z",
+        "sunsetTime": "2025-06-17T00:13:58.058992323Z"
+      },
+      "moonEvents": {
+        "moonPhase": "WANING_GIBBOUS",
+        "moonsetTimes": [
+          "2025-06-16T15:17:51.743748674Z"
+        ]
+      },
+      "maxHeatIndex": {
+        "degrees": 34.2,
+        "unit": "CELSIUS"
+      }
+    },
+    {
+      "interval": {
+        "startTime": "2025-06-17T11:00:00Z",
+        "endTime": "2025-06-18T11:00:00Z"
+      },
+      "displayDate": {
+        "year": 2025,
+        "month": 6,
+        "day": 17
+      },
+      "daytimeForecast": {
+        "interval": {
+          "startTime": "2025-06-17T11:00:00Z",
+          "endTime": "2025-06-17T23:00:00Z"
+        },
+        "weatherCondition": {
+          "iconBaseUri": "https://maps.gstatic.com/weather/v1/party_cloudy",
+          "description": {
+            "text": "Partly sunny",
+            "languageCode": "en"
+          },
+          "type": "PARTLY_CLOUDY"
+        },
+        "relativeHumidity": 64,
+        "uvIndex": 9,
+        "precipitation": {
+          "probability": {
+            "percent": 15,
+            "type": "RAIN"
+          },
+          "snowQpf": {
+            "quantity": 0,
+            "unit": "MILLIMETERS"
+          },
+          "qpf": {
+            "quantity": 0.1143,
+            "unit": "MILLIMETERS"
+          }
+        },
+        "thunderstormProbability": 50,
+        "wind": {
+          "direction": {
+            "degrees": 124,
+            "cardinal": "EAST_SOUTHEAST"
+          },
+          "speed": {
+            "value": 16,
+            "unit": "KILOMETERS_PER_HOUR"
+          },
+          "gust": {
+            "value": 26,
+            "unit": "KILOMETERS_PER_HOUR"
+          }
+        },
+        "cloudCover": 63,
+        "iceThickness": {
+          "thickness": 0,
+          "unit": "MILLIMETERS"
+        }
+      },
+      "nighttimeForecast": {
+        "interval": {
+          "startTime": "2025-06-17T23:00:00Z",
+          "endTime": "2025-06-18T11:00:00Z"
+        },
+        "weatherCondition": {
+          "iconBaseUri": "https://maps.gstatic.com/weather/v1/partly_clear",
+          "description": {
+            "text": "Partly cloudy",
+            "languageCode": "en"
+          },
+          "type": "PARTLY_CLOUDY"
+        },
+        "relativeHumidity": 70,
+        "uvIndex": 0,
+        "precipitation": {
+          "probability": {
+            "percent": 15,
+            "type": "RAIN"
+          },
+          "snowQpf": {
+            "quantity": 0,
+            "unit": "MILLIMETERS"
+          },
+          "qpf": {
+            "quantity": 0,
+            "unit": "MILLIMETERS"
+          }
+        },
+        "thunderstormProbability": 50,
+        "wind": {
+          "direction": {
+            "degrees": 131,
+            "cardinal": "SOUTHEAST"
+          },
+          "speed": {
+            "value": 13,
+            "unit": "KILOMETERS_PER_HOUR"
+          },
+          "gust": {
+            "value": 23,
+            "unit": "KILOMETERS_PER_HOUR"
+          }
+        },
+        "cloudCover": 53,
+        "iceThickness": {
+          "thickness": 0,
+          "unit": "MILLIMETERS"
+        }
+      },
+      "maxTemperature": {
+        "degrees": 30.8,
+        "unit": "CELSIUS"
+      },
+      "minTemperature": {
+        "degrees": 27.7,
+        "unit": "CELSIUS"
+      },
+      "feelsLikeMaxTemperature": {
+        "degrees": 34.7,
+        "unit": "CELSIUS"
+      },
+      "feelsLikeMinTemperature": {
+        "degrees": 30.9,
+        "unit": "CELSIUS"
+      },
+      "sunEvents": {
+        "sunriseTime": "2025-06-17T10:29:25.668688397Z",
+        "sunsetTime": "2025-06-18T00:14:14.620366820Z"
+      },
+      "moonEvents": {
+        "moonPhase": "WANING_GIBBOUS",
+        "moonriseTimes": [
+          "2025-06-17T04:31:23.343409494Z"
+        ],
+        "moonsetTimes": [
+          "2025-06-17T16:17:24.001909213Z"
+        ]
+      },
+      "maxHeatIndex": {
+        "degrees": 34.7,
+        "unit": "CELSIUS"
+      }
+    }
+  ],
+  "timeZone": {
+    "id": "America/New_York"
+  },
+  "nextPageToken": "ChYKEgkZBody_cI5QBFfLGdKRgxUwBAHEAUYBSILCP-BssIGEKnt5x0qEEFtZXJpY2EvTmV3X1lvcms="
+}
+
+2025-06-13 12:50:23,408 - gemini_model - INFO - Sending function response back to the model

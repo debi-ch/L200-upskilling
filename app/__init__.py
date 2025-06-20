@@ -6,3 +6,7 @@ including frontend, backend, and utility components.
 """
 
 # This file can be empty, but its presence makes 'app' a package.
+
+"""
+App package initialization
+"""

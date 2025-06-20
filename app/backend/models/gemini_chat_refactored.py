@@ -12,6 +12,7 @@ from vertexai.generative_models import GenerativeModel, Part, Content
 # Import configuration and logging
 from app.config import GCP_PROJECT_ID, GCP_LOCATION, ModelConfig
 from app.utils.logging_utils import ChatbotLogger
+from app.backend.models.weather_chat import get_location_weather
 
 # Initialize logger
 logger = ChatbotLogger("gemini_model")
@@ -19,12 +20,13 @@ logger = ChatbotLogger("gemini_model")
 # Flag to control which model to use
 USE_TUNED_MODEL = ModelConfig.USE_TUNED_MODEL
 
-def chat_with_gemini(prompt_text):
+def chat_with_gemini(prompt_text, tools=None):
     """
     Sends a prompt to the selected Gemini model and gets a response.
     
     Args:
         prompt_text (str): The prompt text to send to the model
+        tools (list, optional): A list of tools the model can use. Defaults to None.
         
     Returns:
         str: The model's response text
@@ -36,7 +38,8 @@ def chat_with_gemini(prompt_text):
             ModelConfig.GEMINI_TUNED_MODEL_PROJECT_NUM, 
             ModelConfig.GEMINI_TUNED_MODEL_REGION, 
             prompt_text, 
-            "fine-tuned"
+            "fine-tuned",
+            tools=tools
         )
     else:
         # Use the base model
@@ -45,12 +48,13 @@ def chat_with_gemini(prompt_text):
             GCP_PROJECT_ID, 
             GCP_LOCATION, 
             prompt_text, 
-            "base"
+            "base",
+            tools=tools
         )
 
-def chat_with_model_internal(model_id, project_id, location, prompt_text, model_type_str):
+def chat_with_model_internal(model_id, project_id, location, prompt_text, model_type_str, tools=None):
     """
-    Internal function to call a specific Gemini model.
+    Internal function to call a specific Gemini model, with optional function calling.
     
     Args:
         model_id (str): The model ID or resource name
@@ -58,9 +62,10 @@ def chat_with_model_internal(model_id, project_id, location, prompt_text, model_
         location (str): The Google Cloud region
         prompt_text (str): The prompt text to send to the model
         model_type_str (str): A string describing the model type (for logging)
+        tools (list, optional): A list of tools the model can use. Defaults to None.
         
     Returns:
-        str: The model's response text
+        str: The model's final response text
     """
     try:
         logger.info(
@@ -73,28 +78,47 @@ def chat_with_model_internal(model_id, project_id, location, prompt_text, model_
         # Initialize Vertex AI (idempotent)
         vertexai.init(project=project_id, location=location)
         
-        # Load the model
+        # Load the model and start a chat session
         model = GenerativeModel(model_name=model_id)
+        chat = model.start_chat()
+
+        # Send the prompt and tools to the model
+        logger.debug("Sending prompt to model with tools", prompt=prompt_text, tools_available=str(tools) if tools else "None")
+        response = chat.send_message(prompt_text, tools=tools)
         
-        # Create structured content for the prompt
-        structured_prompt = [
-            Content(role="user", parts=[Part.from_text(prompt_text)])
-        ]
-        logger.debug("Sending structured prompt", prompt=str(structured_prompt))
+        # Check if the model wants to call a function
+        function_call = response.candidates[0].content.parts[0].function_call
+        if not function_call:
+            # If no function call, return the text response
+            logger.info("Model returned a direct text response.")
+            return response.text
+
+        # --- Handle Function Call ---
+        logger.info("Model requested a function call", function_name=function_call.name, args=str(function_call.args))
         
-        # Generate response
-        start_time = __import__('time').time()
-        response = model.generate_content(structured_prompt)
-        end_time = __import__('time').time()
-        
-        logger.info(
-            f"Model response generated",
-            model_type=model_type_str,
-            response_time=end_time - start_time,
-            response_length=len(response.text) if hasattr(response, 'text') else 0
-        )
-        
-        return response.text
+        # Call the requested function
+        if function_call.name == "get_location_weather":
+            location_arg = function_call.args.get("location")
+            api_response = get_location_weather(location=location_arg)
+            
+            # Convert dict to a string or a Part object for the model
+            # This ensures the model gets a clean, usable response.
+            part = Part.from_function_response(
+                name=function_call.name,
+                response={
+                    "content": str(api_response),
+                }
+            )
+
+            # Send the function response back to the model
+            logger.info("Sending function response back to the model", function_response=str(api_response))
+            final_response = chat.send_message(part)
+            
+            return final_response.text
+        else:
+            logger.warning(f"Model requested an unknown function: {function_call.name}")
+            return f"Error: The model requested an unknown function: {function_call.name}"
+
             
     except Exception as e:
         logger.error(
@@ -113,7 +137,8 @@ def chat_with_model_internal(model_id, project_id, location, prompt_text, model_
                 GCP_PROJECT_ID, 
                 GCP_LOCATION, 
                 prompt_text, 
-                "base (fallback)"
+                "base (fallback)",
+                tools=tools
             )
         else:
             # If the base model (or fallback) also failed
